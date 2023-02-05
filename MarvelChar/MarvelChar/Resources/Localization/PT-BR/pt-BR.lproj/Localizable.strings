@@ -1,0 +1,11 @@
+/* 
+  Localizable.strings
+  MarvelChar
+
+  Created by Leonardo Soares on 05/02/23.
+  
+*/
+
+"AVENGERS_COMMA" = "Vingadores,";
+"ASSEMBLE_EXCLAMATION" = "Unidos!";
+"SEARCH" = "Buscar";

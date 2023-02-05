@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="collection view cell content view" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="DynamicHeroCollectionViewCell" id="rNO-tN-n72" customClass="DynamicHeroCollectionViewCell" customModule="MarvelChar" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="334" height="292"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="l9i-ZY-vfe">
+                <rect key="frame" x="0.0" y="0.0" width="334" height="292"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4cJ-QG-nAA">
+                        <rect key="frame" x="0.0" y="0.0" width="334" height="292"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="avengersSplash" translatesAutoresizingMaskIntoConstraints="NO" id="HmI-00-Ybj">
+                                <rect key="frame" x="0.0" y="0.0" width="334" height="292"/>
+                            </imageView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="km2-ob-NZf">
+                                <rect key="frame" x="0.0" y="232" width="334" height="60"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Qsg-Ly-tXM">
+                                        <rect key="frame" x="18" y="19" width="46" height="22"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="22" id="Rji-uS-Vki"/>
+                                            <constraint firstAttribute="height" constant="22" id="zbI-HZ-7pG"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="18"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="B1H-j2-Rsm"/>
+                                    <constraint firstItem="Qsg-Ly-tXM" firstAttribute="top" secondItem="km2-ob-NZf" secondAttribute="top" constant="19" id="aLt-XO-pMv"/>
+                                    <constraint firstAttribute="bottom" secondItem="Qsg-Ly-tXM" secondAttribute="bottom" constant="19" id="foX-Iv-IJ7"/>
+                                    <constraint firstItem="Qsg-Ly-tXM" firstAttribute="leading" secondItem="km2-ob-NZf" secondAttribute="leading" constant="18" id="sA7-f9-xSF"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="HmI-00-Ybj" firstAttribute="top" secondItem="4cJ-QG-nAA" secondAttribute="top" id="3r6-6V-uzB"/>
+                            <constraint firstItem="km2-ob-NZf" firstAttribute="leading" secondItem="4cJ-QG-nAA" secondAttribute="leading" id="Ndo-gh-Wr7"/>
+                            <constraint firstAttribute="bottom" secondItem="HmI-00-Ybj" secondAttribute="bottom" id="TJp-HS-IqF"/>
+                            <constraint firstItem="HmI-00-Ybj" firstAttribute="leading" secondItem="4cJ-QG-nAA" secondAttribute="leading" id="UVc-nJ-4pL"/>
+                            <constraint firstAttribute="trailing" secondItem="HmI-00-Ybj" secondAttribute="trailing" id="ZsB-OI-0tW"/>
+                            <constraint firstAttribute="trailing" secondItem="km2-ob-NZf" secondAttribute="trailing" id="hAg-4B-PY6"/>
+                            <constraint firstAttribute="bottom" secondItem="km2-ob-NZf" secondAttribute="bottom" id="vLQ-eR-LTL"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <color key="backgroundColor" red="0.070588235289999995" green="0.070588235289999995" blue="0.070588235289999995" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                <constraints>
+                    <constraint firstItem="4cJ-QG-nAA" firstAttribute="top" secondItem="l9i-ZY-vfe" secondAttribute="top" id="Gsm-JH-3t8"/>
+                    <constraint firstAttribute="bottom" secondItem="4cJ-QG-nAA" secondAttribute="bottom" id="QWh-pd-4pC"/>
+                    <constraint firstAttribute="trailing" secondItem="4cJ-QG-nAA" secondAttribute="trailing" id="mbm-Hd-sKX"/>
+                    <constraint firstItem="4cJ-QG-nAA" firstAttribute="leading" secondItem="l9i-ZY-vfe" secondAttribute="leading" id="uSz-Ka-SQE"/>
+                </constraints>
+            </collectionViewCellContentView>
+            <size key="customSize" width="334" height="292"/>
+            <connections>
+                <outlet property="heroCellContentView" destination="4cJ-QG-nAA" id="VGB-df-6Uu"/>
+                <outlet property="heroImage" destination="HmI-00-Ybj" id="vBS-Jp-ZZI"/>
+                <outlet property="heroNameLabel" destination="Qsg-Ly-tXM" id="tCG-8X-Mvq"/>
+                <outlet property="heroNameView" destination="km2-ob-NZf" id="GPC-44-cWK"/>
+            </connections>
+            <point key="canvasLocation" x="334.35114503816794" y="19.014084507042256"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="avengersSplash" width="375" height="806"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

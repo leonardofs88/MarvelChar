@@ -10,41 +10,68 @@ import UIKit
 
 class HomeViewController: UIViewController {
     @IBOutlet private weak var searchTextField: UITextField!
+    @IBOutlet weak var avengersTitleLable: UILabel!
+    @IBOutlet weak var assembleTitleLabel: UILabel!
     
-    @IBOutlet private weak var titleLabel: UILabel!
+    @IBOutlet weak var heroesCollecionView: UICollectionView!
+    
+    fileprivate var currentRow = 0
     
     override func viewDidLoad() {
         super.viewDidLoad()
         setUpTitle()
-        setUpSearchBar()
+        searchTextField.setUpSearchBar(imageName: ImageName.search)
+        setUpCollectionView()
     }
     
     fileprivate func setUpTitle() {
-        let title = """
-                    Avengers,
-                    Assemble!
-                    """
-        let mutableString = NSMutableAttributedString(string: title,
-                                                      attributes: [NSAttributedString.Key.font :
-                                                                    UIFont.systemFont(ofSize: 36,
-                                                                                      weight: .semibold)])
-        mutableString.addAttribute(NSAttributedString.Key.font,
-                                   value: UIFont.systemFont(ofSize: 40, weight: .bold),
-                                   range: NSRange(location:9,length:9))
+        avengersTitleLable.text = LocalizableStrings.avengersComma
+        assembleTitleLabel.text = LocalizableStrings.assembleExclamation
+    }
+    
+    fileprivate func setUpCollectionView() {
+        heroesCollecionView.delegate = self
+        heroesCollecionView.dataSource = self
         
-        titleLabel.attributedText = mutableString
-        titleLabel.layoutIfNeeded()
+        heroesCollecionView.register(UINib(nibName: "DynamicHeroCollectionViewCell", bundle: nil), forCellWithReuseIdentifier: DynamicHeroCollectionViewCell.identifier)
     }
     
-    fileprivate func setUpSearchBar() {
-        searchTextField.frame = CGRect(x: 18, y: 165, width: 339, height: 48)
-        searchTextField.font = UIFont.systemFont(ofSize: 18)
-        searchTextField.layer.cornerRadius = 16
-        searchTextField.textColor = .white
-        searchTextField.backgroundColor = UIColor(red: 1, green: 1, blue: 1, alpha: 0.07)
-        searchTextField.clipsToBounds = true
-        searchTextField.setLeftImage(imageName: "searchLens")
+}
+
+extension HomeViewController: UICollectionViewDelegate {
+    func numberOfSections(in collectionView: UICollectionView) -> Int {
+        1
+    }
+}
+
+extension HomeViewController: UICollectionViewDataSource {
+    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+        10
     }
     
-    
+    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+        
+        if let cell = collectionView.dequeueReusableCell(withReuseIdentifier: DynamicHeroCollectionViewCell.identifier, for: indexPath) as? DynamicHeroCollectionViewCell {
+            return cell
+        }
+        
+        return UICollectionViewCell()
+    }
+}
+
+extension HomeViewController: UICollectionViewDelegateFlowLayout {
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
+        let collectionViewSize = heroesCollecionView.frame.width
+        switch currentRow {
+        case 0...1:
+            currentRow += 1
+            return CGSize(width: collectionViewSize, height: CGFloat(180))
+        case 2...3:
+            currentRow += 1
+            return CGSize(width: (collectionViewSize - 10)/2, height: CGFloat(220))
+        default:
+            currentRow = 0
+            return CGSize(width: collectionViewSize, height: CGFloat(520))
+        }
+    }
 }

@@ -20,4 +20,18 @@ extension UITextField {
         leftViewMode = .always
         self.leftView = leftView
     }
+    
+    func setUpSearchBar(imageName: String) {
+        frame = CGRect(x: 18, y: 165, width: 339, height: 48)
+        font = UIFont.systemFont(ofSize: 18)
+        layer.cornerRadius = 16
+        textColor = .white
+        backgroundColor = UIColor(red: 1, green: 1, blue: 1, alpha: 0.07)
+        clipsToBounds = true
+        attributedPlaceholder = NSAttributedString(
+            string: LocalizableStrings.search,
+            attributes: [NSAttributedString.Key.foregroundColor: UIColor.lightGray]
+        )
+        setLeftImage(imageName: imageName)
+    }
 }
