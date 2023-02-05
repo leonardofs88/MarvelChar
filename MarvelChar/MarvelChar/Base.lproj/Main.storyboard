@@ -1,24 +1,115 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="lwb-Ry-Yjt">
+    <device id="retina4_0" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
-        <scene sceneID="tne-QT-ifu">
+        <!--Home-->
+        <scene sceneID="9RW-IP-6pn">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                <viewController title="Home" id="G9t-iJ-QAs" customClass="HomeViewController" customModule="MarvelChar" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="9od-xG-VqF">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" xcode11CocoaTouchSystemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wVg-8b-yOD">
+                                <rect key="frame" x="18" y="18" width="196" height="91"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="196" id="5st-DL-gC6"/>
+                                    <constraint firstAttribute="height" constant="91" id="h3l-3Y-HYK"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="marvelLogoRounded" translatesAutoresizingMaskIntoConstraints="NO" id="QjZ-pv-4wl">
+                                <rect key="frame" x="269" y="18" width="33" height="33"/>
+                            </imageView>
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Search" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="RQ0-mO-m7a">
+                                <rect key="frame" x="18" y="127" width="284" height="48"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="48" id="D32-PG-i38"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="8Vu-fk-rVJ"/>
+                        <color key="backgroundColor" red="0.094117647058823528" green="0.094117647058823528" blue="0.094117647058823528" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstItem="RQ0-mO-m7a" firstAttribute="leading" secondItem="8Vu-fk-rVJ" secondAttribute="leading" constant="18" id="3az-aq-Ej3"/>
+                            <constraint firstItem="wVg-8b-yOD" firstAttribute="top" secondItem="8Vu-fk-rVJ" secondAttribute="top" constant="18" id="BFT-AQ-tLD"/>
+                            <constraint firstItem="8Vu-fk-rVJ" firstAttribute="trailing" secondItem="wVg-8b-yOD" secondAttribute="trailing" constant="106" id="TSR-Gn-w40"/>
+                            <constraint firstItem="8Vu-fk-rVJ" firstAttribute="trailing" secondItem="QjZ-pv-4wl" secondAttribute="trailing" constant="18" id="bds-jW-UQZ"/>
+                            <constraint firstItem="8Vu-fk-rVJ" firstAttribute="trailing" secondItem="RQ0-mO-m7a" secondAttribute="trailing" constant="18" id="e1p-Kv-dgd"/>
+                            <constraint firstItem="RQ0-mO-m7a" firstAttribute="top" secondItem="wVg-8b-yOD" secondAttribute="bottom" constant="18" id="uLX-tb-OgC"/>
+                            <constraint firstItem="QjZ-pv-4wl" firstAttribute="top" secondItem="8Vu-fk-rVJ" secondAttribute="top" constant="18" id="xYW-fz-vdb"/>
+                            <constraint firstItem="wVg-8b-yOD" firstAttribute="leading" secondItem="8Vu-fk-rVJ" secondAttribute="leading" constant="18" id="yQ2-8h-XwV"/>
+                        </constraints>
                     </view>
+                    <tabBarItem key="tabBarItem" title="" image="tabHomePage" selectedImage="tabHomePageSelected" id="GQz-fb-6Hg">
+                        <color key="badgeColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBarItem>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="searchTextField" destination="RQ0-mO-m7a" id="YsV-ZJ-tVg"/>
+                        <outlet property="titleLabel" destination="wVg-8b-yOD" id="eVX-XK-ufb"/>
+                    </connections>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="NfR-cq-8LG" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="735" y="-378.16901408450707"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="elM-g6-YDx">
+            <objects>
+                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="lwb-Ry-Yjt" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="O2f-g5-wwf">
+                        <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="barTintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="selectedImageTintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="G9t-iJ-QAs" kind="relationship" relationship="viewControllers" id="s86-Oh-arW"/>
+                        <segue destination="HKG-Ck-DA6" kind="relationship" relationship="viewControllers" id="CgA-Z7-DGk"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="uj3-xg-5QV" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-153.43511450381678" y="-92.253521126760575"/>
+        </scene>
+        <!--About-->
+        <scene sceneID="nva-X3-aYF">
+            <objects>
+                <viewController title="About" id="HKG-Ck-DA6" customClass="AboutViewController" customModule="MarvelChar" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="wSO-k5-Rvz">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="byc-7F-B7j"/>
+                        <color key="backgroundColor" red="0.070588235294117646" green="0.070588235294117646" blue="0.070588235294117646" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="" image="tabAbout" selectedImage="tabAboutSelected" id="AYD-kk-EQr">
+                        <color key="badgeColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBarItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="mcU-xY-3QY" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="746" y="357"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="marvelLogoRounded" width="33" height="33"/>
+        <image name="tabAbout" width="22" height="22"/>
+        <image name="tabAboutSelected" width="82" height="82"/>
+        <image name="tabHomePage" width="22" height="22"/>
+        <image name="tabHomePageSelected" width="69" height="70"/>
+    </resources>
 </document>
