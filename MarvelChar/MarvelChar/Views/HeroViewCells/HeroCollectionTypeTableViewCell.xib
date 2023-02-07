@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="450" id="MvQ-Up-PPa" customClass="HeroCollectionTypeTableViewCell" customModule="MarvelChar" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="393" height="450"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="MvQ-Up-PPa" id="cW4-i9-rdW">
+                <rect key="frame" x="0.0" y="0.0" width="393" height="450"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="RsK-89-DaT">
+                        <rect key="frame" x="18" y="95" width="357" height="337"/>
+                        <color key="backgroundColor" red="0.094117647060000004" green="0.094117647060000004" blue="0.094117647060000004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstAttribute="height" priority="999" constant="285" id="gor-3Z-MEE"/>
+                        </constraints>
+                        <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="10" minimumInteritemSpacing="18" id="etC-UH-vgd">
+                            <size key="itemSize" width="128" height="128"/>
+                            <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                            <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                            <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                        </collectionViewFlowLayout>
+                    </collectionView>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hxo-cy-hO9" customClass="TitleHeaderView" customModule="MarvelChar" customModuleProvider="target">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="77"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="77" id="JPP-zT-Nui"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <color key="backgroundColor" red="0.094117647060000004" green="0.094117647060000004" blue="0.094117647060000004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="RsK-89-DaT" secondAttribute="trailing" constant="18" id="26j-4B-RAo"/>
+                    <constraint firstItem="RsK-89-DaT" firstAttribute="leading" secondItem="cW4-i9-rdW" secondAttribute="leading" constant="18" id="36j-8M-Apc"/>
+                    <constraint firstItem="hxo-cy-hO9" firstAttribute="leading" secondItem="cW4-i9-rdW" secondAttribute="leading" id="AY7-o3-oYk"/>
+                    <constraint firstAttribute="trailing" secondItem="hxo-cy-hO9" secondAttribute="trailing" id="C81-tA-4bt"/>
+                    <constraint firstItem="RsK-89-DaT" firstAttribute="top" secondItem="hxo-cy-hO9" secondAttribute="bottom" constant="18" id="Nwa-F7-rXk"/>
+                    <constraint firstItem="hxo-cy-hO9" firstAttribute="top" secondItem="cW4-i9-rdW" secondAttribute="top" id="Tv6-eg-Uce"/>
+                    <constraint firstAttribute="bottom" secondItem="RsK-89-DaT" secondAttribute="bottom" constant="18" id="WWn-RO-jxa"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="collectionView" destination="RsK-89-DaT" id="b0f-ZM-BrF"/>
+                <outlet property="titleHeader" destination="hxo-cy-hO9" id="xwk-wF-KmD"/>
+            </connections>
+            <point key="canvasLocation" x="78.625954198473281" y="73.943661971830991"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

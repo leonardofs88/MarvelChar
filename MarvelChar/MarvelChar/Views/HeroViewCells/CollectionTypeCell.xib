@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="collection view cell content view" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="CollectionTypeCell" id="Ll4-ZT-Pqk" customClass="CollectionTypeCell" customModule="MarvelChar" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="211" height="343"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" ambiguous="YES" insetsLayoutMarginsFromSafeArea="NO" id="Fu0-2x-zTa">
+                <rect key="frame" x="0.0" y="0.0" width="211" height="343"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="missingComic" translatesAutoresizingMaskIntoConstraints="NO" id="KvZ-4R-hhS">
+                        <rect key="frame" x="0.0" y="0.0" width="150" height="210"/>
+                        <constraints>
+                            <constraint firstAttribute="height" priority="999" constant="210" id="0gY-59-rqg"/>
+                            <constraint firstAttribute="width" constant="150" id="1X7-ib-sWa"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" alpha="0.69999999999999996" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NX4-Hk-Pst">
+                        <rect key="frame" x="10" y="218" width="150" height="107"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="NX4-Hk-Pst" firstAttribute="leading" secondItem="KvZ-4R-hhS" secondAttribute="leading" constant="10" id="4bo-Ea-c84"/>
+                    <constraint firstItem="NX4-Hk-Pst" firstAttribute="top" secondItem="KvZ-4R-hhS" secondAttribute="bottom" constant="8" id="67J-g6-0Ia"/>
+                    <constraint firstAttribute="bottom" secondItem="NX4-Hk-Pst" secondAttribute="bottom" constant="18" id="HyW-ie-mmr"/>
+                    <constraint firstItem="NX4-Hk-Pst" firstAttribute="trailing" secondItem="KvZ-4R-hhS" secondAttribute="trailing" constant="10" id="Sh1-og-RDC"/>
+                    <constraint firstItem="KvZ-4R-hhS" firstAttribute="leading" secondItem="Fu0-2x-zTa" secondAttribute="leading" id="Xcx-w8-FcJ"/>
+                    <constraint firstAttribute="trailing" secondItem="KvZ-4R-hhS" secondAttribute="trailing" id="ZqY-w9-js4"/>
+                    <constraint firstItem="KvZ-4R-hhS" firstAttribute="top" secondItem="Fu0-2x-zTa" secondAttribute="top" id="hcj-7F-2PX"/>
+                </constraints>
+            </collectionViewCellContentView>
+            <size key="customSize" width="211" height="343"/>
+            <connections>
+                <outlet property="descriptionLabel" destination="NX4-Hk-Pst" id="Oea-0q-fxx"/>
+                <outlet property="imageView" destination="KvZ-4R-hhS" id="RO4-mq-Wsd"/>
+            </connections>
+            <point key="canvasLocation" x="150.38167938931298" y="89.788732394366207"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="missingComic" width="180" height="240"/>
+    </resources>
+</document>

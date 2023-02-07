@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="HeroTableTypeTableViewCell" rowHeight="358" id="0VB-qY-AcI" customClass="HeroTableTypeTableViewCell" customModule="MarvelChar" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="393" height="358"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="0VB-qY-AcI" id="Tzf-sE-MEi">
+                <rect key="frame" x="0.0" y="0.0" width="393" height="358"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9Bl-4v-Zcl" customClass="TitleHeaderView" customModule="MarvelChar" customModuleProvider="target">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="77"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="77" id="fyE-l0-bIZ"/>
+                        </constraints>
+                    </view>
+                    <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="w8b-07-1nf">
+                        <rect key="frame" x="18" y="85" width="357" height="255"/>
+                        <color key="backgroundColor" red="0.094117647060000004" green="0.094117647060000004" blue="0.094117647060000004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstAttribute="height" priority="999" constant="255" id="4Fr-9e-htR"/>
+                        </constraints>
+                    </tableView>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="w8b-07-1nf" firstAttribute="top" secondItem="9Bl-4v-Zcl" secondAttribute="bottom" constant="8" symbolic="YES" id="ACA-TE-Pn3"/>
+                    <constraint firstAttribute="trailing" secondItem="w8b-07-1nf" secondAttribute="trailing" constant="18" id="GNO-dQ-c8h"/>
+                    <constraint firstItem="9Bl-4v-Zcl" firstAttribute="top" secondItem="Tzf-sE-MEi" secondAttribute="top" id="LY0-ZL-4A6"/>
+                    <constraint firstAttribute="bottom" secondItem="w8b-07-1nf" secondAttribute="bottom" constant="18" id="Pxn-3t-8VZ"/>
+                    <constraint firstAttribute="trailing" secondItem="9Bl-4v-Zcl" secondAttribute="trailing" id="aQm-gc-UfE"/>
+                    <constraint firstItem="9Bl-4v-Zcl" firstAttribute="leading" secondItem="Tzf-sE-MEi" secondAttribute="leading" id="inQ-EB-nsp"/>
+                    <constraint firstItem="w8b-07-1nf" firstAttribute="leading" secondItem="Tzf-sE-MEi" secondAttribute="leading" constant="18" id="pR8-VI-OcQ"/>
+                </constraints>
+            </tableViewCellContentView>
+            <color key="backgroundColor" red="0.094117647060000004" green="0.094117647060000004" blue="0.094117647060000004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+            <connections>
+                <outlet property="tableView" destination="w8b-07-1nf" id="g9m-vo-Ui2"/>
+                <outlet property="tableViewHeightConstraint" destination="4Fr-9e-htR" id="5HP-fV-UnV"/>
+                <outlet property="titleHeaderView" destination="9Bl-4v-Zcl" id="loz-5K-4YM"/>
+            </connections>
+            <point key="canvasLocation" x="-228.24427480916029" y="-227.46478873239437"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

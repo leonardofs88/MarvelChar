@@ -22,27 +22,13 @@
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="avengersSplash" translatesAutoresizingMaskIntoConstraints="NO" id="HmI-00-Ybj">
                                 <rect key="frame" x="0.0" y="0.0" width="334" height="292"/>
+                                <color key="backgroundColor" red="0.094117647058823528" green="0.094117647058823528" blue="0.094117647058823528" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                             </imageView>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="km2-ob-NZf">
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="km2-ob-NZf" customClass="HeroNameView" customModule="MarvelChar" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="232" width="334" height="60"/>
-                                <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Qsg-Ly-tXM">
-                                        <rect key="frame" x="18" y="19" width="46" height="22"/>
-                                        <constraints>
-                                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="22" id="Rji-uS-Vki"/>
-                                            <constraint firstAttribute="height" constant="22" id="zbI-HZ-7pG"/>
-                                        </constraints>
-                                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="18"/>
-                                        <nil key="textColor"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                </subviews>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="60" id="B1H-j2-Rsm"/>
-                                    <constraint firstItem="Qsg-Ly-tXM" firstAttribute="top" secondItem="km2-ob-NZf" secondAttribute="top" constant="19" id="aLt-XO-pMv"/>
-                                    <constraint firstAttribute="bottom" secondItem="Qsg-Ly-tXM" secondAttribute="bottom" constant="19" id="foX-Iv-IJ7"/>
-                                    <constraint firstItem="Qsg-Ly-tXM" firstAttribute="leading" secondItem="km2-ob-NZf" secondAttribute="leading" constant="18" id="sA7-f9-xSF"/>
                                 </constraints>
                             </view>
                         </subviews>
@@ -70,7 +56,6 @@
             <connections>
                 <outlet property="heroCellContentView" destination="4cJ-QG-nAA" id="VGB-df-6Uu"/>
                 <outlet property="heroImage" destination="HmI-00-Ybj" id="vBS-Jp-ZZI"/>
-                <outlet property="heroNameLabel" destination="Qsg-Ly-tXM" id="tCG-8X-Mvq"/>
                 <outlet property="heroNameView" destination="km2-ob-NZf" id="GPC-44-cWK"/>
             </connections>
             <point key="canvasLocation" x="334.35114503816794" y="19.014084507042256"/>

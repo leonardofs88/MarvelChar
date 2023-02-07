@@ -9,7 +9,7 @@ import Foundation
 import UIKit
 
 class HomeViewController: UIViewController {
-    @IBOutlet private weak var searchTextField: UITextField!
+    @IBOutlet weak var searchTextField: UITextField!
     @IBOutlet weak var avengersTitleLable: UILabel!
     @IBOutlet weak var assembleTitleLabel: UILabel!
     
@@ -33,7 +33,7 @@ class HomeViewController: UIViewController {
         heroesCollecionView.delegate = self
         heroesCollecionView.dataSource = self
         
-        heroesCollecionView.register(UINib(nibName: "DynamicHeroCollectionViewCell", bundle: nil), forCellWithReuseIdentifier: DynamicHeroCollectionViewCell.identifier)
+        heroesCollecionView.register(UINib(nibName: DynamicHeroCollectionViewCell.identifier, bundle: nil), forCellWithReuseIdentifier: DynamicHeroCollectionViewCell.identifier)
     }
     
 }
@@ -41,6 +41,14 @@ class HomeViewController: UIViewController {
 extension HomeViewController: UICollectionViewDelegate {
     func numberOfSections(in collectionView: UICollectionView) -> Int {
         1
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        let storyboard = UIStoryboard(name: "HeroScene", bundle: nil)
+           
+        if let viewController = storyboard.instantiateViewController(withIdentifier: HeroTableViewController.nibName) as? HeroTableViewController {
+            present(viewController, animated: true, completion: nil)
+        }
     }
 }
 
