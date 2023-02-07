@@ -16,12 +16,24 @@ class HeroCollectionTypeTableViewCell: UITableViewCell {
     
     @IBOutlet weak var collectionView: UICollectionView!
     
+    @IBOutlet weak var subtitleLabel: UILabel!
+    
+    @IBOutlet weak var subtitleHeightConstraint: NSLayoutConstraint!
+    
+    @IBOutlet weak var subtitleBottomConstraint: NSLayoutConstraint!
     
     override func awakeFromNib() {
         super.awakeFromNib()
         collectionView.delegate = self
         collectionView.dataSource = self
         collectionView.register(UINib(nibName: CollectionTypeCell.identifier, bundle: nil), forCellWithReuseIdentifier: CollectionTypeCell.identifier)
+        hideSubtitle()
+    }
+    
+    func hideSubtitle(_ hide: Bool = true) {
+        subtitleLabel.isHidden = hide
+        subtitleHeightConstraint.constant = hide ? 0 : 24
+        subtitleBottomConstraint.constant = hide ? 0 : 18
     }
 }
 

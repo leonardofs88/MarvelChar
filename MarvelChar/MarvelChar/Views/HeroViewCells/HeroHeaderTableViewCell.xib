@@ -23,11 +23,33 @@
                             <constraint firstAttribute="height" priority="999" constant="354" id="H1e-TI-CWQ"/>
                         </constraints>
                     </imageView>
-                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="HJ9-qm-uS8" customClass="HeroNameView" customModule="MarvelChar" customModuleProvider="target">
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="HJ9-qm-uS8">
                         <rect key="frame" x="0.0" y="294" width="393" height="60"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BTQ-Ld-2sY">
+                                <rect key="frame" x="18" y="16.000000000000004" width="69" height="32.333333333333343"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="27"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Mou-Sy-n5G">
+                                <rect key="frame" x="353" y="18" width="22" height="22"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="22" id="RFt-88-giq"/>
+                                    <constraint firstAttribute="width" constant="22" id="s3K-kN-epd"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="22" id="vD5-Nr-eNV"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" image="share"/>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
+                            <constraint firstAttribute="trailing" secondItem="Mou-Sy-n5G" secondAttribute="trailing" constant="18" id="9Ji-EY-eoG"/>
+                            <constraint firstItem="BTQ-Ld-2sY" firstAttribute="top" secondItem="HJ9-qm-uS8" secondAttribute="top" constant="16" id="GAb-im-xe8"/>
+                            <constraint firstItem="BTQ-Ld-2sY" firstAttribute="leading" secondItem="HJ9-qm-uS8" secondAttribute="leading" constant="18" id="Ugk-0K-vrW"/>
                             <constraint firstAttribute="height" constant="60" id="Zbw-mM-OgA"/>
+                            <constraint firstItem="Mou-Sy-n5G" firstAttribute="top" secondItem="HJ9-qm-uS8" secondAttribute="top" constant="18" id="lCk-17-5m3"/>
                         </constraints>
                     </view>
                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="12T-Ip-2VD">
@@ -59,6 +81,7 @@
             </tableViewCellContentView>
             <connections>
                 <outlet property="heroImageView" destination="vUp-8a-u1Z" id="z9d-Hj-vua"/>
+                <outlet property="heroNameLabel" destination="BTQ-Ld-2sY" id="Mfs-hp-Ov9"/>
                 <outlet property="heroNameView" destination="HJ9-qm-uS8" id="MMc-2H-qjC"/>
             </connections>
             <point key="canvasLocation" x="-303.05343511450383" y="-18.30985915492958"/>
@@ -67,6 +90,7 @@
     <resources>
         <image name="avengersSplash" width="375" height="806"/>
         <image name="dismiss" width="28" height="28"/>
+        <image name="share" width="20" height="20"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

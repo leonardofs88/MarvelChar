@@ -17,6 +17,8 @@
 		9829E469298EA4EF00C514B1 /* MarvelCharTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9829E468298EA4EF00C514B1 /* MarvelCharTests.swift */; };
 		9829E473298EA4EF00C514B1 /* MarvelCharUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9829E472298EA4EF00C514B1 /* MarvelCharUITests.swift */; };
 		9829E475298EA4EF00C514B1 /* MarvelCharUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9829E474298EA4EF00C514B1 /* MarvelCharUITestsLaunchTests.swift */; };
+		986116462992B7540026FDB3 /* TitleTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 986116452992B7540026FDB3 /* TitleTableViewCell.xib */; };
+		986116482992B7CC0026FDB3 /* TitleTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 986116472992B7CC0026FDB3 /* TitleTableViewCell.swift */; };
 		98B9ACC5298EEC4200547730 /* UITextField+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98B9ACC4298EEC4200547730 /* UITextField+Extensions.swift */; };
 		98B9ACCA298FC8DA00547730 /* LocalizableStrings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98B9ACC9298FC8DA00547730 /* LocalizableStrings.swift */; };
 		98B9ACCB298FC8DA00547730 /* LocalizableStrings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98B9ACC9298FC8DA00547730 /* LocalizableStrings.swift */; };
@@ -145,6 +147,8 @@
 		9829E46E298EA4EF00C514B1 /* MarvelCharUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MarvelCharUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		9829E472298EA4EF00C514B1 /* MarvelCharUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarvelCharUITests.swift; sourceTree = "<group>"; };
 		9829E474298EA4EF00C514B1 /* MarvelCharUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarvelCharUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		986116452992B7540026FDB3 /* TitleTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TitleTableViewCell.xib; sourceTree = "<group>"; };
+		986116472992B7CC0026FDB3 /* TitleTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TitleTableViewCell.swift; sourceTree = "<group>"; };
 		98B9ACC4298EEC4200547730 /* UITextField+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITextField+Extensions.swift"; sourceTree = "<group>"; };
 		98B9ACC9298FC8DA00547730 /* LocalizableStrings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalizableStrings.swift; sourceTree = "<group>"; };
 		98B9ACCD298FC91300547730 /* String+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Extensions.swift"; sourceTree = "<group>"; };
@@ -339,6 +343,8 @@
 				98B9AD192990280700547730 /* HeroNameView.xib */,
 				98B9AD1D2990289D00547730 /* HeroNameView.swift */,
 				98B9AD292990366300547730 /* BaseView.swift */,
+				986116452992B7540026FDB3 /* TitleTableViewCell.xib */,
+				986116472992B7CC0026FDB3 /* TitleTableViewCell.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -387,9 +393,9 @@
 				98B9AD682991AE8F00547730 /* HeroCollectionTypeTableViewCell.xib */,
 				98B9AD6C2991AFC000547730 /* HeroCollectionTypeTableViewCell.swift */,
 				98B9AD7029923CA000547730 /* TableTypeCell.xib */,
+				98B9AD7C2992444600547730 /* TableTypeCell.swift */,
 				98B9AD7429923CB500547730 /* CollectionTypeCell.xib */,
 				98B9AD7829923E5700547730 /* CollectionTypeCell.swift */,
-				98B9AD7C2992444600547730 /* TableTypeCell.swift */,
 			);
 			path = HeroViewCells;
 			sourceTree = "<group>";
@@ -534,6 +540,7 @@
 				98B9AD2E29914E7700547730 /* TitleHeaderView.xib in Resources */,
 				98B9ACE9298FD97800547730 /* Localizable.strings in Resources */,
 				98B9AD5B29919ED400547730 /* HeroTableTypeTableViewCell.xib in Resources */,
+				986116462992B7540026FDB3 /* TitleTableViewCell.xib in Resources */,
 				9829E45E298EA4EF00C514B1 /* LaunchScreen.storyboard in Resources */,
 				98B9ACFE298FE11600547730 /* DynamicHeroCollectionViewCell.xib in Resources */,
 				98B9AD7529923CB500547730 /* CollectionTypeCell.xib in Resources */,
@@ -698,6 +705,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				986116482992B7CC0026FDB3 /* TitleTableViewCell.swift in Sources */,
 				98B9AD322991521C00547730 /* TitleHeaderView.swift in Sources */,
 				98B9ACCE298FC91300547730 /* String+Extensions.swift in Sources */,
 				9829E452298EA4EE00C514B1 /* AppDelegate.swift in Sources */,

@@ -44,7 +44,7 @@
                         </constraints>
                     </view>
                 </subviews>
-                <color key="backgroundColor" red="0.070588235289999995" green="0.070588235289999995" blue="0.070588235289999995" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                <color key="backgroundColor" red="0.094117647060000004" green="0.094117647060000004" blue="0.094117647060000004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                 <constraints>
                     <constraint firstItem="4cJ-QG-nAA" firstAttribute="top" secondItem="l9i-ZY-vfe" secondAttribute="top" id="Gsm-JH-3t8"/>
                     <constraint firstAttribute="bottom" secondItem="4cJ-QG-nAA" secondAttribute="bottom" id="QWh-pd-4pC"/>
@@ -52,6 +52,7 @@
                     <constraint firstItem="4cJ-QG-nAA" firstAttribute="leading" secondItem="l9i-ZY-vfe" secondAttribute="leading" id="uSz-Ka-SQE"/>
                 </constraints>
             </collectionViewCellContentView>
+            <color key="backgroundColor" red="0.094117647060000004" green="0.094117647060000004" blue="0.094117647060000004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
             <size key="customSize" width="334" height="292"/>
             <connections>
                 <outlet property="heroCellContentView" destination="4cJ-QG-nAA" id="VGB-df-6Uu"/>

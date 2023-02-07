@@ -97,40 +97,44 @@
             <objects>
                 <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="lwb-Ry-Yjt" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="O2f-g5-wwf">
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" translucent="NO" id="O2f-g5-wwf">
                         <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
                         <autoresizingMask key="autoresizingMask"/>
-                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="backgroundColor" red="0.094117647060000004" green="0.094117647060000004" blue="0.094117647060000004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <color key="barTintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="barTintColor" red="0.094117647060000004" green="0.094117647060000004" blue="0.094117647060000004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <color key="selectedImageTintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </tabBar>
                     <connections>
                         <segue destination="G9t-iJ-QAs" kind="relationship" relationship="viewControllers" id="s86-Oh-arW"/>
-                        <segue destination="HKG-Ck-DA6" kind="relationship" relationship="viewControllers" id="CgA-Z7-DGk"/>
+                        <segue destination="W2a-dI-owH" kind="relationship" relationship="viewControllers" id="w95-KS-bGm"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="uj3-xg-5QV" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-153.43511450381678" y="-92.253521126760575"/>
         </scene>
-        <!--About-->
-        <scene sceneID="nva-X3-aYF">
+        <!--About View Controller-->
+        <scene sceneID="my6-IR-GrF">
             <objects>
-                <viewController title="About" id="HKG-Ck-DA6" customClass="AboutViewController" customModule="MarvelChar" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="wSO-k5-Rvz">
+                <tableViewController id="W2a-dI-owH" customClass="AboutViewController" customModule="MarvelChar" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" id="egh-I0-gJh">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <viewLayoutGuide key="safeArea" id="byc-7F-B7j"/>
-                        <color key="backgroundColor" red="0.070588235294117646" green="0.070588235294117646" blue="0.070588235294117646" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                    </view>
-                    <tabBarItem key="tabBarItem" title="" image="tabAbout" selectedImage="tabAboutSelected" id="AYD-kk-EQr">
+                        <color key="backgroundColor" red="0.094117647060000004" green="0.094117647060000004" blue="0.094117647060000004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <connections>
+                            <outlet property="dataSource" destination="W2a-dI-owH" id="ajb-jS-ErW"/>
+                            <outlet property="delegate" destination="W2a-dI-owH" id="Bqz-OX-aeE"/>
+                        </connections>
+                    </tableView>
+                    <tabBarItem key="tabBarItem" title="" image="tabAbout" selectedImage="tabAboutSelected" id="umh-4k-jHM">
                         <color key="badgeColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </tabBarItem>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="mcU-xY-3QY" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="nc8-NY-wLG" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="746" y="357"/>
+            <point key="canvasLocation" x="780" y="434"/>
         </scene>
     </scenes>
     <resources>
