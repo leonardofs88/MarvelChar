@@ -10,8 +10,6 @@ import UIKit
 
 class TitleTableViewCell: UITableViewCell {
     
-    static let identifier = "TitleTableViewCell"
-    
     @IBOutlet weak var titleLabel: UILabel!
     
     func isSubTitle(_ subtitle: Bool) {

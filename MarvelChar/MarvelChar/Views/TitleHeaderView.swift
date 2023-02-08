@@ -15,7 +15,7 @@ class TitleHeaderView: BaseView {
     
     required init?(coder: NSCoder) {
         super.init(coder: coder)
-        loadView(from: "TitleHeaderView")
+        loadView(from: .titleHeaderView)
         contentView.frame = bounds
         addSubview(contentView)
     }

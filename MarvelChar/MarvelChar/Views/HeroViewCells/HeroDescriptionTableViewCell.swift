@@ -10,8 +10,6 @@ import UIKit
 
 class HeroDescriptionTableViewCell: UITableViewCell {
     
-    static let identifier = "HeroDescriptionTableViewCell"
-    
     @IBOutlet weak var descriptionLabel: UILabel!
     
 }

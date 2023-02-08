@@ -10,8 +10,6 @@ import UIKit
 
 class HeroCollectionTypeTableViewCell: UITableViewCell {
     
-    static let identifier = "HeroCollectionTypeTableViewCell"
-    
     @IBOutlet weak var titleHeader: TitleHeaderView!
     
     @IBOutlet weak var collectionView: UICollectionView!
@@ -26,7 +24,7 @@ class HeroCollectionTypeTableViewCell: UITableViewCell {
         super.awakeFromNib()
         collectionView.delegate = self
         collectionView.dataSource = self
-        collectionView.register(UINib(nibName: CollectionTypeCell.identifier, bundle: nil), forCellWithReuseIdentifier: CollectionTypeCell.identifier)
+        collectionView.register(UINib(nibName: .collectionTypeCell, bundle: nil), forCellWithReuseIdentifier: .collectionTypeCell)
         hideSubtitle()
     }
     
@@ -49,7 +47,7 @@ extension HeroCollectionTypeTableViewCell: UICollectionViewDataSource {
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        if let cell = collectionView.dequeueReusableCell(withReuseIdentifier: CollectionTypeCell.identifier, for: indexPath) as? CollectionTypeCell{
+        if let cell = collectionView.dequeueReusableCell(withReuseIdentifier: .collectionTypeCell, for: indexPath) as? CollectionTypeCell{
             return cell
         }
         return UICollectionViewCell()

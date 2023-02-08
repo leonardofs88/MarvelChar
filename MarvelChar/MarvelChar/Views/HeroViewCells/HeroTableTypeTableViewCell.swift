@@ -10,8 +10,6 @@ import UIKit
 
 class HeroTableTypeTableViewCell: UITableViewCell {
     
-    static let identifier = "HeroTableTypeTableViewCell"
-    
     @IBOutlet weak var titleHeaderView: TitleHeaderView!
     
     @IBOutlet weak var tableView: UITableView!
@@ -22,7 +20,7 @@ class HeroTableTypeTableViewCell: UITableViewCell {
         super.awakeFromNib()
         tableView.dataSource = self
         tableView.delegate = self
-        tableView.register(UINib(nibName: TableTypeCell.identifier, bundle: nil), forCellReuseIdentifier: TableTypeCell.identifier)
+        tableView.register(UINib(nibName: .tableTypeCell, bundle: nil), forCellReuseIdentifier: .tableTypeCell)
         
         tableViewHeightConstraint.constant = 111*10
         tableViewHeightConstraint.isActive = true
@@ -45,7 +43,7 @@ extension HeroTableTypeTableViewCell: UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        if let cell = tableView.dequeueReusableCell(withIdentifier: TableTypeCell.identifier) as? TableTypeCell {
+        if let cell = tableView.dequeueReusableCell(withIdentifier: .tableTypeCell) as? TableTypeCell {
             return cell
         }
         return UITableViewCell()

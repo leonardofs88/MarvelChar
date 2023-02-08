@@ -14,8 +14,6 @@ protocol HeroHeaderTableViewCellDelegate: AnyObject {
 
 class HeroHeaderTableViewCell: UITableViewCell {
     
-    static let identifier = "HeroHeaderTableViewCell"
-    
     weak var delegate: HeroHeaderTableViewCellDelegate?
 
     @IBOutlet weak var heroNameLabel: UILabel!

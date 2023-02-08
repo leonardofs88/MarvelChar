@@ -16,7 +16,7 @@ class HeroNameView: BaseView {
     
     required init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
-        loadView(from: "HeroNameView")
+        loadView(from: .heroNameView)
         contentView.frame = bounds
         addSubview(contentView)
     }

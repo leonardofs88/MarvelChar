@@ -11,48 +11,28 @@
             <connections>
                 <outlet property="contentView" destination="wCa-SX-pRo" id="zdX-rG-Hui"/>
                 <outlet property="heroNameLabel" destination="gC5-yj-h7b" id="d72-Ja-MDb"/>
-                <outlet property="shareButton" destination="Jov-Pl-Rea" id="hkQ-Or-SaR"/>
             </connections>
         </placeholder>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wCa-SX-pRo">
             <rect key="frame" x="0.0" y="0.0" width="393" height="60"/>
             <subviews>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gC5-yj-h7b">
-                    <rect key="frame" x="18" y="19" width="180" height="22"/>
-                    <constraints>
-                        <constraint firstAttribute="width" constant="180" id="5LB-nh-EJL"/>
-                    </constraints>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gC5-yj-h7b">
+                    <rect key="frame" x="17.999999999999996" y="19" width="45.666666666666657" height="21.666666666666671"/>
                     <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="18"/>
                     <nil key="textColor"/>
                     <nil key="highlightedColor"/>
                 </label>
-                <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Jov-Pl-Rea">
-                    <rect key="frame" x="355" y="18" width="20" height="20"/>
-                    <constraints>
-                        <constraint firstAttribute="height" constant="20" id="JXL-pz-oZq"/>
-                        <constraint firstAttribute="width" constant="20" id="Tz1-Y7-Cu0"/>
-                    </constraints>
-                    <state key="normal" title="Button"/>
-                    <buttonConfiguration key="configuration" style="plain" image="share"/>
-                </button>
             </subviews>
             <viewLayoutGuide key="safeArea" id="9Mu-Yv-OOR"/>
             <constraints>
-                <constraint firstItem="Jov-Pl-Rea" firstAttribute="leading" secondItem="gC5-yj-h7b" secondAttribute="trailing" constant="157" id="32N-7M-1Rr"/>
+                <constraint firstItem="9Mu-Yv-OOR" firstAttribute="trailing" secondItem="gC5-yj-h7b" secondAttribute="trailing" constant="329.33333333333337" id="54m-S0-8Iq"/>
                 <constraint firstItem="gC5-yj-h7b" firstAttribute="top" secondItem="wCa-SX-pRo" secondAttribute="top" constant="19" id="5UR-MI-cI5"/>
-                <constraint firstItem="Jov-Pl-Rea" firstAttribute="top" secondItem="wCa-SX-pRo" secondAttribute="top" constant="18" id="FC1-3b-amu"/>
-                <constraint firstItem="9Mu-Yv-OOR" firstAttribute="trailing" secondItem="Jov-Pl-Rea" secondAttribute="trailing" constant="18" id="JyH-fw-3iH"/>
-                <constraint firstItem="9Mu-Yv-OOR" firstAttribute="bottom" secondItem="Jov-Pl-Rea" secondAttribute="bottom" constant="22" id="M4O-Bw-WY2"/>
-                <constraint firstItem="gC5-yj-h7b" firstAttribute="leading" secondItem="wCa-SX-pRo" secondAttribute="leading" constant="18" id="RfL-cA-b4L"/>
-                <constraint firstAttribute="bottom" secondItem="gC5-yj-h7b" secondAttribute="bottom" constant="19" id="WAY-qA-o7R"/>
                 <constraint firstAttribute="height" constant="60" id="WTD-Jo-wk4"/>
+                <constraint firstItem="gC5-yj-h7b" firstAttribute="leading" secondItem="9Mu-Yv-OOR" secondAttribute="leading" constant="18" id="bya-RJ-Wdj"/>
             </constraints>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
             <point key="canvasLocation" x="525.95419847328242" y="-109.1549295774648"/>
         </view>
     </objects>
-    <resources>
-        <image name="share" width="20" height="20"/>
-    </resources>
 </document>

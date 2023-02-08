@@ -9,13 +9,11 @@ import Foundation
 import UIKit
 
 class CollectionTypeCell: UICollectionViewCell {
-    static let identifier = "CollectionTypeCell"
-    
     @IBOutlet weak var imageView: UIImageView!
     @IBOutlet weak var descriptionLabel: UILabel!
     
     override func prepareForReuse() {
-        imageView.image = UIImage(named: "missingComic")
+        imageView.image = UIImage(named: ImageName.missingComic)
         descriptionLabel.text = nil
     }
 }

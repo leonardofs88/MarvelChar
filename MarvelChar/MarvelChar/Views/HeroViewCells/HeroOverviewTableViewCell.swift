@@ -10,9 +10,12 @@ import UIKit
 
 class HeroOverviewTableViewCell: UITableViewCell {
     
-    static let identifier = "HeroOverviewTableViewCell"
-    
     @IBOutlet weak var descriptionLabel: UILabel!
     
     @IBOutlet weak var titleView: TitleHeaderView!
+    
+    override func layoutSubviews() {
+        super.layoutSubviews()
+        titleView.headerLabel.text = LocalizableStrings.overview
+    }
 }

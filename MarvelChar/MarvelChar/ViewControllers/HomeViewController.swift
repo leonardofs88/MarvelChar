@@ -7,11 +7,18 @@
 
 import Foundation
 import UIKit
+import RxSwift
+import RxCocoa
 
 class HomeViewController: UIViewController {
+    
     @IBOutlet weak var searchTextField: UITextField!
     @IBOutlet weak var avengersTitleLable: UILabel!
     @IBOutlet weak var assembleTitleLabel: UILabel!
+    
+    fileprivate let viewModel = HomeViewModel()
+    
+    lazy var disposeBag = DisposeBag()
     
     @IBOutlet weak var heroesCollecionView: UICollectionView!
     
@@ -30,41 +37,37 @@ class HomeViewController: UIViewController {
     }
     
     fileprivate func setUpCollectionView() {
-        heroesCollecionView.delegate = self
-        heroesCollecionView.dataSource = self
+        heroesCollecionView.rx.setDelegate(self).disposed(by: disposeBag)
+        heroesCollecionView.register(UINib(nibName: .dynamicHeroCollectionViewCell, bundle: nil), forCellWithReuseIdentifier: .dynamicHeroCollectionViewCell)
         
-        heroesCollecionView.register(UINib(nibName: DynamicHeroCollectionViewCell.identifier, bundle: nil), forCellWithReuseIdentifier: DynamicHeroCollectionViewCell.identifier)
-    }
-    
-}
-
-extension HomeViewController: UICollectionViewDelegate {
-    func numberOfSections(in collectionView: UICollectionView) -> Int {
-        1
-    }
-    
-    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        let storyboard = UIStoryboard(name: "HeroScene", bundle: nil)
-           
-        if let viewController = storyboard.instantiateViewController(withIdentifier: HeroTableViewController.nibName) as? HeroTableViewController {
-            present(viewController, animated: true, completion: nil)
+        viewModel.characters.bind(to: heroesCollecionView.rx.items(cellIdentifier: .dynamicHeroCollectionViewCell, cellType: DynamicHeroCollectionViewCell.self)) { [weak self] (row,character,cell) in
+            cell.heroNameLabel.text = character.name
+            if let imagePath = character.thumbnail?.path,
+               let imageExtension = character.thumbnail?.imageExtension {
+                self?.viewModel.getImage(from: "\(imagePath.toHTTPS()).\(imageExtension)",
+                                        for: cell.heroImage)
+            }
         }
-    }
-}
-
-extension HomeViewController: UICollectionViewDataSource {
-    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        10
+        .disposed(by: disposeBag)
+        
+        heroesCollecionView.rx.modelSelected(Character.self)
+            .subscribe(onNext: { [weak self] character in
+                if let characterId = character.id {
+                    let storyboard = UIStoryboard(name: .heroScene, bundle: nil)
+                    
+                    if let viewController = storyboard.instantiateViewController(withIdentifier: .heroTableViewController) as? HeroTableViewController {
+                        viewController.characterId = characterId
+                        self?.present(viewController, animated: true, completion: nil)
+                    }
+                } else {
+                    print("error no id found")
+                }
+            })
+            .disposed(by: disposeBag)
+        
+        viewModel.getCharacters()
     }
     
-    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        
-        if let cell = collectionView.dequeueReusableCell(withReuseIdentifier: DynamicHeroCollectionViewCell.identifier, for: indexPath) as? DynamicHeroCollectionViewCell {
-            return cell
-        }
-        
-        return UICollectionViewCell()
-    }
 }
 
 extension HomeViewController: UICollectionViewDelegateFlowLayout {

@@ -9,7 +9,6 @@ import Foundation
 import UIKit
 
 class TableTypeCell: UITableViewCell {
-    static let identifier = "TableTypeCell"
     
     @IBOutlet weak var cellImageView: UIImageView!
     @IBOutlet weak var titleLabel: UILabel!
@@ -17,7 +16,7 @@ class TableTypeCell: UITableViewCell {
     
     
     override func prepareForReuse() {
-        cellImageView.image = UIImage(named: "missingIcon")
+        cellImageView.image = UIImage(named: ImageName.missingIcon)
         titleLabel.text = nil
         descriptionLabel.text = nil
     }

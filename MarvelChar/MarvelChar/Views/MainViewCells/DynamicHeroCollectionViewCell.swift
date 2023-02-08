@@ -9,12 +9,12 @@ import Foundation
 import UIKit
 
 class DynamicHeroCollectionViewCell: UICollectionViewCell {
-    static let identifier = "DynamicHeroCollectionViewCell"
     
     @IBOutlet weak var heroImage: UIImageView!
     @IBOutlet weak var heroCellContentView: UIView!
-    @IBOutlet weak var heroNameView: HeroNameView!
+    @IBOutlet weak var heroNameView: UIView!
     
+    @IBOutlet weak var heroNameLabel: UILabel!
     override func awakeFromNib() {
         super.awakeFromNib()
         setUpCellStyle()
@@ -28,6 +28,14 @@ class DynamicHeroCollectionViewCell: UICollectionViewCell {
     func setUpCellStyle() {
         heroCellContentView.layer.cornerRadius = 9
         heroCellContentView.clipsToBounds = true
+        
+        heroNameLabel.textColor = .white
+        heroNameLabel.layer.shadowColor = UIColor.black.cgColor
+        heroNameLabel.layer.shadowRadius = 1.0
+        heroNameLabel.layer.shadowOpacity = 1.0
+        heroNameLabel.layer.shadowOffset = CGSize(width: 1, height: 1)
+        heroNameLabel.layer.masksToBounds = false
+        heroNameView.backgroundColor = UIColor(red: 0.39, green: 0.08, blue: 0.66, alpha: 0.5)
         contentView.layoutSubviews()
     }
 }
