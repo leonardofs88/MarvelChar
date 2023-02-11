@@ -38,11 +38,10 @@ extension String {
     static let heroScene = "HeroScene"
     
     func localizedString() -> String {
-        NSLocalizedString(self,
-                          tableName: "Localizable",
-                          bundle: .main,
-                          value: self,
-                          comment: self)
+        guard let fallbackBundlePath = Bundle.main.path(forResource: "en", ofType: "lproj") else { return self }
+        guard let fallbackBundle = Bundle(path: fallbackBundlePath) else { return self }
+        let fallbackString = fallbackBundle.localizedString(forKey: self, value: nil, table: nil)
+        return Bundle.main.localizedString(forKey: self, value: fallbackString, table: nil)
     }
     
     func toHTTPS() -> String {

@@ -12,6 +12,10 @@ import UIKit
 
 class BaseViewModel {
     
+    init() {
+        // exposing init
+    }
+    
     lazy var disposeBag = DisposeBag()
     
     func getImage(from path: String, for cellImage: UIImageView) {

@@ -29,6 +29,10 @@ struct URLComponents {
 enum EndpointRouter: URLRequestConvertible {
     case getCharacters
     case getCharacter(_ id: Int)
+    case getComicsFor(_ characterId: Int)
+    case getEventsFor(_ characterId: Int)
+    case getStoriesFor(_ characterId: Int)
+    case getSeriesFor(_ characterId: Int)
     
     func asURLRequest() throws -> URLRequest {
         var url = try AppCongfig.baseURL.rawValue.asURL()
@@ -55,12 +59,12 @@ enum EndpointRouter: URLRequestConvertible {
             }
         }()
         
-        return try encoding.encode(urlRequest, with: nil)
+        return try encoding.encode(urlRequest, with: parameters)
     }
     
     private var method: HTTPMethod {
         switch self {
-        case .getCharacters, .getCharacter(_):
+        case .getCharacters, .getCharacter(_), .getComicsFor(_), .getEventsFor(_), .getStoriesFor(_), .getSeriesFor(_):
             return .get
         }
     }
@@ -71,11 +75,29 @@ enum EndpointRouter: URLRequestConvertible {
             return "/characters"
         case .getCharacter(let id):
             return "/characters/\(id)"
+        case .getComicsFor(let id):
+            return "/characters/\(id)/comics"
+        case .getEventsFor(let id):
+            return "/characters/\(id)/events"
+        case .getStoriesFor(let id):
+            return "/characters/\(id)/stories"
+        case .getSeriesFor(let id):
+            return "/characters/\(id)/series"
         }
     }
     
     var hash: String {
         return (URLComponents.ts + AppCongfig.privateKey.rawValue + AppCongfig.publicKey.rawValue).toHash()
     }
-
+    
+    private var parameters: Parameters? {
+        switch self {
+        case .getEventsFor(_), .getSeriesFor(_), .getStoriesFor(_):
+            //A dictionary of the key (From the constants file) and its value is returned
+            return ["limit" : 5]
+        default:
+            return nil
+        }
+    }
+    
 }

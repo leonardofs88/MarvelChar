@@ -14,8 +14,8 @@ enum HeroSubviewType {
     case header(_: Character)
     case description(_: Character)
     case overview(_: Character)
-    case comics
-    case table
+    case comics(_: [Comic])
+    case table(_ : [TableTypeItem])
 }
 
 class HeroViewController: UIViewController {
@@ -65,25 +65,39 @@ class HeroViewController: UIViewController {
         stackView.bottomAnchor.constraint(equalTo: scrollView.bottomAnchor).isActive = true
         stackView.widthAnchor.constraint(equalTo: scrollView.widthAnchor).isActive = true
         
+        getData()
+    }
+    
+    fileprivate func getData() {
         if let id = heroId {
-            viewModel.getCharacter(id: id)
+            viewModel.getData(for: id)
                 .observe(on: MainScheduler.instance)
-                .subscribe(onNext: { [weak self] data in
+                .subscribe(onNext: { [weak self] characterData, comicsData, eventsData, storiesData, seriesData in
                     guard let self = self else { return }
-                    guard let character = data else { return }
-                    self.addStackViewSubview(.header(character))
-                    self.addStackViewSubview(.description(character))
-                    self.addStackViewSubview(.overview(character))
-                })
-                .disposed(by: disposeBag)
+                    if let character = characterData {
+                        self.addStackViewSubview(.header(character))
+                        self.addStackViewSubview(.description(character))
+                        self.addStackViewSubview(.overview(character))
+                        
+                    }
+                    if let comics = comicsData, !comics.isEmpty {
+                        self.addStackViewSubview(.comics(comics))
+                    }
+                    
+                    if let events = eventsData, !events.isEmpty {
+                        self.addStackViewSubview(.table(events))
+                    }
+                    
+                    if let stories = storiesData, !stories.isEmpty {
+                        self.addStackViewSubview(.table(stories))
+                    }
+                    
+                    if let series = seriesData, !series.isEmpty {
+                        self.addStackViewSubview(.table(series))
+                    }
+                    
+                }).disposed(by: disposeBag)
         }
-//        addStackViewSubview(.description)
-//        addStackViewSubview(.overview)
-//        addStackViewSubview(.comics)
-//        addStackViewSubview(.table)
-//        addStackViewSubview(.table)
-//        addStackViewSubview(.table)
-        
     }
     
     fileprivate func addStackViewSubview(_ type: HeroSubviewType) {
@@ -102,10 +116,10 @@ class HeroViewController: UIViewController {
             return configDescriptionView(with: character)
         case .overview(let character):
             return configOverview(with: character)
-        case .comics:
-            return HeroCollectionTypeView(frame: CGRect(x: 0, y: 0, width: viewWidth, height: 360))
-        case .table:
-            return HeroTableTypeView(frame: CGRect(x: 0, y: 0, width: viewWidth, height: 674))
+        case .comics(let comics):
+            return configComicsView(with: comics)
+        case .table(let items):
+            return configTableView(with: items)
         }
     }
     
@@ -142,5 +156,34 @@ class HeroViewController: UIViewController {
         overview.descriptionText.text = description
         
         return overview
+    }
+    
+    fileprivate func configComicsView(with items: [Comic]) -> UIView? {
+        let comics = HeroCollectionTypeView(frame: CGRect(x: 0, y: 0, width: viewWidth, height: 360))
+        
+        comics.titleLabel.text = LocalizableStrings.comics
+        comics.viewModel.items = items
+        return comics
+    }
+    
+    fileprivate func configTableView(with items: [TableTypeItem]) -> UIView? {
+        let comics = HeroTableTypeView(frame: CGRect(x: 0, y: 0, width: viewWidth, height: 674))
+        var title = ""
+        
+        if items is [Event]? {
+            title = LocalizableStrings.events
+        }
+        
+        if items is [Story]? {
+            title = LocalizableStrings.stories
+        }
+        
+        if items is [Series]? {
+            title = LocalizableStrings.series
+        }
+        
+        comics.titleLabel.text = title
+        comics.viewModel.items = items
+        return comics
     }
 }

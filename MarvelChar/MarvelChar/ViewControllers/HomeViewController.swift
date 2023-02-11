@@ -26,9 +26,14 @@ class HomeViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        searchTextField.delegate = self
         setUpTitle()
         searchTextField.setUpSearchBar(imageName: ImageName.search)
         setUpCollectionView()
+    }
+    
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        self.view.endEditing(true)
     }
     
     fileprivate func setUpTitle() {
@@ -45,7 +50,7 @@ class HomeViewController: UIViewController {
             if let imagePath = character.thumbnail?.path,
                let imageExtension = character.thumbnail?.imageExtension {
                 self?.viewModel.getImage(from: "\(imagePath.toHTTPS()).\(imageExtension)",
-                                        for: cell.heroImage)
+                                         for: cell.heroImage)
             }
         }
         .disposed(by: disposeBag)
@@ -67,7 +72,6 @@ class HomeViewController: UIViewController {
         
         viewModel.getCharacters()
     }
-    
 }
 
 extension HomeViewController: UICollectionViewDelegateFlowLayout {
@@ -84,5 +88,12 @@ extension HomeViewController: UICollectionViewDelegateFlowLayout {
             currentRow = 0
             return CGSize(width: collectionViewSize, height: CGFloat(520))
         }
+    }
+}
+
+extension HomeViewController: UITextFieldDelegate {
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        searchTextField.resignFirstResponder()
+        return true
     }
 }

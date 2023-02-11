@@ -14,6 +14,10 @@ struct LocalizableStrings {
     static let aboutScreenTitle = "ABOUT_SCREEN_TITLE".localizedString()
     static let aboutScreenSubtitle = "ABOUT_SCREEN_SUBTITLE".localizedString()
     static let aboutScreenDescription = "ABOUT_SCREEN_DESCRIPTION".localizedString()
-    static let overview = "OVERVIEW".localizedString()
     static let aboutScreenOverviewDescription = "ABOUT_SCREEN_OVERVIEW_DESCRIPTION".localizedString()
+    static let overview = "OVERVIEW".localizedString()
+    static let comics = "COMICS".localizedString()
+    static let events = "EVENTS".localizedString()
+    static let stories = "STORIES".localizedString()
+    static let series = "SERIES".localizedString()
 }

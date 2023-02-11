@@ -16,6 +16,7 @@ class HeroCollectionTypeView: BaseView {
     
     @IBOutlet weak var collectionView: UICollectionView!
     
+    lazy var viewModel = HeroCollectionTypeViewModel()
     
     required init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
@@ -41,11 +42,18 @@ extension HeroCollectionTypeView: UICollectionViewDelegate {
 
 extension HeroCollectionTypeView: UICollectionViewDataSource {
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        10
+        viewModel.items?.count ?? 0
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         if let cell = collectionView.dequeueReusableCell(withReuseIdentifier: .collectionTypeCell, for: indexPath) as? CollectionTypeCell{
+            cell.descriptionLabel.text = viewModel.items?[indexPath.row].title
+            
+            if let path = viewModel.items?[indexPath.row].thumbnail?.path,
+            let imageExtension = viewModel.items?[indexPath.row].thumbnail?.imageExtension{
+                viewModel.getImage(from: "\(path.toHTTPS()).\(imageExtension)", for: cell.imageView)
+            }
+            
             return cell
         }
         return UICollectionViewCell()

@@ -16,6 +16,8 @@ class HeroTableTypeView: BaseView {
     
     @IBOutlet weak var tableView: UITableView!
     
+    lazy var viewModel = HeroTableTypeViewModel()
+    
     required init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
     }
@@ -44,11 +46,19 @@ extension HeroTableTypeView: UITableViewDelegate {
 
 extension HeroTableTypeView: UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        5
+        viewModel.items?.count ?? 0
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         if let cell = tableView.dequeueReusableCell(withIdentifier: .tableTypeCell) as? TableTypeCell {
+            cell.titleLabel.text = viewModel.items?[indexPath.row].itemTitle
+            cell.descriptionLabel.text = viewModel.items?[indexPath.row].itemDescription
+            
+            if let path = viewModel.items?[indexPath.row].itemThumbnail?.path,
+            let imageExtension = viewModel.items?[indexPath.row].itemThumbnail?.imageExtension{
+                viewModel.getImage(from: "\(path.toHTTPS()).\(imageExtension)", for: cell.cellImageView)
+            }
+            
             return cell
         }
         return UITableViewCell()

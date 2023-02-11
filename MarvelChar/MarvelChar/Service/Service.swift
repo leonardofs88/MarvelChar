@@ -21,6 +21,22 @@ class Service {
         return request(EndpointRouter.getCharacter(id))
     }
     
+    static func getComics(for characterId: Int) -> Observable<ComicsDataWrapper> {
+        return request(EndpointRouter.getComicsFor(characterId))
+    }
+    
+    static func getEvents(for characterId: Int) -> Observable<EventDataWrapper> {
+        return request(EndpointRouter.getEventsFor(characterId))
+    }
+    
+    static func getStories(for characterId: Int) -> Observable<StoriesDataWrapper> {
+        return request(EndpointRouter.getStoriesFor(characterId))
+    }
+    
+    static func getSeries(for characterId: Int) -> Observable<SeriesDataWrapper> {
+        return request(EndpointRouter.getSeriesFor(characterId))
+    }
+    
     static func getImage(_ URL: URL) -> Observable<Image> {
         return requestImage(URL)
     }
