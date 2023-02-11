@@ -12,15 +12,27 @@ protocol HeroHeaderTableViewCellDelegate: AnyObject {
     func dismissView()
 }
 
-class HeroHeaderTableViewCell: UITableViewCell {
+class HeroHeaderView: BaseView {
     
     weak var delegate: HeroHeaderTableViewCellDelegate?
-
+    
+    @IBOutlet weak var contentView: UIView!
     @IBOutlet weak var heroNameLabel: UILabel!
     @IBOutlet weak var heroImageView: UIImageView!
     @IBOutlet weak var heroNameView: UIView!
-    required init?(coder: NSCoder) {
-        super.init(coder: coder)
+    
+    required init?(coder aDecoder: NSCoder) {
+        super.init(coder: aDecoder)
+        loadView(from: .heroHeaderView)
+        contentView.frame = bounds
+        addSubview(contentView)
+    }
+    
+    override init(frame: CGRect) {
+        super.init(frame: frame)
+        loadView(from: .heroHeaderView)
+        contentView.frame = bounds
+        addSubview(contentView)
     }
     
     override func layoutSubviews() {

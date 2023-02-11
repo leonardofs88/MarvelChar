@@ -15,7 +15,6 @@ extension String {
     static let tableTypeCell = "TableTypeCell"
     static let heroCollectionTypeTableViewCell = "HeroCollectionTypeTableViewCell"
     static let heroTableTypeTableViewCell = "HeroTableTypeTableViewCell"
-    static let heroHeaderTableViewCell = "HeroHeaderTableViewCell"
     static let heroOverviewTableViewCell = "HeroOverviewTableViewCell"
     static let heroDescriptionTableViewCell = "HeroDescriptionTableViewCell"
     
@@ -26,9 +25,14 @@ extension String {
     // Views
     static let heroNameView = "HeroNameView"
     static let titleHeaderView = "TitleHeaderView"
+    static let heroHeaderView = "HeroHeaderView"
+    static let heroDescriptionView = "HeroDescriptionView"
+    static let heroOverviewView = "HeroOverviewView"
+    static let heroCollectionTypeView = "HeroCollectionTypeView"
+    static let heroTableTypeView = "HeroTableTypeView"
     
     // ViewControllers
-    static let heroTableViewController = "HeroTableViewController"
+    static let heroViewController = "HeroViewController"
     
     // Scenes
     static let heroScene = "HeroScene"

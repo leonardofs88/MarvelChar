@@ -55,8 +55,8 @@ class HomeViewController: UIViewController {
                 if let characterId = character.id {
                     let storyboard = UIStoryboard(name: .heroScene, bundle: nil)
                     
-                    if let viewController = storyboard.instantiateViewController(withIdentifier: .heroTableViewController) as? HeroTableViewController {
-                        viewController.characterId = characterId
+                    if let viewController = storyboard.instantiateViewController(withIdentifier: .heroViewController) as? HeroViewController {
+                        viewController.heroId = characterId
                         self?.present(viewController, animated: true, completion: nil)
                     }
                 } else {

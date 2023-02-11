@@ -10,7 +10,7 @@ target 'MarvelChar' do
   pod 'Alamofire'
   pod 'AlamofireImage'
   pod 'RxSwift'
-  pod 'RxCocoa'  
+  pod 'RxCocoa'
 
   target 'MarvelCharTests' do
     inherit! :search_paths

@@ -10,6 +10,7 @@ import Foundation
 struct Character: Codable {
     let id: Int?
     let name: String?
+    let quote: String?
     let description: String?
     let thumbnail: Thumbnail?
 }

@@ -1,33 +1,38 @@
 //
-//  HeroTableView.swift
+//  HeroTableTypeView.swift
 //  MarvelChar
 //
-//  Created by Leonardo Soares on 06/02/23.
+//  Created by Leonardo Soares on 10/02/23.
 //
 
 import Foundation
 import UIKit
 
-class HeroTableTypeTableViewCell: UITableViewCell {
+class HeroTableTypeView: BaseView {
     
-    @IBOutlet weak var titleHeaderView: TitleHeaderView!
+    @IBOutlet weak var contentView: UIView!
+    
+    @IBOutlet weak var titleLabel: UILabel!
     
     @IBOutlet weak var tableView: UITableView!
- 
-    @IBOutlet weak var tableViewHeightConstraint: NSLayoutConstraint!
     
-    override func awakeFromNib() {
-        super.awakeFromNib()
-        tableView.dataSource = self
-        tableView.delegate = self
-        tableView.register(UINib(nibName: .tableTypeCell, bundle: nil), forCellReuseIdentifier: .tableTypeCell)
+    required init?(coder aDecoder: NSCoder) {
+        super.init(coder: aDecoder)
+    }
+    
+    override init(frame: CGRect) {
+        super.init(frame: frame)
+        loadView(from: .heroTableTypeView)
+        contentView.frame = bounds
+        addSubview(contentView)
         
-        tableViewHeightConstraint.constant = 121*5
-        tableViewHeightConstraint.isActive = true
+        tableView.delegate = self
+        tableView.dataSource = self
+        tableView.register(UINib(nibName: .tableTypeCell, bundle: nil), forCellReuseIdentifier: .tableTypeCell)
     }
 }
 
-extension HeroTableTypeTableViewCell: UITableViewDelegate {
+extension HeroTableTypeView: UITableViewDelegate {
     func numberOfSections(in collectionView: UICollectionView) -> Int {
         1
     }
@@ -37,9 +42,9 @@ extension HeroTableTypeTableViewCell: UITableViewDelegate {
     }
 }
 
-extension HeroTableTypeTableViewCell: UITableViewDataSource {
+extension HeroTableTypeView: UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        10
+        5
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {

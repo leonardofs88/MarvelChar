@@ -9,22 +9,17 @@ import Foundation
 import RxCocoa
 import RxSwift
 
-class HeroTableViewModel: BaseViewModel {
+class HeroViewModel: BaseViewModel {
     
     let character = PublishRelay<[Character]>()
     let description = PublishRelay<String>()
     
     
-    func getCharacter(id: Int) {
+    func getCharacter(id: Int) -> Observable<Character?> {
         Service.getCharacter(id)
             .observe(on: MainScheduler.instance)
             .map { characterDatawrapper in
-                characterDatawrapper.data?.results ?? []
+                characterDatawrapper.data?.results?.first ?? nil
             }
-            .subscribe(onNext: { [weak self] character in
-                self?.character.accept(character)
-                self?.description.accept(character.description)
-            })
-            .disposed(by: disposeBag)
     }
 }
