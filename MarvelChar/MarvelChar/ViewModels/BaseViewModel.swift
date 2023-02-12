@@ -9,22 +9,21 @@ import Foundation
 import RxSwift
 import RxCocoa
 import UIKit
+import AlamofireImage
 
 class BaseViewModel {
     
-    init() {
+    var repository: MarvelRepositoryProtocol
+    
+    init(repository: MarvelRepositoryProtocol) {
         // exposing init
+        self.repository = repository
     }
     
     lazy var disposeBag = DisposeBag()
     
-    func getImage(from path: String, for cellImage: UIImageView) {
-        guard let pathToUrl = URL(string: path) else { return }
-        Service.getImage(pathToUrl)
-            .observe(on: MainScheduler.instance)
-            .asDriver(onErrorJustReturn: .emptyCharacterImage)
-            .map { $0 }
-            .drive(cellImage.rx.image)
-            .disposed(by: disposeBag)
+    func getImage(from path: String) -> Observable<Image> {
+        guard let pathToUrl = URL(string: path.toHTTPS()) else { return Observable<Image>.just(.emptyCharacterImage) }
+        return repository.getImage(URL: pathToUrl) ?? Observable<Image>.just(.emptyCharacterImage)
     }
 }

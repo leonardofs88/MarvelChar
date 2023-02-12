@@ -11,9 +11,8 @@ import RxSwift
 
 class HeroViewModel: BaseViewModel {
     
-    override init() {
-        super.init()
-        // exposing constructor
+    override init(repository: MarvelRepositoryProtocol) {
+        super.init(repository: repository)
     }
     
     func getData(for characterId: Int) -> Observable<(Character?, [Comic]?, [Event]?, [Story]?, [Series]?)> {
@@ -25,7 +24,7 @@ class HeroViewModel: BaseViewModel {
     }
     
     fileprivate func getCharacter(id: Int) -> Observable<Character?> {
-        Service.getCharacter(id)
+        repository.getCharacter(id)
             .observe(on: MainScheduler.instance)
             .map { characterDatawrapper in
                 characterDatawrapper.data?.results?.first ?? nil
@@ -33,7 +32,7 @@ class HeroViewModel: BaseViewModel {
     }
     
     fileprivate func getComics(for characterId: Int) -> Observable<[Comic]?> {
-        Service.getComics(for: characterId)
+        repository.getComics(for: characterId)
             .observe(on: MainScheduler.instance)
             .map { comicsDataWrapper in
                 comicsDataWrapper.data?.results ?? nil
@@ -41,7 +40,7 @@ class HeroViewModel: BaseViewModel {
     }
     
     fileprivate func getEvents(for characterId: Int) -> Observable<[Event]?> {
-        Service.getEvents(for: characterId)
+        repository.getEvents(for: characterId)
             .observe(on: MainScheduler.instance)
             .map { eventsDataWrapper in
                 eventsDataWrapper.data?.results ?? nil
@@ -49,7 +48,7 @@ class HeroViewModel: BaseViewModel {
     }
     
     fileprivate func getStories(for characterId: Int) -> Observable<[Story]?> {
-        Service.getStories(for: characterId)
+        repository.getStories(for: characterId)
             .observe(on: MainScheduler.instance)
             .map { storiesDataWrapper in
                 storiesDataWrapper.data?.results ?? nil
@@ -57,10 +56,10 @@ class HeroViewModel: BaseViewModel {
     }
     
     fileprivate func getSeries(for characterId: Int) -> Observable<[Series]?> {
-        Service.getSeries(for: characterId)
+        repository.getSeries(for: characterId)
             .observe(on: MainScheduler.instance)
-            .map { seriesDatWrapper in
-                seriesDatWrapper.data?.results ?? nil
+            .map { seriesDataWrapper in
+                seriesDataWrapper.data?.results ?? nil
             }
     }
 }

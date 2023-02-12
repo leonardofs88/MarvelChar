@@ -26,15 +26,9 @@ class HeroNameView: BaseView {
     }
     
     override func setUpSubviews() {
-        heroNameLabel.textColor = .white
-        heroNameLabel.layer.shadowColor = UIColor.black.cgColor
-        heroNameLabel.layer.shadowRadius = 1.0
-        heroNameLabel.layer.shadowOpacity = 1.0
-        heroNameLabel.layer.shadowOffset = CGSize(width: 1, height: 1)
-        heroNameLabel.layer.masksToBounds = false
+        heroNameLabel.setShadowTextField(color: .white)
         backgroundColor = UIColor(red: 0.39, green: 0.08, blue: 0.66, alpha: 0.5)
     }
-    
     
     func showShareButton() {
         shareButton.isHidden = false

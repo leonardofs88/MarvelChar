@@ -10,9 +10,9 @@ import UIKit
 extension UITextField {
     
     func setUpSearchBar(imageName: String) {
+        setRoundedCorners(radius: 9)
         frame = CGRect(x: 18, y: 165, width: 339, height: 48)
         font = UIFont.systemFont(ofSize: 18)
-        layer.cornerRadius = 16
         textColor = .white
         backgroundColor = UIColor(red: 1, green: 1, blue: 1, alpha: 0.07)
         clipsToBounds = true

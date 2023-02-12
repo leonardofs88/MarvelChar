@@ -17,9 +17,4 @@ protocol TableTypeItem {
 
 class HeroTableTypeViewModel: BaseViewModel {
     var items: [TableTypeItem]?
-    
-    override init() {
-        super.init()
-        // exposing constructor
-    }
 }

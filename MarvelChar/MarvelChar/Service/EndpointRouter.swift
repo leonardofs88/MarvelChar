@@ -1,5 +1,5 @@
 //
-//  EndpointRouter.swift
+//  MarvelEndpoinRouter.swift
 //  MarvelChar
 //
 //  Created by Leonardo Soares on 07/02/23.
@@ -26,8 +26,9 @@ struct URLComponents {
     static let ts = String(Date().timeIntervalSince1970)
 }
 
-enum EndpointRouter: URLRequestConvertible {
-    case getCharacters
+enum MarvelEndpoinRouter: URLRequestConvertible {
+    
+    case getCharacters(_ page: Int, name: String?)
     case getCharacter(_ id: Int)
     case getComicsFor(_ characterId: Int)
     case getEventsFor(_ characterId: Int)
@@ -92,8 +93,16 @@ enum EndpointRouter: URLRequestConvertible {
     
     private var parameters: Parameters? {
         switch self {
+        case .getCharacters(let page, let name):
+            var params: [String : Any] = ["limit": page]
+            
+            if let searchTerm = name,
+               !searchTerm.isEmpty{
+                params["nameStartsWith"] = searchTerm
+            }
+            
+            return params
         case .getEventsFor(_), .getSeriesFor(_), .getStoriesFor(_):
-            //A dictionary of the key (From the constants file) and its value is returned
             return ["limit" : 5]
         default:
             return nil

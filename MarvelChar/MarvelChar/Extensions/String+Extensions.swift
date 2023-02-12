@@ -45,7 +45,7 @@ extension String {
     }
     
     func toHTTPS() -> String {
-        self.replacingOccurrences(of: "http", with: "https")
+        self.replacingOccurrences(of: "http://", with: "https://")
     }
 }
 

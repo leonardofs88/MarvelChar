@@ -56,6 +56,19 @@
                                 </collectionViewFlowLayout>
                                 <cells/>
                             </collectionView>
+                            <view alpha="0.69999999999999996" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="l8E-0I-Xgl">
+                                <rect key="frame" x="0.0" y="212" width="320" height="307"/>
+                                <subviews>
+                                    <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="medium" translatesAutoresizingMaskIntoConstraints="NO" id="9ma-5i-br5">
+                                        <rect key="frame" x="150" y="143.5" width="20" height="20"/>
+                                    </activityIndicatorView>
+                                </subviews>
+                                <color key="backgroundColor" red="0.094117647060000004" green="0.094117647060000004" blue="0.094117647060000004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <constraints>
+                                    <constraint firstItem="9ma-5i-br5" firstAttribute="centerY" secondItem="l8E-0I-Xgl" secondAttribute="centerY" id="mXR-hk-ru7"/>
+                                    <constraint firstItem="9ma-5i-br5" firstAttribute="centerX" secondItem="l8E-0I-Xgl" secondAttribute="centerX" id="qbv-sH-wQ3"/>
+                                </constraints>
+                            </view>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="8Vu-fk-rVJ"/>
                         <color key="backgroundColor" red="0.094117647058823528" green="0.094117647058823528" blue="0.094117647058823528" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
@@ -64,9 +77,12 @@
                             <constraint firstItem="RQ0-mO-m7a" firstAttribute="top" secondItem="Eev-eG-U8k" secondAttribute="bottom" constant="18" id="7IT-1k-wEu"/>
                             <constraint firstItem="MBL-M6-pi1" firstAttribute="bottom" secondItem="8Vu-fk-rVJ" secondAttribute="bottom" id="DUE-uP-s9v"/>
                             <constraint firstItem="Eev-eG-U8k" firstAttribute="leading" secondItem="8Vu-fk-rVJ" secondAttribute="leading" constant="18" id="DoH-v4-IKC"/>
+                            <constraint firstItem="l8E-0I-Xgl" firstAttribute="leading" secondItem="8Vu-fk-rVJ" secondAttribute="leading" id="FAg-I3-W97"/>
                             <constraint firstItem="Eev-eG-U8k" firstAttribute="top" secondItem="fQr-gz-dfv" secondAttribute="bottom" id="JkS-ao-CQl"/>
                             <constraint firstItem="MBL-M6-pi1" firstAttribute="leading" secondItem="8Vu-fk-rVJ" secondAttribute="leading" constant="18" id="Ohn-Z6-yDL"/>
                             <constraint firstItem="8Vu-fk-rVJ" firstAttribute="trailing" secondItem="Eev-eG-U8k" secondAttribute="trailing" constant="107" id="Pez-Sq-mK1"/>
+                            <constraint firstItem="l8E-0I-Xgl" firstAttribute="top" secondItem="MBL-M6-pi1" secondAttribute="top" id="T1d-mm-vur"/>
+                            <constraint firstItem="8Vu-fk-rVJ" firstAttribute="trailing" secondItem="l8E-0I-Xgl" secondAttribute="trailing" id="UdH-ZZ-0qv"/>
                             <constraint firstItem="fQr-gz-dfv" firstAttribute="leading" secondItem="8Vu-fk-rVJ" secondAttribute="leading" constant="18" id="VWH-aX-2QX"/>
                             <constraint firstItem="8Vu-fk-rVJ" firstAttribute="trailing" secondItem="QjZ-pv-4wl" secondAttribute="trailing" constant="18" id="bds-jW-UQZ"/>
                             <constraint firstItem="8Vu-fk-rVJ" firstAttribute="trailing" secondItem="RQ0-mO-m7a" secondAttribute="trailing" constant="18" id="e1p-Kv-dgd"/>
@@ -75,6 +91,7 @@
                             <constraint firstItem="QjZ-pv-4wl" firstAttribute="leading" secondItem="fQr-gz-dfv" secondAttribute="trailing" constant="90" id="lxJ-Dd-aZp"/>
                             <constraint firstItem="fQr-gz-dfv" firstAttribute="top" secondItem="8Vu-fk-rVJ" secondAttribute="top" constant="18" id="szk-xG-Dbc"/>
                             <constraint firstItem="QjZ-pv-4wl" firstAttribute="top" secondItem="8Vu-fk-rVJ" secondAttribute="top" constant="18" id="xYW-fz-vdb"/>
+                            <constraint firstItem="8Vu-fk-rVJ" firstAttribute="bottom" secondItem="l8E-0I-Xgl" secondAttribute="bottom" id="znB-Ij-Ft1"/>
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="" image="tabHomePage" selectedImage="tabHomePageSelected" id="GQz-fb-6Hg">
@@ -85,6 +102,8 @@
                         <outlet property="assembleTitleLabel" destination="Eev-eG-U8k" id="a3L-t6-sJp"/>
                         <outlet property="avengersTitleLable" destination="fQr-gz-dfv" id="UOg-g9-rsZ"/>
                         <outlet property="heroesCollecionView" destination="MBL-M6-pi1" id="ben-cn-rjB"/>
+                        <outlet property="indicator" destination="9ma-5i-br5" id="JH9-XF-7ta"/>
+                        <outlet property="indicatorView" destination="l8E-0I-Xgl" id="ckq-my-SZV"/>
                         <outlet property="searchTextField" destination="RQ0-mO-m7a" id="YsV-ZJ-tVg"/>
                     </connections>
                 </viewController>

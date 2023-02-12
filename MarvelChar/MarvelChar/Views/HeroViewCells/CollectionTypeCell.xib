@@ -28,6 +28,19 @@
                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <nil key="highlightedColor"/>
                     </label>
+                    <view hidden="YES" alpha="0.69999999999999996" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7Bv-kT-TFG">
+                        <rect key="frame" x="0.0" y="0.0" width="179" height="273"/>
+                        <subviews>
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="medium" translatesAutoresizingMaskIntoConstraints="NO" id="Vzj-ZV-621">
+                                <rect key="frame" x="79.666666666666671" y="126.66666666666669" width="20" height="20"/>
+                            </activityIndicatorView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.094117647060000004" green="0.094117647060000004" blue="0.094117647060000004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstItem="Vzj-ZV-621" firstAttribute="centerX" secondItem="7Bv-kT-TFG" secondAttribute="centerX" id="Gqk-rH-ata"/>
+                            <constraint firstItem="Vzj-ZV-621" firstAttribute="centerY" secondItem="7Bv-kT-TFG" secondAttribute="centerY" id="eHW-Pv-q2n"/>
+                        </constraints>
+                    </view>
                 </subviews>
                 <constraints>
                     <constraint firstItem="xQz-UL-Zwo" firstAttribute="top" secondItem="jyr-Ap-08P" secondAttribute="bottom" id="0In-Ya-VXr"/>
@@ -36,13 +49,19 @@
                     <constraint firstItem="jyr-Ap-08P" firstAttribute="top" secondItem="42T-oZ-fFq" secondAttribute="top" id="KJs-Xw-429"/>
                     <constraint firstItem="jyr-Ap-08P" firstAttribute="leading" secondItem="42T-oZ-fFq" secondAttribute="leading" id="QFk-mV-Rdf"/>
                     <constraint firstAttribute="trailing" secondItem="jyr-Ap-08P" secondAttribute="trailing" id="WSC-su-4VL"/>
+                    <constraint firstItem="7Bv-kT-TFG" firstAttribute="leading" secondItem="42T-oZ-fFq" secondAttribute="leading" id="hjO-i4-6I5"/>
+                    <constraint firstItem="7Bv-kT-TFG" firstAttribute="top" secondItem="42T-oZ-fFq" secondAttribute="top" id="mgg-wH-mpE"/>
+                    <constraint firstAttribute="trailing" secondItem="7Bv-kT-TFG" secondAttribute="trailing" id="ohH-wk-zFj"/>
                     <constraint firstAttribute="trailing" secondItem="xQz-UL-Zwo" secondAttribute="trailing" constant="10" id="rxP-Q5-yh3"/>
+                    <constraint firstAttribute="bottom" secondItem="7Bv-kT-TFG" secondAttribute="bottom" id="xjo-fI-irh"/>
                 </constraints>
             </collectionViewCellContentView>
             <size key="customSize" width="177" height="232"/>
             <connections>
                 <outlet property="descriptionLabel" destination="xQz-UL-Zwo" id="EsS-VI-Jxq"/>
                 <outlet property="imageView" destination="jyr-Ap-08P" id="m0O-Dt-lOB"/>
+                <outlet property="indicator" destination="Vzj-ZV-621" id="3vN-rl-JZB"/>
+                <outlet property="indicatorView" destination="7Bv-kT-TFG" id="G1m-ej-Zzd"/>
             </connections>
             <point key="canvasLocation" x="45.038167938931295" y="92.605633802816911"/>
         </collectionViewCell>

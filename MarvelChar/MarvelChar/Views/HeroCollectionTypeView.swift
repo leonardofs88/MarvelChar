@@ -7,6 +7,8 @@
 
 import Foundation
 import UIKit
+import RxCocoa
+import RxSwift
 
 class HeroCollectionTypeView: BaseView {
     
@@ -16,17 +18,24 @@ class HeroCollectionTypeView: BaseView {
     
     @IBOutlet weak var collectionView: UICollectionView!
     
-    lazy var viewModel = HeroCollectionTypeViewModel()
+    fileprivate lazy var disposeBag = DisposeBag()
+    
+    var repository: MarvelRepositoryProtocol?
+    
+    var viewModel: HeroCollectionTypeViewModel?
     
     required init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
     }
     
-    override init(frame: CGRect) {
+    init(frame: CGRect, repository: MarvelRepositoryProtocol) {
         super.init(frame: frame)
         loadView(from: .heroCollectionTypeView)
         contentView.frame = bounds
         addSubview(contentView)
+        
+        self.repository = repository
+        self.viewModel = HeroCollectionTypeViewModel(repository: repository)
         
         collectionView.delegate = self
         collectionView.dataSource = self
@@ -42,16 +51,19 @@ extension HeroCollectionTypeView: UICollectionViewDelegate {
 
 extension HeroCollectionTypeView: UICollectionViewDataSource {
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        viewModel.items?.count ?? 0
+        viewModel?.items?.count ?? 0
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         if let cell = collectionView.dequeueReusableCell(withReuseIdentifier: .collectionTypeCell, for: indexPath) as? CollectionTypeCell{
-            cell.descriptionLabel.text = viewModel.items?[indexPath.row].title
-            
-            if let path = viewModel.items?[indexPath.row].thumbnail?.path,
-            let imageExtension = viewModel.items?[indexPath.row].thumbnail?.imageExtension{
-                viewModel.getImage(from: "\(path.toHTTPS()).\(imageExtension)", for: cell.imageView)
+            cell.descriptionLabel.text = viewModel?.items?[indexPath.row].title
+            if let path = viewModel?.items?[indexPath.row].thumbnail?.path,
+               let imageExtension = viewModel?.items?[indexPath.row].thumbnail?.imageExtension{
+                viewModel?.getImage(from: "\(path).\(imageExtension)")
+                    .asDriver(onErrorJustReturn: .emptyCharacterImage)
+                    .map { $0 }
+                    .drive(cell.imageView.rx.image)
+                    .disposed(by: disposeBag)
             }
             
             return cell

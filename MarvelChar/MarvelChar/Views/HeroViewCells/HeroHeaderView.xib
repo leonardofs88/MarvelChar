@@ -56,17 +56,31 @@
                         <constraint firstItem="1gX-L6-fdv" firstAttribute="centerY" secondItem="Gb3-na-geB" secondAttribute="centerY" id="wjb-vi-sFR"/>
                     </constraints>
                 </view>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="i9H-QL-Ng0">
+                    <rect key="frame" x="355" y="18" width="20" height="20"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="20" id="0d8-NQ-Wo9"/>
+                        <constraint firstAttribute="width" constant="20" id="T2t-IR-dnz"/>
+                    </constraints>
+                    <state key="normal" title="Button"/>
+                    <buttonConfiguration key="configuration" style="plain" image="dismiss"/>
+                    <connections>
+                        <action selector="dismissView" destination="-1" eventType="touchUpInside" id="1ab-oh-xRF"/>
+                    </connections>
+                </button>
             </subviews>
             <viewLayoutGuide key="safeArea" id="elC-Jr-6F8"/>
             <color key="backgroundColor" red="0.094117647060000004" green="0.094117647060000004" blue="0.094117647060000004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
             <constraints>
                 <constraint firstItem="ExX-ig-vYu" firstAttribute="leading" secondItem="elC-Jr-6F8" secondAttribute="leading" id="3r6-Fq-2M9"/>
+                <constraint firstItem="i9H-QL-Ng0" firstAttribute="top" secondItem="NSH-3I-maP" secondAttribute="top" constant="18" id="As5-od-J5m"/>
                 <constraint firstItem="elC-Jr-6F8" firstAttribute="trailing" secondItem="Gb3-na-geB" secondAttribute="trailing" id="J7R-H4-fYU"/>
                 <constraint firstItem="elC-Jr-6F8" firstAttribute="bottom" secondItem="Gb3-na-geB" secondAttribute="bottom" id="LeG-xG-Dr9"/>
                 <constraint firstItem="ExX-ig-vYu" firstAttribute="trailing" secondItem="elC-Jr-6F8" secondAttribute="trailing" id="VPJ-Ig-7nk"/>
                 <constraint firstItem="ExX-ig-vYu" firstAttribute="bottom" secondItem="elC-Jr-6F8" secondAttribute="bottom" id="df3-Dg-9rN"/>
                 <constraint firstItem="Gb3-na-geB" firstAttribute="leading" secondItem="elC-Jr-6F8" secondAttribute="leading" id="lFe-9x-WbH"/>
                 <constraint firstItem="ExX-ig-vYu" firstAttribute="top" secondItem="NSH-3I-maP" secondAttribute="top" id="odN-BY-507"/>
+                <constraint firstAttribute="trailing" secondItem="i9H-QL-Ng0" secondAttribute="trailing" constant="18" id="weg-IM-KW1"/>
             </constraints>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
             <point key="canvasLocation" x="997.70992366412213" y="71.83098591549296"/>
@@ -74,6 +88,7 @@
     </objects>
     <resources>
         <image name="avengersSplash" width="375" height="806"/>
+        <image name="dismiss" width="28" height="28"/>
         <image name="share" width="20" height="20"/>
     </resources>
 </document>

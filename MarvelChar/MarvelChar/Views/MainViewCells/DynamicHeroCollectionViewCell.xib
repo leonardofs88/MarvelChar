@@ -54,12 +54,29 @@
                             <constraint firstAttribute="bottom" secondItem="km2-ob-NZf" secondAttribute="bottom" id="vLQ-eR-LTL"/>
                         </constraints>
                     </view>
+                    <view alpha="0.69999999999999996" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ovb-V0-s1o">
+                        <rect key="frame" x="0.0" y="0.0" width="334" height="292"/>
+                        <subviews>
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="medium" translatesAutoresizingMaskIntoConstraints="NO" id="Tm1-uP-5id">
+                                <rect key="frame" x="157" y="136" width="20" height="20"/>
+                            </activityIndicatorView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.094117647060000004" green="0.094117647060000004" blue="0.094117647060000004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstItem="Tm1-uP-5id" firstAttribute="centerX" secondItem="ovb-V0-s1o" secondAttribute="centerX" id="0q4-YJ-lqU"/>
+                            <constraint firstItem="Tm1-uP-5id" firstAttribute="centerY" secondItem="ovb-V0-s1o" secondAttribute="centerY" id="jlc-PY-XZ7"/>
+                        </constraints>
+                    </view>
                 </subviews>
                 <color key="backgroundColor" red="0.094117647060000004" green="0.094117647060000004" blue="0.094117647060000004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                 <constraints>
+                    <constraint firstItem="ovb-V0-s1o" firstAttribute="leading" secondItem="l9i-ZY-vfe" secondAttribute="leading" id="6jx-Wq-MDX"/>
                     <constraint firstItem="4cJ-QG-nAA" firstAttribute="top" secondItem="l9i-ZY-vfe" secondAttribute="top" id="Gsm-JH-3t8"/>
                     <constraint firstAttribute="bottom" secondItem="4cJ-QG-nAA" secondAttribute="bottom" id="QWh-pd-4pC"/>
+                    <constraint firstAttribute="bottom" secondItem="ovb-V0-s1o" secondAttribute="bottom" id="aMW-Va-P5s"/>
                     <constraint firstAttribute="trailing" secondItem="4cJ-QG-nAA" secondAttribute="trailing" id="mbm-Hd-sKX"/>
+                    <constraint firstItem="ovb-V0-s1o" firstAttribute="top" secondItem="l9i-ZY-vfe" secondAttribute="top" id="nX4-tm-Z65"/>
+                    <constraint firstAttribute="trailing" secondItem="ovb-V0-s1o" secondAttribute="trailing" id="run-rD-LWu"/>
                     <constraint firstItem="4cJ-QG-nAA" firstAttribute="leading" secondItem="l9i-ZY-vfe" secondAttribute="leading" id="uSz-Ka-SQE"/>
                 </constraints>
             </collectionViewCellContentView>
@@ -70,6 +87,8 @@
                 <outlet property="heroImage" destination="HmI-00-Ybj" id="vBS-Jp-ZZI"/>
                 <outlet property="heroNameLabel" destination="LjE-YR-kxY" id="7R0-u9-Drs"/>
                 <outlet property="heroNameView" destination="km2-ob-NZf" id="GPC-44-cWK"/>
+                <outlet property="indicator" destination="Tm1-uP-5id" id="Ez5-v7-dFA"/>
+                <outlet property="indicatorView" destination="ovb-V0-s1o" id="RkS-QB-ya2"/>
             </connections>
             <point key="canvasLocation" x="334.35114503816794" y="19.014084507042256"/>
         </collectionViewCell>

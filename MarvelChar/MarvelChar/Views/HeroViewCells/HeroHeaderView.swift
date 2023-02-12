@@ -41,14 +41,8 @@ class HeroHeaderView: BaseView {
     }
     
     fileprivate func setUpViewStyle() {
-        heroNameLabel.textColor = .white
-        heroNameLabel.layer.shadowColor = UIColor.black.cgColor
-        heroNameLabel.layer.shadowRadius = 1.0
-        heroNameLabel.layer.shadowOpacity = 1.0
-        heroNameLabel.layer.shadowOffset = CGSize(width: 1, height: 1)
-        heroNameLabel.layer.masksToBounds = false
-        heroNameView.layer.cornerRadius = 9
-        heroNameView.layer.maskedCorners = [.layerMaxXMinYCorner, .layerMinXMinYCorner]
+        heroNameLabel.setShadowTextField(color: .white)
+        heroNameView.setRoundedCorners(radius: 9, for: .top)
         heroNameView.backgroundColor = UIColor(red: 0.39, green: 0.08, blue: 0.66, alpha: 0.5)
     }
     

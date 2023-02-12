@@ -41,12 +41,18 @@ class HeroViewController: UIViewController {
         return view
     }()
     
-    lazy var viewModel = HeroViewModel()
+    var repository: MarvelRepositoryProtocol?
+    fileprivate lazy var service = Service()
+    
+    fileprivate var viewModel: HeroViewModel?
     lazy var disposeBag = DisposeBag()
     
     override func viewDidLoad() {
         super.viewDidLoad()
         viewWidth = view.frame.width
+        if let repo = repository {
+            viewModel = HeroViewModel(repository: repo)
+        }
         configureView()
     }
     
@@ -70,7 +76,7 @@ class HeroViewController: UIViewController {
     
     fileprivate func getData() {
         if let id = heroId {
-            viewModel.getData(for: id)
+            viewModel?.getData(for: id)
                 .observe(on: MainScheduler.instance)
                 .subscribe(onNext: { [weak self] characterData, comicsData, eventsData, storiesData, seriesData in
                     guard let self = self else { return }
@@ -130,9 +136,14 @@ class HeroViewController: UIViewController {
         
         let header = HeroHeaderView(frame: CGRect(x: 0, y: 0, width: viewWidth, height: 354))
         
+        header.delegate = self
         header.heroNameLabel.text = name
         
-        viewModel.getImage(from: "\(path.toHTTPS()).\(imageExtension)", for: header.heroImageView)
+        viewModel?.getImage(from: "\(path).\(imageExtension)")
+            .asDriver(onErrorJustReturn: .emptyCharacterImage)
+            .map { $0 }
+            .drive(header.heroImageView.rx.image)
+            .disposed(by: disposeBag)
         
         return header
     }
@@ -159,15 +170,18 @@ class HeroViewController: UIViewController {
     }
     
     fileprivate func configComicsView(with items: [Comic]) -> UIView? {
-        let comics = HeroCollectionTypeView(frame: CGRect(x: 0, y: 0, width: viewWidth, height: 360))
+        guard let repository = repository else { return nil }
+        let comics = HeroCollectionTypeView(frame: CGRect(x: 0, y: 0, width: viewWidth, height: 360), repository: repository)
         
         comics.titleLabel.text = LocalizableStrings.comics
-        comics.viewModel.items = items
+        comics.viewModel?.items = items
         return comics
     }
     
     fileprivate func configTableView(with items: [TableTypeItem]) -> UIView? {
-        let comics = HeroTableTypeView(frame: CGRect(x: 0, y: 0, width: viewWidth, height: 674))
+        guard let repository = repository else { return nil }
+        let tableViewHeight = CGFloat(69 + (121 * items.count))
+        let comics = HeroTableTypeView(frame: CGRect(x: 0, y: 0, width: viewWidth, height: tableViewHeight), repository: repository)
         var title = ""
         
         if items is [Event]? {
@@ -183,7 +197,13 @@ class HeroViewController: UIViewController {
         }
         
         comics.titleLabel.text = title
-        comics.viewModel.items = items
+        comics.viewModel?.items = items
         return comics
+    }
+}
+
+extension HeroViewController: HeroHeaderTableViewCellDelegate {
+    func dismissView() {
+        dismiss(animated: true)
     }
 }

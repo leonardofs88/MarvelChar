@@ -9,9 +9,4 @@ import Foundation
 
 class HeroCollectionTypeViewModel: BaseViewModel {
     var items: [Comic]?
-    
-    override init() {
-        super.init()
-        //exposing init
-    }
 }
