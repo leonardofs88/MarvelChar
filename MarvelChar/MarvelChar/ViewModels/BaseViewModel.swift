@@ -24,6 +24,6 @@ class BaseViewModel {
     
     func getImage(from path: String) -> Observable<Image> {
         guard let pathToUrl = URL(string: path.toHTTPS()) else { return Observable<Image>.just(.emptyCharacterImage) }
-        return repository.getImage(URL: pathToUrl) ?? Observable<Image>.just(.emptyCharacterImage)
+        return repository.getImage(URL: pathToUrl) 
     }
 }

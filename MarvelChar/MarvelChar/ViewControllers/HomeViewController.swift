@@ -26,8 +26,6 @@ class HomeViewController: UIViewController {
     
     fileprivate var page = 20
     
-    fileprivate var tag = 0
-    
     lazy var disposeBag = DisposeBag()
     
     @IBOutlet weak var heroesCollecionView: UICollectionView!

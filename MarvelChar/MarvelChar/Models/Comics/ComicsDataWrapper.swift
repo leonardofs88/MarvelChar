@@ -1,5 +1,5 @@
 //
-//  BaseDataWrapper.swift
+//  ComicsDataWrapper.swift
 //  MarvelChar
 //
 //  Created by Leonardo Soares on 11/02/23.

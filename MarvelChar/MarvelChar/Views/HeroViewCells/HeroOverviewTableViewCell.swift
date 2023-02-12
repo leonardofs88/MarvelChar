@@ -1,5 +1,5 @@
 //
-//  HeroOverviewView.swift
+//  HeroOverviewTableViewCell.swift
 //  MarvelChar
 //
 //  Created by Leonardo Soares on 06/02/23.
