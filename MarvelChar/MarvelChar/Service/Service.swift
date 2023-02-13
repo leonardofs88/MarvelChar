@@ -11,7 +11,13 @@ import Alamofire
 import AlamofireImage
 import UIKit
 
-class Service {
+protocol ServiceProtocol: AnyObject {
+    func request<T: Codable> (_ urlConvertible: URLRequestConvertible) -> Observable<T>
+    func requestImage(URL: URL) -> Observable<Image>
+}
+
+class Service: ServiceProtocol {
+    
     func request<T: Codable> (_ urlConvertible: URLRequestConvertible) -> Observable<T> {
         return Observable<T>.create { observer in
             
@@ -20,10 +26,10 @@ class Service {
                 switch response.result {
                 case .success(let value):
                     observer.onNext(value)
-                    observer.onCompleted()
                 case .failure(let error):
-                    print(error)
+                    observer.onError(error)
                 }
+                observer.onCompleted()
             }
             
             return Disposables.create {

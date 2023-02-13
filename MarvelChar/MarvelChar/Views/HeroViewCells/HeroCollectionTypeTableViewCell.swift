@@ -7,6 +7,8 @@
 
 import Foundation
 import UIKit
+import RxSwift
+import RxCocoa
 
 class HeroCollectionTypeTableViewCell: UITableViewCell {
     
@@ -20,8 +22,18 @@ class HeroCollectionTypeTableViewCell: UITableViewCell {
     
     @IBOutlet weak var subtitleBottomConstraint: NSLayoutConstraint!
     
+    var books: [Book]? {
+        didSet {
+            collectionView.reloadData()
+        }
+    }
+    
+    var viewModel: HeroCollectionTypeViewModel?
+    lazy var disposeBag = DisposeBag()
+    
     override func awakeFromNib() {
         super.awakeFromNib()
+        
         collectionView.delegate = self
         collectionView.dataSource = self
         collectionView.register(UINib(nibName: .collectionTypeCell, bundle: nil), forCellWithReuseIdentifier: .collectionTypeCell)
@@ -43,11 +55,20 @@ extension HeroCollectionTypeTableViewCell: UICollectionViewDelegate {
 
 extension HeroCollectionTypeTableViewCell: UICollectionViewDataSource {
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        10
+        books?.count ?? 0
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         if let cell = collectionView.dequeueReusableCell(withReuseIdentifier: .collectionTypeCell, for: indexPath) as? CollectionTypeCell {
+            cell.descriptionLabel.text = books?[indexPath.row].volumeInfo.title
+            if let path = books?[indexPath.row].volumeInfo.imageLinks?.thumbnailURL {
+                viewModel?.getImage(from: path)
+                    .observe(on: MainScheduler.instance)
+                    .subscribe(onNext: { image in
+                        cell.imageView.image = image
+                    })
+                    .disposed(by: disposeBag)
+            }
             return cell
         }
         return UICollectionViewCell()

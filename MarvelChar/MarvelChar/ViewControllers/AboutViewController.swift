@@ -7,14 +7,22 @@
 
 import Foundation
 import UIKit
+import RxSwift
 
 class AboutViewController: UITableViewController {
 
     @IBOutlet weak var titleAboutLabel: UILabel!
     @IBOutlet weak var subtitleAboutLabel: UILabel!
+    lazy var service = Service()
+    lazy var disposeBag = DisposeBag()
+    fileprivate var viewModel: AboutViewModel?
+    fileprivate var collectionViewItems: [Book]?
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        let googleRepo = GoogleRepository(service: service)
+        let marvelRepo = MarvelRepository(service: service)
+        viewModel = AboutViewModel(repository: marvelRepo, googleRepository: googleRepo)
         
         tableView.delegate = self
         tableView.dataSource = self
@@ -58,7 +66,15 @@ class AboutViewController: UITableViewController {
         
         if let cell = tableView.dequeueReusableCell(withIdentifier: .heroCollectionTypeTableViewCell) as? HeroCollectionTypeTableViewCell,
            indexPath.row == 4 {
+            cell.titleHeader.headerLabel.text = LocalizableStrings.googleBooks
+            cell.subtitleLabel.text = LocalizableStrings.googleBooksSubtitle
+            cell.viewModel = HeroCollectionTypeViewModel(repository: MarvelRepository(service: service), googleRepository: GoogleRepository(service: service))
             cell.hideSubtitle(false)
+            viewModel?.getBooks()?
+                .observe(on: MainScheduler.instance)
+                .subscribe(onNext: { booksWrapper in
+                    cell.books = booksWrapper.items
+                }).disposed(by: disposeBag)
             return cell
         }
         

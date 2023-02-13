@@ -13,8 +13,26 @@ enum AppCongfig: String {
     case baseURL = "https://gateway.marvel.com:443"
     case v1 = "/v1"
     case publicKeyPath = "/public"
-    case publicKey = "78615c175e959268b26b574d80998e69"
-    case privateKey = "bfb781f74705389ebf98315d152bd8c256af1070"
+    
+    static var publicKey: String {
+        info["API_PUBLIC_KEY"] as! String
+    }
+    
+    static var privateKey: String {
+        info["API_PRIVATE_KEY"] as! String
+    }
+    
+    static var googleApiKey: String {
+        info["GOOGLE_KEY"] as! String
+    }
+    
+    private static var info : [String: Any] {
+        if let dict = Bundle.main.infoDictionary {
+              return dict
+          } else {
+              fatalError("Info Plist file not found")
+          }
+    }
 }
 
 struct URLComponents {
@@ -41,7 +59,7 @@ enum MarvelEndpoinRouter: URLRequestConvertible {
         url = url.appendingPathComponent(AppCongfig.publicKeyPath.rawValue)
         url = url.appendingPathComponent(path)
         url = url.appending(queryItems: [URLQueryItem(name: "ts", value: URLComponents.ts)])
-        url = url.appending(queryItems: [URLQueryItem(name: "apikey", value: AppCongfig.publicKey.rawValue)])
+        url = url.appending(queryItems: [URLQueryItem(name: "apikey", value: AppCongfig.publicKey)])
         url = url.appending(queryItems: [URLQueryItem(name: "hash", value: hash)])
         
         var urlRequest = URLRequest(url: url)
@@ -88,7 +106,7 @@ enum MarvelEndpoinRouter: URLRequestConvertible {
     }
     
     var hash: String {
-        return (URLComponents.ts + AppCongfig.privateKey.rawValue + AppCongfig.publicKey.rawValue).toHash()
+        return (URLComponents.ts + AppCongfig.privateKey + AppCongfig.publicKey).toHash()
     }
     
     private var parameters: Parameters? {

@@ -11,7 +11,7 @@ import RxSwift
 
 class HeroViewModel: BaseViewModel {
     
-    override init(repository: MarvelRepositoryProtocol) {
+    init(repository: MarvelRepositoryProtocol) {
         super.init(repository: repository)
     }
     

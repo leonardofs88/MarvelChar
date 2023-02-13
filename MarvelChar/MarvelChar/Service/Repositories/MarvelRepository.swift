@@ -22,9 +22,9 @@ protocol MarvelRepositoryProtocol: AnyObject {
 
 class MarvelRepository: MarvelRepositoryProtocol {
     
-    fileprivate var service: Service
+    fileprivate var service: ServiceProtocol
     
-    init(service: Service) {
+    init(service: ServiceProtocol) {
         self.service = service
     }
     

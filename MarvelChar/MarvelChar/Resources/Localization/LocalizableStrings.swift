@@ -20,4 +20,6 @@ struct LocalizableStrings {
     static let events = "EVENTS".localizedString()
     static let stories = "STORIES".localizedString()
     static let series = "SERIES".localizedString()
+    static let googleBooks = "GOOGLE_BOOKS".localizedString()
+    static let googleBooksSubtitle = "GOOGLE_BOOKS_SUBTITLE".localizedString()
 }

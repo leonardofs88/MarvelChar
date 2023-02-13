@@ -6,3 +6,10 @@
 //
 
 import Foundation
+import RxSwift
+
+class AboutViewModel: BaseViewModel {
+    func getBooks() -> Observable<BookDataWrapper>? {
+        googleRepository?.getBooks()
+    }
+}

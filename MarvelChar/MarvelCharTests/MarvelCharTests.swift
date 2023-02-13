@@ -6,9 +6,12 @@
 //
 
 import XCTest
+import RxSwift
 @testable import MarvelChar
 
 final class MarvelCharTests: XCTestCase {
+    
+    lazy var disposeBag = DisposeBag()
 
     override func setUpWithError() throws {
         // Put setup code here. This method is called before the invocation of each test method in the class.
@@ -18,19 +21,23 @@ final class MarvelCharTests: XCTestCase {
         // Put teardown code here. This method is called after the invocation of each test method in the class.
     }
 
-    func testExample() throws {
-        // This is an example of a functional test case.
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
-        // Any test you write for XCTest can be annotated as throws and async.
-        // Mark your test throws to produce an unexpected failure when your test encounters an uncaught error.
-        // Mark your test async to allow awaiting for asynchronous code to complete. Check the results with assertions afterwards.
-    }
-
-    func testPerformanceExample() throws {
-        // This is an example of a performance test case.
-        self.measure {
-            // Put the code you want to measure the time of here.
-        }
+    func testFetchingHeroName() {
+        let expectations = expectation(description: "testFetchingHeroName")
+        let viewModel = HomeViewModel(repository: MockMarvelRepository())
+        
+        viewModel.characters
+            .asObservable()
+            .observe(on: MainScheduler.instance)
+            .subscribe(onNext: { characters in
+                XCTAssertEqual(20, characters.count)
+                expectations.fulfill()
+            }, onError: { _ in
+                XCTFail("Shouldn't have failed")
+                expectations.fulfill()
+            }).disposed(by: disposeBag)
+        
+        viewModel.getCharacters(page: 10)
+        waitForExpectations(timeout: 5)
     }
 
 }

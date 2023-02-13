@@ -14,10 +14,11 @@ import AlamofireImage
 class BaseViewModel {
     
     var repository: MarvelRepositoryProtocol
+    var googleRepository: GoogleRepositoryProtocol?
     
-    init(repository: MarvelRepositoryProtocol) {
-        // exposing init
+    init(repository: MarvelRepositoryProtocol, googleRepository: GoogleRepositoryProtocol? = nil) {
         self.repository = repository
+        self.googleRepository = googleRepository
     }
     
     lazy var disposeBag = DisposeBag()
