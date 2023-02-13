@@ -48,12 +48,11 @@ class CollectionTypeCell: UICollectionViewCell {
     }
     
     func loadInfo() {
-        descriptionLabel.text = viewModel.getCharacterDescription()
+        descriptionLabel.text = viewModel.getComicTitle()
     }
     
     fileprivate func showIndicator() {
         indicator.startAnimating()
-        indicator.isHidden = false
         indicatorView.isHidden = false
     }
     

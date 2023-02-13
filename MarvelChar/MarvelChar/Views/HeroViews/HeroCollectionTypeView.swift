@@ -55,17 +55,11 @@ extension HeroCollectionTypeView: UICollectionViewDataSource {
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        if let cell = collectionView.dequeueReusableCell(withReuseIdentifier: .collectionTypeCell, for: indexPath) as? CollectionTypeCell{
-            cell.descriptionLabel.text = viewModel?.items?[indexPath.row].title
-            if let path = viewModel?.items?[indexPath.row].thumbnail?.path,
-               let imageExtension = viewModel?.items?[indexPath.row].thumbnail?.imageExtension{
-                viewModel?.getImage(from: "\(path).\(imageExtension)")
-                    .asDriver(onErrorJustReturn: .emptyCharacterImage)
-                    .map { $0 }
-                    .drive(cell.imageView.rx.image)
-                    .disposed(by: disposeBag)
+        if let cell = collectionView.dequeueReusableCell(withReuseIdentifier: .collectionTypeCell, for: indexPath) as? CollectionTypeCell {
+            if let comic = viewModel?.items?[indexPath.row],
+               let repo = repository {
+                cell.viewModel = CollectionTypeViewModel(comic: comic, repository: repo)
             }
-            
             return cell
         }
         return UICollectionViewCell()

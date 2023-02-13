@@ -102,7 +102,7 @@ class HomeViewController: UIViewController {
             
             if offSetY > (contentHeight - self.heroesCollecionView.frame.size.height - 100),
                let vm = self.viewModel,
-               vm.isLoading {
+               !vm.isLoading {
                 self.page += 20
                vm.getCharacters(page: self.page, named: self.searchTextField.text)
             }

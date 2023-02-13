@@ -10,21 +10,21 @@ import RxSwift
 import UIKit
 
 class CollectionTypeViewModel: BaseViewModel {
-    fileprivate var character: Character
+    fileprivate var comic: Comic
     
-    init(character: Character, repository: MarvelRepositoryProtocol) {
-        self.character = character
+    init(comic: Comic, repository: MarvelRepositoryProtocol) {
+        self.comic = comic
         super.init(repository: repository)
     }
     
     func loadImage() -> Observable<UIImage> {
-        guard let path = character.thumbnail?.path else { return Observable<UIImage>.just(.emptyCharacterImage) }
-        guard let imageExtension = character.thumbnail?.imageExtension else { return Observable<UIImage>.just(.emptyCharacterImage) }
+        guard let path = comic.thumbnail?.path else { return Observable<UIImage>.just(.emptyCharacterImage) }
+        guard let imageExtension = comic.thumbnail?.imageExtension else { return Observable<UIImage>.just(.emptyCharacterImage) }
                 
         return getImage(from: "\(path).\(imageExtension)")
     }
     
-    func getCharacterDescription() -> String? {
-        character.description
+    func getComicTitle() -> String? {
+        comic.title
     }
 }
