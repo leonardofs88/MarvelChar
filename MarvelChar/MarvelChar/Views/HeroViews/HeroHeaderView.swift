@@ -10,6 +10,7 @@ import UIKit
 
 protocol HeroHeaderTableViewCellDelegate: AnyObject {
     func dismissView()
+    func showShareView(view: UIActivityViewController)
 }
 
 class HeroHeaderView: BaseView {
@@ -20,6 +21,8 @@ class HeroHeaderView: BaseView {
     @IBOutlet weak var heroNameLabel: UILabel!
     @IBOutlet weak var heroImageView: UIImageView!
     @IBOutlet weak var heroNameView: UIView!
+    
+    var heroURL: String?
     
     required init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
@@ -48,6 +51,14 @@ class HeroHeaderView: BaseView {
     
     @IBAction func dismissView() {
         delegate?.dismissView()
+    }
+    
+    @IBAction fileprivate func showShareButton() {
+        guard let url = heroURL else { return }
+        let activityViewController : UIActivityViewController = UIActivityViewController(
+            activityItems: [url], applicationActivities: nil)
+        activityViewController.isModalInPresentation = true
+        delegate?.showShareView(view: activityViewController)
     }
     
 }

@@ -72,6 +72,7 @@
 		988652DA299A55CB0028D88A /* StoriesDataWrapper.json in Resources */ = {isa = PBXBuildFile; fileRef = 989F0EDA299A433D00864839 /* StoriesDataWrapper.json */; };
 		988652DB299A55CD0028D88A /* SeriesDataWrapper.json in Resources */ = {isa = PBXBuildFile; fileRef = 989F0EDC299A437100864839 /* SeriesDataWrapper.json */; };
 		988652DC299A55CE0028D88A /* SeriesDataWrapper.json in Resources */ = {isa = PBXBuildFile; fileRef = 989F0EDC299A437100864839 /* SeriesDataWrapper.json */; };
+		988652DE299A5EF30028D88A /* CharacterUrl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 988652DD299A5EF30028D88A /* CharacterUrl.swift */; };
 		988B83B929992316000D4CA6 /* DynamicHeroCollectionViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 988B83B829992316000D4CA6 /* DynamicHeroCollectionViewModel.swift */; };
 		988B83BB29995ED3000D4CA6 /* UIView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 988B83BA29995ED3000D4CA6 /* UIView+Extensions.swift */; };
 		988B83BD299963BB000D4CA6 /* UILabel+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 988B83BC299963BB000D4CA6 /* UILabel+Extensions.swift */; };
@@ -183,6 +184,7 @@
 		986116472992B7CC0026FDB3 /* TitleTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TitleTableViewCell.swift; sourceTree = "<group>"; };
 		986387AC2995796C00FF0391 /* HeroViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeroViewController.swift; sourceTree = "<group>"; };
 		988652A5299A49C40028D88A /* MockMarvelEndpointRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MockMarvelEndpointRouter.swift; sourceTree = "<group>"; };
+		988652DD299A5EF30028D88A /* CharacterUrl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterUrl.swift; sourceTree = "<group>"; };
 		988B83B829992316000D4CA6 /* DynamicHeroCollectionViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DynamicHeroCollectionViewModel.swift; sourceTree = "<group>"; };
 		988B83BA29995ED3000D4CA6 /* UIView+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extensions.swift"; sourceTree = "<group>"; };
 		988B83BC299963BB000D4CA6 /* UILabel+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UILabel+Extensions.swift"; sourceTree = "<group>"; };
@@ -312,6 +314,7 @@
 				984A13342992E46700EB595D /* Character.swift */,
 				98DA63DC2993965B0000622A /* CharacterDataWrapper.swift */,
 				98DA63DE2993A5010000622A /* CharactersData.swift */,
+				988652DD299A5EF30028D88A /* CharacterUrl.swift */,
 			);
 			path = Characters;
 			sourceTree = "<group>";
@@ -901,6 +904,7 @@
 				98D7F61B298EC6CA00192887 /* HomeViewController.swift in Sources */,
 				98B9AD1E2990289D00547730 /* HeroNameView.swift in Sources */,
 				98A8E88329943373001A5709 /* BaseViewModel.swift in Sources */,
+				988652DE299A5EF30028D88A /* CharacterUrl.swift in Sources */,
 				981FBEEB2997DE9E0044C008 /* SeriesDataWrapper.swift in Sources */,
 				984A13352992E46700EB595D /* Character.swift in Sources */,
 				989B59732999A1C000A5F368 /* GoogleRepository.swift in Sources */,

@@ -13,4 +13,5 @@ struct Character: Codable {
     let quote: String?
     let description: String?
     let thumbnail: Thumbnail?
+    let urls: [CharacterUrl]?
 }

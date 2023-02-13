@@ -138,6 +138,7 @@ class HeroViewController: UIViewController {
         
         header.delegate = self
         header.heroNameLabel.text = name
+        header.heroURL = character.urls?.first?.characterUrl
         
         viewModel?.getImage(from: "\(path).\(imageExtension)")
             .asDriver(onErrorJustReturn: .emptyCharacterImage)
@@ -203,6 +204,10 @@ class HeroViewController: UIViewController {
 }
 
 extension HeroViewController: HeroHeaderTableViewCellDelegate {
+    func showShareView(view: UIActivityViewController) {
+        present(view, animated: true)
+    }
+    
     func dismissView() {
         dismiss(animated: true)
     }

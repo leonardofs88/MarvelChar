@@ -31,7 +31,10 @@
                     <rect key="frame" x="0.0" y="294" width="393" height="60"/>
                     <subviews>
                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CtQ-n0-4lL">
-                            <rect key="frame" x="18" y="13.333333333333314" width="68" height="33.333333333333336"/>
+                            <rect key="frame" x="18" y="13" width="181" height="33"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="181" id="PaN-uv-0QK"/>
+                            </constraints>
                             <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="27"/>
                             <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             <nil key="highlightedColor"/>
@@ -45,6 +48,9 @@
                             </constraints>
                             <state key="normal" title="Button"/>
                             <buttonConfiguration key="configuration" style="plain" image="share"/>
+                            <connections>
+                                <action selector="showShareButton" destination="-1" eventType="touchUpInside" id="Q0B-rA-lZi"/>
+                            </connections>
                         </button>
                     </subviews>
                     <color key="backgroundColor" red="0.3921568627" green="0.08235294118" blue="0.66274509800000003" alpha="1" colorSpace="calibratedRGB"/>
