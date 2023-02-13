@@ -29,6 +29,14 @@ final class MarvelCharUITests: XCTestCase {
 
         // Use XCTAssert and related functions to verify your tests produce the correct results.
     }
+    
+    func testTappingInCharacterOnMain() throws {
+        let app = XCUIApplication()
+        app.launch()
+        
+        let colectionView = app.collectionViews.firstMatch
+        colectionView.cells.firstMatch.tap()
+    }
 
     func testLaunchPerformance() throws {
         if #available(macOS 10.15, iOS 13.0, tvOS 13.0, watchOS 7.0, *) {

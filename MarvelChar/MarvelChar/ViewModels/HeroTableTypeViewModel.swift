@@ -14,7 +14,6 @@ protocol TableTypeItem {
     var itemThumbnail: Thumbnail? { get }
 }
 
-
 class HeroTableTypeViewModel: BaseViewModel {
     var items: [TableTypeItem]?
 }

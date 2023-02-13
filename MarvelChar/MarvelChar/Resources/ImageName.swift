@@ -12,4 +12,4 @@ struct ImageName {
     static let avengersSplash = "avengersSplash"
     static let missingComic = "missingComic"
     static let missingIcon = "missingIcon"
-}
+} 
