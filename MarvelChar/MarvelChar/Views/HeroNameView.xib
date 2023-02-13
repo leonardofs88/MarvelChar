@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="HeroNameView" customModule="MarvelChar" customModuleProvider="target">
+            <connections>
+                <outlet property="contentView" destination="wCa-SX-pRo" id="zdX-rG-Hui"/>
+                <outlet property="heroNameLabel" destination="gC5-yj-h7b" id="d72-Ja-MDb"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wCa-SX-pRo">
+            <rect key="frame" x="0.0" y="0.0" width="393" height="60"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gC5-yj-h7b">
+                    <rect key="frame" x="17.999999999999996" y="19" width="45.666666666666657" height="21.666666666666671"/>
+                    <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="18"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="9Mu-Yv-OOR"/>
+            <constraints>
+                <constraint firstItem="9Mu-Yv-OOR" firstAttribute="trailing" secondItem="gC5-yj-h7b" secondAttribute="trailing" constant="329.33333333333337" id="54m-S0-8Iq"/>
+                <constraint firstItem="gC5-yj-h7b" firstAttribute="top" secondItem="wCa-SX-pRo" secondAttribute="top" constant="19" id="5UR-MI-cI5"/>
+                <constraint firstAttribute="height" constant="60" id="WTD-Jo-wk4"/>
+                <constraint firstItem="gC5-yj-h7b" firstAttribute="leading" secondItem="9Mu-Yv-OOR" secondAttribute="leading" constant="18" id="bya-RJ-Wdj"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="525.95419847328242" y="-109.1549295774648"/>
+        </view>
+    </objects>
+</document>

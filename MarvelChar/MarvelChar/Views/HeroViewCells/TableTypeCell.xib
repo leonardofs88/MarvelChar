@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="TableTypeCell" rowHeight="99" id="ZWi-Zn-lq2" customClass="TableTypeCell" customModule="MarvelChar" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="393" height="112"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="ZWi-Zn-lq2" id="LCK-Xd-jFb">
+                <rect key="frame" x="0.0" y="0.0" width="393" height="112"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="missingIcon" translatesAutoresizingMaskIntoConstraints="NO" id="7ZZ-V3-IES">
+                        <rect key="frame" x="0.0" y="18" width="51" height="77"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="51" id="7df-Oe-X2W"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" alpha="0.69999999999999996" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oFa-GF-peH">
+                        <rect key="frame" x="69" y="18" width="47" height="22"/>
+                        <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" alpha="0.69999999999999996" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XUV-Xh-hqr">
+                        <rect key="frame" x="69" y="40" width="44" height="22"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <color key="backgroundColor" red="0.094117647060000004" green="0.094117647060000004" blue="0.094117647060000004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                <constraints>
+                    <constraint firstItem="7ZZ-V3-IES" firstAttribute="top" secondItem="LCK-Xd-jFb" secondAttribute="top" constant="18" id="4qA-Sz-xRN"/>
+                    <constraint firstAttribute="bottom" secondItem="7ZZ-V3-IES" secondAttribute="bottom" constant="17" id="7Vd-H6-htI"/>
+                    <constraint firstItem="XUV-Xh-hqr" firstAttribute="leading" secondItem="7ZZ-V3-IES" secondAttribute="trailing" constant="18" id="Puu-b1-Vmb"/>
+                    <constraint firstItem="XUV-Xh-hqr" firstAttribute="top" secondItem="oFa-GF-peH" secondAttribute="bottom" id="cUa-4g-GQT"/>
+                    <constraint firstItem="oFa-GF-peH" firstAttribute="top" secondItem="LCK-Xd-jFb" secondAttribute="top" constant="18" id="ef6-fw-0lc"/>
+                    <constraint firstItem="oFa-GF-peH" firstAttribute="leading" secondItem="7ZZ-V3-IES" secondAttribute="trailing" constant="18" id="xd4-nz-eAW"/>
+                    <constraint firstItem="7ZZ-V3-IES" firstAttribute="leading" secondItem="LCK-Xd-jFb" secondAttribute="leading" id="z1c-B1-45U"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="cellImageView" destination="7ZZ-V3-IES" id="An0-1m-1CB"/>
+                <outlet property="descriptionLabel" destination="XUV-Xh-hqr" id="D9a-1t-qcz"/>
+                <outlet property="titleLabel" destination="oFa-GF-peH" id="ahU-90-eUJ"/>
+            </connections>
+            <point key="canvasLocation" x="-180.91603053435114" y="7.746478873239437"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="missingIcon" width="72" height="72"/>
+    </resources>
+</document>

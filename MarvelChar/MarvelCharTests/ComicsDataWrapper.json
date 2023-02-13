@@ -1,0 +1,3479 @@
+{
+  "code": 200,
+  "status": "Ok",
+  "copyright": "© 2023 MARVEL",
+  "attributionText": "Data provided by Marvel. © 2023 MARVEL",
+  "attributionHTML": "<a href=\"http://marvel.com\">Data provided by Marvel. © 2023 MARVEL</a>",
+  "etag": "fa59713cf496bf6be5de429296b82668b9166b86",
+  "data": {
+    "offset": 0,
+    "limit": 20,
+    "total": 96,
+    "count": 20,
+    "results": [
+      {
+        "id": 91714,
+        "digitalId": 57784,
+        "title": "Gamma Flight (2021) #5",
+        "issueNumber": 5,
+        "variantDescription": "",
+        "description": null,
+        "modified": "2021-06-30T09:08:44-0400",
+        "isbn": "",
+        "upc": "75960609998600511",
+        "diamondCode": "",
+        "ean": "",
+        "issn": "",
+        "format": "Comic",
+        "pageCount": 32,
+        "textObjects": [],
+        "resourceURI": "http://gateway.marvel.com/v1/public/comics/91714",
+        "urls": [
+          {
+            "type": "detail",
+            "url": "http://marvel.com/comics/issue/91714/gamma_flight_2021_5?utm_campaign=apiRef&utm_source=78615c175e959268b26b574d80998e69"
+          },
+          {
+            "type": "purchase",
+            "url": "http://comicstore.marvel.com/Gamma-Flight-5/digital-comic/57784?utm_campaign=apiRef&utm_source=78615c175e959268b26b574d80998e69"
+          },
+          {
+            "type": "reader",
+            "url": "http://marvel.com/digitalcomics/view.htm?iid=57784&utm_campaign=apiRef&utm_source=78615c175e959268b26b574d80998e69"
+          },
+          {
+            "type": "inAppLink",
+            "url": "https://applink.marvel.com/issue/57784?utm_campaign=apiRef&utm_source=78615c175e959268b26b574d80998e69"
+          }
+        ],
+        "series": {
+          "resourceURI": "http://gateway.marvel.com/v1/public/series/31372",
+          "name": "Gamma Flight (2021)"
+        },
+        "variants": [],
+        "collections": [],
+        "collectedIssues": [],
+        "dates": [
+          {
+            "type": "onsaleDate",
+            "date": "2021-10-13T00:00:00-0400"
+          },
+          {
+            "type": "focDate",
+            "date": "2021-09-20T00:00:00-0400"
+          },
+          {
+            "type": "unlimitedDate",
+            "date": "2022-01-17T00:00:00-0500"
+          },
+          {
+            "type": "digitalPurchaseDate",
+            "date": "2021-10-13T00:00:00-0400"
+          }
+        ],
+        "prices": [
+          {
+            "type": "printPrice",
+            "price": 3.99
+          },
+          {
+            "type": "digitalPurchasePrice",
+            "price": 3.99
+          }
+        ],
+        "thumbnail": {
+          "path": "http://i.annihil.us/u/prod/marvel/i/mg/1/50/6160b672c9998",
+          "extension": "jpg"
+        },
+        "images": [
+          {
+            "path": "http://i.annihil.us/u/prod/marvel/i/mg/1/50/6160b672c9998",
+            "extension": "jpg"
+          }
+        ],
+        "creators": {
+          "available": 8,
+          "collectionURI": "http://gateway.marvel.com/v1/public/comics/91714/creators",
+          "items": [
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/creators/12174",
+              "name": "Al Ewing",
+              "role": "writer"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/creators/14148",
+              "name": "Crystal Frasier",
+              "role": "writer"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/creators/428",
+              "name": "Antonio Fabela",
+              "role": "colorist"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/creators/11579",
+              "name": "Sunny Gho",
+              "role": "colorist (cover)"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/creators/437",
+              "name": "Lan Medina",
+              "role": "penciler"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/creators/12376",
+              "name": "Wilson Moss",
+              "role": "editor"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/creators/12974",
+              "name": "Vc Joe Sabino",
+              "role": "letterer"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/creators/758",
+              "name": "Leinil Francis Yu",
+              "role": "penciler (cover)"
+            }
+          ],
+          "returned": 8
+        },
+        "characters": {
+          "available": 6,
+          "collectionURI": "http://gateway.marvel.com/v1/public/comics/91714/characters",
+          "items": [
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/characters/1009148",
+              "name": "Absorbing Man"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/characters/1009513",
+              "name": "Puck"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/characters/1009379",
+              "name": "Rick Jones"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/characters/1009560",
+              "name": "Sasquatch (Walter Langkowski)"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/characters/1011223",
+              "name": "Skaar"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/characters/1010669",
+              "name": "Titania"
+            }
+          ],
+          "returned": 6
+        },
+        "stories": {
+          "available": 2,
+          "collectionURI": "http://gateway.marvel.com/v1/public/comics/91714/stories",
+          "items": [
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/stories/204513",
+              "name": "cover from Gamma Flight (2021) #5",
+              "type": "cover"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/stories/204514",
+              "name": "story from Gamma Flight (2021) #5",
+              "type": "interiorStory"
+            }
+          ],
+          "returned": 2
+        },
+        "events": {
+          "available": 0,
+          "collectionURI": "http://gateway.marvel.com/v1/public/comics/91714/events",
+          "items": [],
+          "returned": 0
+        }
+      },
+      {
+        "id": 91713,
+        "digitalId": 57664,
+        "title": "Gamma Flight (2021) #4",
+        "issueNumber": 4,
+        "variantDescription": "",
+        "description": null,
+        "modified": "2021-06-15T09:07:25-0400",
+        "isbn": "",
+        "upc": "75960609998600411",
+        "diamondCode": "JUL210703",
+        "ean": "",
+        "issn": "",
+        "format": "Comic",
+        "pageCount": 32,
+        "textObjects": [],
+        "resourceURI": "http://gateway.marvel.com/v1/public/comics/91713",
+        "urls": [
+          {
+            "type": "detail",
+            "url": "http://marvel.com/comics/issue/91713/gamma_flight_2021_4?utm_campaign=apiRef&utm_source=78615c175e959268b26b574d80998e69"
+          },
+          {
+            "type": "purchase",
+            "url": "http://comicstore.marvel.com/Gamma-Flight-4/digital-comic/57664?utm_campaign=apiRef&utm_source=78615c175e959268b26b574d80998e69"
+          },
+          {
+            "type": "reader",
+            "url": "http://marvel.com/digitalcomics/view.htm?iid=57664&utm_campaign=apiRef&utm_source=78615c175e959268b26b574d80998e69"
+          },
+          {
+            "type": "inAppLink",
+            "url": "https://applink.marvel.com/issue/57664?utm_campaign=apiRef&utm_source=78615c175e959268b26b574d80998e69"
+          }
+        ],
+        "series": {
+          "resourceURI": "http://gateway.marvel.com/v1/public/series/31372",
+          "name": "Gamma Flight (2021)"
+        },
+        "variants": [
+          {
+            "resourceURI": "http://gateway.marvel.com/v1/public/comics/93596",
+            "name": "Gamma Flight (2021) #4 (Variant)"
+          },
+          {
+            "resourceURI": "http://gateway.marvel.com/v1/public/comics/97021",
+            "name": "Gamma Flight (2021) #4 (Variant)"
+          }
+        ],
+        "collections": [],
+        "collectedIssues": [],
+        "dates": [
+          {
+            "type": "onsaleDate",
+            "date": "2021-09-22T00:00:00-0400"
+          },
+          {
+            "type": "focDate",
+            "date": "2021-08-30T00:00:00-0400"
+          },
+          {
+            "type": "unlimitedDate",
+            "date": "2021-12-27T00:00:00-0500"
+          },
+          {
+            "type": "digitalPurchaseDate",
+            "date": "2021-09-22T00:00:00-0400"
+          }
+        ],
+        "prices": [
+          {
+            "type": "printPrice",
+            "price": 3.99
+          },
+          {
+            "type": "digitalPurchasePrice",
+            "price": 3.99
+          }
+        ],
+        "thumbnail": {
+          "path": "http://i.annihil.us/u/prod/marvel/i/mg/d/80/6142604a48829",
+          "extension": "jpg"
+        },
+        "images": [
+          {
+            "path": "http://i.annihil.us/u/prod/marvel/i/mg/d/80/6142604a48829",
+            "extension": "jpg"
+          }
+        ],
+        "creators": {
+          "available": 8,
+          "collectionURI": "http://gateway.marvel.com/v1/public/comics/91713/creators",
+          "items": [
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/creators/12174",
+              "name": "Al Ewing",
+              "role": "writer"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/creators/14148",
+              "name": "Crystal Frasier",
+              "role": "writer"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/creators/428",
+              "name": "Antonio Fabela",
+              "role": "colorist"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/creators/11579",
+              "name": "Sunny Gho",
+              "role": "colorist (cover)"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/creators/437",
+              "name": "Lan Medina",
+              "role": "penciler"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/creators/12376",
+              "name": "Wilson Moss",
+              "role": "editor"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/creators/12974",
+              "name": "Vc Joe Sabino",
+              "role": "letterer"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/creators/758",
+              "name": "Leinil Francis Yu",
+              "role": "penciler (cover)"
+            }
+          ],
+          "returned": 8
+        },
+        "characters": {
+          "available": 6,
+          "collectionURI": "http://gateway.marvel.com/v1/public/comics/91713/characters",
+          "items": [
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/characters/1009148",
+              "name": "Absorbing Man"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/characters/1009275",
+              "name": "Doc Samson"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/characters/1009513",
+              "name": "Puck"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/characters/1009379",
+              "name": "Rick Jones"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/characters/1011223",
+              "name": "Skaar"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/characters/1010669",
+              "name": "Titania"
+            }
+          ],
+          "returned": 6
+        },
+        "stories": {
+          "available": 2,
+          "collectionURI": "http://gateway.marvel.com/v1/public/comics/91713/stories",
+          "items": [
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/stories/204511",
+              "name": "cover from Gamma Flight (2021) #4",
+              "type": "cover"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/stories/204512",
+              "name": "story from Gamma Flight (2021) #4",
+              "type": "interiorStory"
+            }
+          ],
+          "returned": 2
+        },
+        "events": {
+          "available": 0,
+          "collectionURI": "http://gateway.marvel.com/v1/public/comics/91713/events",
+          "items": [],
+          "returned": 0
+        }
+      },
+      {
+        "id": 91712,
+        "digitalId": 57174,
+        "title": "Gamma Flight (2021) #3",
+        "issueNumber": 3,
+        "variantDescription": "",
+        "description": "AMERICAN GAMMA! Who is after Gamma Flight? You've been calling for them since IMMORTAL HULK's early days — well, True Believer, we're here to deliver. Come to GAMMA FLIGHT for all the radioactive wonder you've been missing — and the characters you love to hate.",
+        "modified": "2021-06-09T09:31:06-0400",
+        "isbn": "",
+        "upc": "75960609998600311",
+        "diamondCode": "JUN210686",
+        "ean": "",
+        "issn": "",
+        "format": "Comic",
+        "pageCount": 32,
+        "textObjects": [],
+        "resourceURI": "http://gateway.marvel.com/v1/public/comics/91712",
+        "urls": [
+          {
+            "type": "detail",
+            "url": "http://marvel.com/comics/issue/91712/gamma_flight_2021_3?utm_campaign=apiRef&utm_source=78615c175e959268b26b574d80998e69"
+          },
+          {
+            "type": "purchase",
+            "url": "http://comicstore.marvel.com/Gamma-Flight-3/digital-comic/57174?utm_campaign=apiRef&utm_source=78615c175e959268b26b574d80998e69"
+          },
+          {
+            "type": "reader",
+            "url": "http://marvel.com/digitalcomics/view.htm?iid=57174&utm_campaign=apiRef&utm_source=78615c175e959268b26b574d80998e69"
+          },
+          {
+            "type": "inAppLink",
+            "url": "https://applink.marvel.com/issue/57174?utm_campaign=apiRef&utm_source=78615c175e959268b26b574d80998e69"
+          }
+        ],
+        "series": {
+          "resourceURI": "http://gateway.marvel.com/v1/public/series/31372",
+          "name": "Gamma Flight (2021)"
+        },
+        "variants": [
+          {
+            "resourceURI": "http://gateway.marvel.com/v1/public/comics/93595",
+            "name": "Gamma Flight (2021) #3 (Variant)"
+          },
+          {
+            "resourceURI": "http://gateway.marvel.com/v1/public/comics/96018",
+            "name": "Gamma Flight (2021) #3 (Variant)"
+          }
+        ],
+        "collections": [],
+        "collectedIssues": [],
+        "dates": [
+          {
+            "type": "onsaleDate",
+            "date": "2021-08-18T00:00:00-0400"
+          },
+          {
+            "type": "focDate",
+            "date": "2021-07-26T00:00:00-0400"
+          },
+          {
+            "type": "unlimitedDate",
+            "date": "2021-11-22T00:00:00-0500"
+          },
+          {
+            "type": "digitalPurchaseDate",
+            "date": "2021-08-18T00:00:00-0400"
+          }
+        ],
+        "prices": [
+          {
+            "type": "printPrice",
+            "price": 3.99
+          },
+          {
+            "type": "digitalPurchasePrice",
+            "price": 3.99
+          }
+        ],
+        "thumbnail": {
+          "path": "http://i.annihil.us/u/prod/marvel/i/mg/8/f0/60e5e29da2e11",
+          "extension": "jpg"
+        },
+        "images": [
+          {
+            "path": "http://i.annihil.us/u/prod/marvel/i/mg/8/f0/60e5e29da2e11",
+            "extension": "jpg"
+          }
+        ],
+        "creators": {
+          "available": 8,
+          "collectionURI": "http://gateway.marvel.com/v1/public/comics/91712/creators",
+          "items": [
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/creators/12174",
+              "name": "Al Ewing",
+              "role": "writer"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/creators/14148",
+              "name": "Crystal Frasier",
+              "role": "writer"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/creators/428",
+              "name": "Antonio Fabela",
+              "role": "colorist"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/creators/11579",
+              "name": "Sunny Gho",
+              "role": "colorist (cover)"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/creators/437",
+              "name": "Lan Medina",
+              "role": "penciler"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/creators/12376",
+              "name": "Wilson Moss",
+              "role": "editor"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/creators/12974",
+              "name": "Vc Joe Sabino",
+              "role": "letterer"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/creators/758",
+              "name": "Leinil Francis Yu",
+              "role": "penciler (cover)"
+            }
+          ],
+          "returned": 8
+        },
+        "characters": {
+          "available": 5,
+          "collectionURI": "http://gateway.marvel.com/v1/public/comics/91712/characters",
+          "items": [
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/characters/1009148",
+              "name": "Absorbing Man"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/characters/1009275",
+              "name": "Doc Samson"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/characters/1009513",
+              "name": "Puck"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/characters/1009379",
+              "name": "Rick Jones"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/characters/1010669",
+              "name": "Titania"
+            }
+          ],
+          "returned": 5
+        },
+        "stories": {
+          "available": 2,
+          "collectionURI": "http://gateway.marvel.com/v1/public/comics/91712/stories",
+          "items": [
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/stories/204509",
+              "name": "cover from Gamma Flight (2021) #3",
+              "type": "cover"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/stories/204510",
+              "name": "story from Gamma Flight (2021) #3",
+              "type": "interiorStory"
+            }
+          ],
+          "returned": 2
+        },
+        "events": {
+          "available": 0,
+          "collectionURI": "http://gateway.marvel.com/v1/public/comics/91712/events",
+          "items": [],
+          "returned": 0
+        }
+      },
+      {
+        "id": 91711,
+        "digitalId": 57049,
+        "title": "Gamma Flight (2021) #2",
+        "issueNumber": 2,
+        "variantDescription": "",
+        "description": null,
+        "modified": "2021-06-09T09:31:02-0400",
+        "isbn": "",
+        "upc": "75960609998600211",
+        "diamondCode": "MAY210566",
+        "ean": "",
+        "issn": "",
+        "format": "Comic",
+        "pageCount": 32,
+        "textObjects": [],
+        "resourceURI": "http://gateway.marvel.com/v1/public/comics/91711",
+        "urls": [
+          {
+            "type": "detail",
+            "url": "http://marvel.com/comics/issue/91711/gamma_flight_2021_2?utm_campaign=apiRef&utm_source=78615c175e959268b26b574d80998e69"
+          },
+          {
+            "type": "purchase",
+            "url": "http://comicstore.marvel.com/Gamma-Flight-2/digital-comic/57049?utm_campaign=apiRef&utm_source=78615c175e959268b26b574d80998e69"
+          },
+          {
+            "type": "reader",
+            "url": "http://marvel.com/digitalcomics/view.htm?iid=57049&utm_campaign=apiRef&utm_source=78615c175e959268b26b574d80998e69"
+          },
+          {
+            "type": "inAppLink",
+            "url": "https://applink.marvel.com/issue/57049?utm_campaign=apiRef&utm_source=78615c175e959268b26b574d80998e69"
+          }
+        ],
+        "series": {
+          "resourceURI": "http://gateway.marvel.com/v1/public/series/31372",
+          "name": "Gamma Flight (2021)"
+        },
+        "variants": [
+          {
+            "resourceURI": "http://gateway.marvel.com/v1/public/comics/93594",
+            "name": "Gamma Flight (2021) #2 (Variant)"
+          },
+          {
+            "resourceURI": "http://gateway.marvel.com/v1/public/comics/95557",
+            "name": "Gamma Flight (2021) #2 (Variant)"
+          }
+        ],
+        "collections": [],
+        "collectedIssues": [],
+        "dates": [
+          {
+            "type": "onsaleDate",
+            "date": "2021-07-21T00:00:00-0400"
+          },
+          {
+            "type": "focDate",
+            "date": "2021-06-28T00:00:00-0400"
+          },
+          {
+            "type": "unlimitedDate",
+            "date": "2021-10-25T00:00:00-0400"
+          },
+          {
+            "type": "digitalPurchaseDate",
+            "date": "2021-07-21T00:00:00-0400"
+          }
+        ],
+        "prices": [
+          {
+            "type": "printPrice",
+            "price": 3.99
+          },
+          {
+            "type": "digitalPurchasePrice",
+            "price": 3.99
+          }
+        ],
+        "thumbnail": {
+          "path": "http://i.annihil.us/u/prod/marvel/i/mg/6/c0/60fad38a98805",
+          "extension": "jpg"
+        },
+        "images": [
+          {
+            "path": "http://i.annihil.us/u/prod/marvel/i/mg/6/c0/60fad38a98805",
+            "extension": "jpg"
+          }
+        ],
+        "creators": {
+          "available": 8,
+          "collectionURI": "http://gateway.marvel.com/v1/public/comics/91711/creators",
+          "items": [
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/creators/12174",
+              "name": "Al Ewing",
+              "role": "writer"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/creators/14148",
+              "name": "Crystal Frasier",
+              "role": "writer"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/creators/428",
+              "name": "Antonio Fabela",
+              "role": "colorist"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/creators/11579",
+              "name": "Sunny Gho",
+              "role": "colorist (cover)"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/creators/437",
+              "name": "Lan Medina",
+              "role": "penciler"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/creators/12376",
+              "name": "Wilson Moss",
+              "role": "editor"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/creators/12974",
+              "name": "Vc Joe Sabino",
+              "role": "letterer"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/creators/758",
+              "name": "Leinil Francis Yu",
+              "role": "penciler (cover)"
+            }
+          ],
+          "returned": 8
+        },
+        "characters": {
+          "available": 6,
+          "collectionURI": "http://gateway.marvel.com/v1/public/comics/91711/characters",
+          "items": [
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/characters/1009148",
+              "name": "Absorbing Man"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/characters/1009275",
+              "name": "Doc Samson"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/characters/1009513",
+              "name": "Puck"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/characters/1009379",
+              "name": "Rick Jones"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/characters/1011223",
+              "name": "Skaar"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/characters/1010669",
+              "name": "Titania"
+            }
+          ],
+          "returned": 6
+        },
+        "stories": {
+          "available": 2,
+          "collectionURI": "http://gateway.marvel.com/v1/public/comics/91711/stories",
+          "items": [
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/stories/204507",
+              "name": "cover from Gamma Flight (2021) #2",
+              "type": "cover"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/stories/204508",
+              "name": "story from Gamma Flight (2021) #2",
+              "type": "interiorStory"
+            }
+          ],
+          "returned": 2
+        },
+        "events": {
+          "available": 0,
+          "collectionURI": "http://gateway.marvel.com/v1/public/comics/91711/events",
+          "items": [],
+          "returned": 0
+        }
+      },
+      {
+        "id": 91710,
+        "digitalId": 56885,
+        "title": "Gamma Flight (2021) #1",
+        "issueNumber": 1,
+        "variantDescription": "",
+        "description": null,
+        "modified": "2021-02-26T09:05:31-0500",
+        "isbn": "",
+        "upc": "75960609998600111",
+        "diamondCode": "APR210836",
+        "ean": "",
+        "issn": "",
+        "format": "Comic",
+        "pageCount": 32,
+        "textObjects": [],
+        "resourceURI": "http://gateway.marvel.com/v1/public/comics/91710",
+        "urls": [
+          {
+            "type": "detail",
+            "url": "http://marvel.com/comics/issue/91710/gamma_flight_2021_1?utm_campaign=apiRef&utm_source=78615c175e959268b26b574d80998e69"
+          },
+          {
+            "type": "purchase",
+            "url": "http://comicstore.marvel.com/Gamma-Flight-1/digital-comic/56885?utm_campaign=apiRef&utm_source=78615c175e959268b26b574d80998e69"
+          },
+          {
+            "type": "reader",
+            "url": "http://marvel.com/digitalcomics/view.htm?iid=56885&utm_campaign=apiRef&utm_source=78615c175e959268b26b574d80998e69"
+          },
+          {
+            "type": "inAppLink",
+            "url": "https://applink.marvel.com/issue/56885?utm_campaign=apiRef&utm_source=78615c175e959268b26b574d80998e69"
+          }
+        ],
+        "series": {
+          "resourceURI": "http://gateway.marvel.com/v1/public/series/31372",
+          "name": "Gamma Flight (2021)"
+        },
+        "variants": [
+          {
+            "resourceURI": "http://gateway.marvel.com/v1/public/comics/93452",
+            "name": "Gamma Flight (2021) #1 (Variant)"
+          },
+          {
+            "resourceURI": "http://gateway.marvel.com/v1/public/comics/93215",
+            "name": "Gamma Flight (2021) #1 (Variant)"
+          }
+        ],
+        "collections": [],
+        "collectedIssues": [],
+        "dates": [
+          {
+            "type": "onsaleDate",
+            "date": "2021-06-23T00:00:00-0400"
+          },
+          {
+            "type": "focDate",
+            "date": "2021-05-31T00:00:00-0400"
+          },
+          {
+            "type": "unlimitedDate",
+            "date": "2021-09-27T00:00:00-0400"
+          },
+          {
+            "type": "digitalPurchaseDate",
+            "date": "2021-06-23T00:00:00-0400"
+          }
+        ],
+        "prices": [
+          {
+            "type": "printPrice",
+            "price": 3.99
+          },
+          {
+            "type": "digitalPurchasePrice",
+            "price": 3.99
+          }
+        ],
+        "thumbnail": {
+          "path": "http://i.annihil.us/u/prod/marvel/i/mg/5/d0/60cd0f4504b28",
+          "extension": "jpg"
+        },
+        "images": [
+          {
+            "path": "http://i.annihil.us/u/prod/marvel/i/mg/5/d0/60cd0f4504b28",
+            "extension": "jpg"
+          }
+        ],
+        "creators": {
+          "available": 9,
+          "collectionURI": "http://gateway.marvel.com/v1/public/comics/91710/creators",
+          "items": [
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/creators/12174",
+              "name": "Al Ewing",
+              "role": "writer"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/creators/14148",
+              "name": "Crystal Frasier",
+              "role": "writer"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/creators/428",
+              "name": "Antonio Fabela",
+              "role": "colorist"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/creators/11579",
+              "name": "Sunny Gho",
+              "role": "colorist (cover)"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/creators/13278",
+              "name": "Ruy Jose",
+              "role": "inker (cover)"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/creators/758",
+              "name": "Leinil Francis Yu",
+              "role": "inker (cover)"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/creators/437",
+              "name": "Lan Medina",
+              "role": "penciler"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/creators/12376",
+              "name": "Wilson Moss",
+              "role": "editor"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/creators/12974",
+              "name": "Vc Joe Sabino",
+              "role": "letterer"
+            }
+          ],
+          "returned": 9
+        },
+        "characters": {
+          "available": 5,
+          "collectionURI": "http://gateway.marvel.com/v1/public/comics/91710/characters",
+          "items": [
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/characters/1009148",
+              "name": "Absorbing Man"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/characters/1009275",
+              "name": "Doc Samson"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/characters/1009513",
+              "name": "Puck"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/characters/1009379",
+              "name": "Rick Jones"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/characters/1010669",
+              "name": "Titania"
+            }
+          ],
+          "returned": 5
+        },
+        "stories": {
+          "available": 2,
+          "collectionURI": "http://gateway.marvel.com/v1/public/comics/91710/stories",
+          "items": [
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/stories/204505",
+              "name": "cover from Gamma Flight (2021) #1",
+              "type": "cover"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/stories/204506",
+              "name": "story from Gamma Flight (2021) #1",
+              "type": "interiorStory"
+            }
+          ],
+          "returned": 2
+        },
+        "events": {
+          "available": 0,
+          "collectionURI": "http://gateway.marvel.com/v1/public/comics/91710/events",
+          "items": [],
+          "returned": 0
+        }
+      },
+      {
+        "id": 68619,
+        "digitalId": 50630,
+        "title": "Immortal Hulk Vol. 2: The Green Door (Trade Paperback)",
+        "issueNumber": 0,
+        "variantDescription": "",
+        "description": "Bruce Banner is alive and on the loose — and now the entire world knows it. Soon the Hulk finds himself hunted once again — this time by the government, Alpha Flight, the mysterious Shadow Base...and the Avengers! Someone’s going to find him first, but which option is least bad? It might not matter, because Bruce has bigger problems. Something terrible has infected him. Something with unspeakable plans for humanity. And the only one who knows about this dark infection…is the Hulk! Meanwhile, Carl “Crusher” Creel was just trying to live. Now, to save what he’s built for himself, he must do the impossible. The Absorbing Man must kill the Immortal Hulk! But the Hulk is the one thing standing between the world of the living — and the Green Door!",
+        "modified": "2019-02-07T16:20:21-0500",
+        "isbn": "978-1-302-91256-7",
+        "upc": "",
+        "diamondCode": "",
+        "ean": "9781302 912567 51599",
+        "issn": "",
+        "format": "Trade Paperback",
+        "pageCount": 112,
+        "textObjects": [
+          {
+            "type": "issue_solicit_text",
+            "language": "en-us",
+            "text": "Bruce Banner is alive and on the loose — and now the entire world knows it. Soon the Hulk finds himself hunted once again — this time by the government, Alpha Flight, the mysterious Shadow Base...and the Avengers! Someone’s going to find him first, but which option is least bad? It might not matter, because Bruce has bigger problems. Something terrible has infected him. Something with unspeakable plans for humanity. And the only one who knows about this dark infection…is the Hulk! Meanwhile, Carl “Crusher” Creel was just trying to live. Now, to save what he’s built for himself, he must do the impossible. The Absorbing Man must kill the Immortal Hulk! But the Hulk is the one thing standing between the world of the living — and the Green Door!"
+          }
+        ],
+        "resourceURI": "http://gateway.marvel.com/v1/public/comics/68619",
+        "urls": [
+          {
+            "type": "detail",
+            "url": "http://marvel.com/comics/collection/68619/immortal_hulk_vol_2_the_green_door_trade_paperback?utm_campaign=apiRef&utm_source=78615c175e959268b26b574d80998e69"
+          },
+          {
+            "type": "purchase",
+            "url": "http://comicstore.marvel.com/IMMORTAL-HULK-VOL-2-THE-GREEN-DOOR-TPB-0/digital-comic/50630?utm_campaign=apiRef&utm_source=78615c175e959268b26b574d80998e69"
+          },
+          {
+            "type": "reader",
+            "url": "http://marvel.com/digitalcomics/view.htm?iid=50630&utm_campaign=apiRef&utm_source=78615c175e959268b26b574d80998e69"
+          }
+        ],
+        "series": {
+          "resourceURI": "http://gateway.marvel.com/v1/public/series/24891",
+          "name": "Immortal Hulk Vol. 2: The Green Door (2019)"
+        },
+        "variants": [],
+        "collections": [],
+        "collectedIssues": [],
+        "dates": [
+          {
+            "type": "onsaleDate",
+            "date": "2019-02-13T00:00:00-0500"
+          },
+          {
+            "type": "focDate",
+            "date": "2018-12-17T00:00:00-0500"
+          },
+          {
+            "type": "unlimitedDate",
+            "date": "2020-07-24T14:13:00-0400"
+          },
+          {
+            "type": "digitalPurchaseDate",
+            "date": "2020-07-24T14:13:00-0400"
+          }
+        ],
+        "prices": [
+          {
+            "type": "printPrice",
+            "price": 15.99
+          }
+        ],
+        "thumbnail": {
+          "path": "http://i.annihil.us/u/prod/marvel/i/mg/8/b0/5c5ca20445b2f",
+          "extension": "jpg"
+        },
+        "images": [
+          {
+            "path": "http://i.annihil.us/u/prod/marvel/i/mg/8/b0/5c5ca20445b2f",
+            "extension": "jpg"
+          }
+        ],
+        "creators": {
+          "available": 6,
+          "collectionURI": "http://gateway.marvel.com/v1/public/comics/68619/creators",
+          "items": [
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/creators/506",
+              "name": "Joe Bennett",
+              "role": "penciller"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/creators/8933",
+              "name": "Lee Garbett",
+              "role": "penciller"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/creators/13299",
+              "name": "Martin Simmonds",
+              "role": "penciller"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/creators/12174",
+              "name": "Al Ewing",
+              "role": "writer"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/creators/63",
+              "name": "Alex Ross",
+              "role": "penciller (cover)"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/creators/4430",
+              "name": "Jeff Youngquist",
+              "role": "editor"
+            }
+          ],
+          "returned": 6
+        },
+        "characters": {
+          "available": 3,
+          "collectionURI": "http://gateway.marvel.com/v1/public/comics/68619/characters",
+          "items": [
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/characters/1009148",
+              "name": "Absorbing Man"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/characters/1009165",
+              "name": "Avengers"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/characters/1009351",
+              "name": "Hulk"
+            }
+          ],
+          "returned": 3
+        },
+        "stories": {
+          "available": 2,
+          "collectionURI": "http://gateway.marvel.com/v1/public/comics/68619/stories",
+          "items": [
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/stories/149825",
+              "name": "cover from IMMORTAL HULK VOL. 2: GREEN DOOR (2019) #2",
+              "type": "cover"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/stories/149826",
+              "name": "story from IMMORTAL HULK VOL. 2: GREEN DOOR (2019) #2",
+              "type": "interiorStory"
+            }
+          ],
+          "returned": 2
+        },
+        "events": {
+          "available": 0,
+          "collectionURI": "http://gateway.marvel.com/v1/public/comics/68619/events",
+          "items": [],
+          "returned": 0
+        }
+      },
+      {
+        "id": 67140,
+        "digitalId": 49725,
+        "title": "Immortal Hulk (2018) #9",
+        "issueNumber": 9,
+        "variantDescription": "",
+        "description": " Carl Creel was just trying to live. But sometimes trying isn’t enough. Now, to save the life he built for himself — and maybe everything else — Carl Creel has to do the impossible. The Absorbing Man has to kill the IMMORTAL HULK. ",
+        "modified": "2019-05-16T09:53:21-0400",
+        "isbn": "",
+        "upc": "75960608956700911",
+        "diamondCode": "SEP180903",
+        "ean": "",
+        "issn": "1941-2142",
+        "format": "Comic",
+        "pageCount": 32,
+        "textObjects": [
+          {
+            "type": "issue_solicit_text",
+            "language": "en-us",
+            "text": " Carl Creel was just trying to live. But sometimes trying isn’t enough. Now, to save the life he built for himself — and maybe everything else — Carl Creel has to do the impossible. The Absorbing Man has to kill the IMMORTAL HULK. "
+          }
+        ],
+        "resourceURI": "http://gateway.marvel.com/v1/public/comics/67140",
+        "urls": [
+          {
+            "type": "detail",
+            "url": "http://marvel.com/comics/issue/67140/immortal_hulk_2018_9?utm_campaign=apiRef&utm_source=78615c175e959268b26b574d80998e69"
+          },
+          {
+            "type": "purchase",
+            "url": "http://comicstore.marvel.com/Immortal-Hulk-9/digital-comic/49725?utm_campaign=apiRef&utm_source=78615c175e959268b26b574d80998e69"
+          },
+          {
+            "type": "reader",
+            "url": "http://marvel.com/digitalcomics/view.htm?iid=49725&utm_campaign=apiRef&utm_source=78615c175e959268b26b574d80998e69"
+          },
+          {
+            "type": "inAppLink",
+            "url": "https://applink.marvel.com/issue/49725?utm_campaign=apiRef&utm_source=78615c175e959268b26b574d80998e69"
+          }
+        ],
+        "series": {
+          "resourceURI": "http://gateway.marvel.com/v1/public/series/24278",
+          "name": "Immortal Hulk (2018 - 2021)"
+        },
+        "variants": [],
+        "collections": [],
+        "collectedIssues": [],
+        "dates": [
+          {
+            "type": "onsaleDate",
+            "date": "2018-11-21T00:00:00-0500"
+          },
+          {
+            "type": "focDate",
+            "date": "2018-10-29T00:00:00-0400"
+          },
+          {
+            "type": "unlimitedDate",
+            "date": "2019-05-27T00:00:00-0400"
+          },
+          {
+            "type": "digitalPurchaseDate",
+            "date": "2018-11-21T00:00:00-0500"
+          }
+        ],
+        "prices": [
+          {
+            "type": "printPrice",
+            "price": 3.99
+          },
+          {
+            "type": "digitalPurchasePrice",
+            "price": 3.99
+          }
+        ],
+        "thumbnail": {
+          "path": "http://i.annihil.us/u/prod/marvel/i/mg/2/60/5becad462e9dc",
+          "extension": "jpg"
+        },
+        "images": [
+          {
+            "path": "http://i.annihil.us/u/prod/marvel/i/mg/2/60/5becad462e9dc",
+            "extension": "jpg"
+          },
+          {
+            "path": "http://i.annihil.us/u/prod/marvel/i/mg/d/20/5b86fe163f7df",
+            "extension": "jpg"
+          }
+        ],
+        "creators": {
+          "available": 8,
+          "collectionURI": "http://gateway.marvel.com/v1/public/comics/67140/creators",
+          "items": [
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/creators/506",
+              "name": "Joe Bennett",
+              "role": "penciler"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/creators/12174",
+              "name": "Al Ewing",
+              "role": "writer"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/creators/13278",
+              "name": "Ruy Jose",
+              "role": "inker"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/creators/12376",
+              "name": "Wilson Moss",
+              "role": "editor"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/creators/479",
+              "name": "Paul Mounts",
+              "role": "colorist"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/creators/13299",
+              "name": "Martin Simmonds",
+              "role": "colorist"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/creators/12980",
+              "name": "Vc Cory Petit",
+              "role": "letterer"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/creators/63",
+              "name": "Alex Ross",
+              "role": "painter (cover)"
+            }
+          ],
+          "returned": 8
+        },
+        "characters": {
+          "available": 2,
+          "collectionURI": "http://gateway.marvel.com/v1/public/comics/67140/characters",
+          "items": [
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/characters/1009148",
+              "name": "Absorbing Man"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/characters/1009351",
+              "name": "Hulk"
+            }
+          ],
+          "returned": 2
+        },
+        "stories": {
+          "available": 2,
+          "collectionURI": "http://gateway.marvel.com/v1/public/comics/67140/stories",
+          "items": [
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/stories/145463",
+              "name": "cover from Immortal Hulk (2018) #9",
+              "type": "cover"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/stories/145464",
+              "name": "story from Immortal Hulk (2018) #9",
+              "type": "interiorStory"
+            }
+          ],
+          "returned": 2
+        },
+        "events": {
+          "available": 0,
+          "collectionURI": "http://gateway.marvel.com/v1/public/comics/67140/events",
+          "items": [],
+          "returned": 0
+        }
+      },
+      {
+        "id": 66777,
+        "digitalId": 0,
+        "title": "Marvel Masterworks: The Avengers Vol. 18 (Hardcover)",
+        "issueNumber": 0,
+        "variantDescription": "",
+        "description": "Collects Avengers (1963) #178-188, Annual (1967) #8-9, Marvel Premiere (1972) #49 and material from Marvel Tales (1966) #100. Avengers Mansion is running out of room, so the old order changeth! Government agent Henry Peter Gyrich is kicking out all but seven Avengers. Despite their protests, the team won’t have time to argue — because a mysterious man from Quicksilver and the Scarlet Witch’s past has emerged, kicking off an adventure that leads the Avengers to Wundagore Mountain and reveals the answer to one of Marvel’s oldest mysteries! But first, the Absorbing Man shows up for a good ol’ fashioned knuckle-crunching battle! Also featuring a trip to the Inhumans’ Great Refuge, an all-new Doctor Spectrum in a story illustrated by George Pérez, solo Beast and Falcon adventures and the massive mountain-menace Monolith! Brought to you by Avengers greats David Michelinie and John Byrne!",
+        "modified": "2018-04-04T17:57:18-0400",
+        "isbn": "978-1-302-90960-4",
+        "upc": "",
+        "diamondCode": "OCT170990",
+        "ean": "9781302 909604 57500",
+        "issn": "",
+        "format": "Hardcover",
+        "pageCount": 320,
+        "textObjects": [
+          {
+            "type": "issue_solicit_text",
+            "language": "en-us",
+            "text": "Collects Avengers (1963) #178-188, Annual (1967) #8-9, Marvel Premiere (1972) #49 and material from Marvel Tales (1966) #100. Avengers Mansion is running out of room, so the old order changeth! Government agent Henry Peter Gyrich is kicking out all but seven Avengers. Despite their protests, the team won’t have time to argue — because a mysterious man from Quicksilver and the Scarlet Witch’s past has emerged, kicking off an adventure that leads the Avengers to Wundagore Mountain and reveals the answer to one of Marvel’s oldest mysteries! But first, the Absorbing Man shows up for a good ol’ fashioned knuckle-crunching battle! Also featuring a trip to the Inhumans’ Great Refuge, an all-new Doctor Spectrum in a story illustrated by George Pérez, solo Beast and Falcon adventures and the massive mountain-menace Monolith! Brought to you by Avengers greats David Michelinie and John Byrne!"
+          }
+        ],
+        "resourceURI": "http://gateway.marvel.com/v1/public/comics/66777",
+        "urls": [
+          {
+            "type": "detail",
+            "url": "http://marvel.com/comics/collection/66777/marvel_masterworks_the_avengers_vol_18_hardcover?utm_campaign=apiRef&utm_source=78615c175e959268b26b574d80998e69"
+          }
+        ],
+        "series": {
+          "resourceURI": "http://gateway.marvel.com/v1/public/series/24158",
+          "name": "Marvel Masterworks: The Avengers Vol. 18 (2018)"
+        },
+        "variants": [],
+        "collections": [],
+        "collectedIssues": [],
+        "dates": [
+          {
+            "type": "onsaleDate",
+            "date": "2018-04-11T00:00:00-0400"
+          },
+          {
+            "type": "focDate",
+            "date": "2017-12-11T00:00:00-0500"
+          }
+        ],
+        "prices": [
+          {
+            "type": "printPrice",
+            "price": 75
+          }
+        ],
+        "thumbnail": {
+          "path": "http://i.annihil.us/u/prod/marvel/i/mg/2/90/5ac54dde3f9fa",
+          "extension": "jpg"
+        },
+        "images": [
+          {
+            "path": "http://i.annihil.us/u/prod/marvel/i/mg/2/90/5ac54dde3f9fa",
+            "extension": "jpg"
+          }
+        ],
+        "creators": {
+          "available": 19,
+          "collectionURI": "http://gateway.marvel.com/v1/public/comics/66777/creators",
+          "items": [
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/creators/1168",
+              "name": "All Thumbs Creative",
+              "role": "colorist (cover)"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/creators/105",
+              "name": "Sal Buscema",
+              "role": "penciller"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/creators/1827",
+              "name": "John Byrne",
+              "role": "penciller"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/creators/1272",
+              "name": "Carmine Infantino",
+              "role": "penciller"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/creators/389",
+              "name": "Jim Mooney",
+              "role": "penciller"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/creators/10026",
+              "name": "Michael Netzer",
+              "role": "penciller"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/creators/2224",
+              "name": "Don Newton",
+              "role": "penciller"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/creators/9565",
+              "name": "Tom Defalco",
+              "role": "writer"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/creators/1273",
+              "name": "Scott Edelman",
+              "role": "writer"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/creators/3131",
+              "name": "Mark Evanier",
+              "role": "writer"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/creators/144",
+              "name": "Steve Gerber",
+              "role": "writer"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/creators/1293",
+              "name": "Steven Grant",
+              "role": "writer"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/creators/259",
+              "name": "Mark Gruenwald",
+              "role": "writer"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/creators/13769",
+              "name": "Bill Mantlo",
+              "role": "writer"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/creators/2784",
+              "name": "David Michelinie",
+              "role": "writer"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/creators/946",
+              "name": "Jim Shooter",
+              "role": "writer"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/creators/1237",
+              "name": "Roger Slifer",
+              "role": "writer"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/creators/1161",
+              "name": "George Perez",
+              "role": "penciller (cover)"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/creators/4430",
+              "name": "Jeff Youngquist",
+              "role": "editor"
+            }
+          ],
+          "returned": 19
+        },
+        "characters": {
+          "available": 6,
+          "collectionURI": "http://gateway.marvel.com/v1/public/comics/66777/characters",
+          "items": [
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/characters/1009148",
+              "name": "Absorbing Man"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/characters/1009165",
+              "name": "Avengers"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/characters/1009175",
+              "name": "Beast"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/characters/1009297",
+              "name": "Falcon"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/characters/1009524",
+              "name": "Quicksilver"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/characters/1009562",
+              "name": "Scarlet Witch"
+            }
+          ],
+          "returned": 6
+        },
+        "stories": {
+          "available": 2,
+          "collectionURI": "http://gateway.marvel.com/v1/public/comics/66777/stories",
+          "items": [
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/stories/144709",
+              "name": "cover from MARVEL MASTERWORKS: THE AVENGERS VOL. 18 HC (2018) #18",
+              "type": "cover"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/stories/144710",
+              "name": "story from MARVEL MASTERWORKS: THE AVENGERS VOL. 18 HC (2018) #18",
+              "type": "interiorStory"
+            }
+          ],
+          "returned": 2
+        },
+        "events": {
+          "available": 0,
+          "collectionURI": "http://gateway.marvel.com/v1/public/comics/66777/events",
+          "items": [],
+          "returned": 0
+        }
+      },
+      {
+        "id": 65327,
+        "digitalId": 46768,
+        "title": "Black Bolt Vol. 1: Hard Time (Trade Paperback)",
+        "issueNumber": 0,
+        "variantDescription": "",
+        "description": "Collects Black Bolt #1-6. The king of the Inhumans has been imprisoned! But where? Why has he been jailed? And who could be powerful enough to hold the uncanny Black Bolt? The answers will shock you - and Blackagar Boltagon as well! For if he is to learn the truth, he must first win a fight to the death against a fellow inmate: the Absorbing Man! As a prison revolt begins, Death's Head enters the fray - but is he there to help, or to hunt? And who - or what - is the warden of this strange place? Whatever it is, the Jailer knows only penance and fear. And soon, so will the Silent King! Award-winning sci-fi writer Saladin Ahmed crafts a story fit for the mind-bending art of Christian Ward!",
+        "modified": "2018-03-14T12:23:41-0400",
+        "isbn": "978-1-302-90732-7",
+        "upc": "",
+        "diamondCode": "SEP170998",
+        "ean": "9781302 907327 51799",
+        "issn": "",
+        "format": "Trade Paperback",
+        "pageCount": 136,
+        "textObjects": [
+          {
+            "type": "issue_solicit_text",
+            "language": "en-us",
+            "text": "Collects Black Bolt #1-6. The king of the Inhumans has been imprisoned! But where? Why has he been jailed? And who could be powerful enough to hold the uncanny Black Bolt? The answers will shock you - and Blackagar Boltagon as well! For if he is to learn the truth, he must first win a fight to the death against a fellow inmate: the Absorbing Man! As a prison revolt begins, Death's Head enters the fray - but is he there to help, or to hunt? And who - or what - is the warden of this strange place? Whatever it is, the Jailer knows only penance and fear. And soon, so will the Silent King! Award-winning sci-fi writer Saladin Ahmed crafts a story fit for the mind-bending art of Christian Ward!"
+          }
+        ],
+        "resourceURI": "http://gateway.marvel.com/v1/public/comics/65327",
+        "urls": [
+          {
+            "type": "detail",
+            "url": "http://marvel.com/comics/collection/65327/black_bolt_vol_1_hard_time_trade_paperback?utm_campaign=apiRef&utm_source=78615c175e959268b26b574d80998e69"
+          },
+          {
+            "type": "purchase",
+            "url": "http://comicstore.marvel.com/BLACK-BOLT-VOL-1-HARD-TIME-TPB-0/digital-comic/46768?utm_campaign=apiRef&utm_source=78615c175e959268b26b574d80998e69"
+          },
+          {
+            "type": "reader",
+            "url": "http://marvel.com/digitalcomics/view.htm?iid=46768&utm_campaign=apiRef&utm_source=78615c175e959268b26b574d80998e69"
+          },
+          {
+            "type": "inAppLink",
+            "url": "https://applink.marvel.com/issue/46768?utm_campaign=apiRef&utm_source=78615c175e959268b26b574d80998e69"
+          }
+        ],
+        "series": {
+          "resourceURI": "http://gateway.marvel.com/v1/public/series/23778",
+          "name": "Black Bolt Vol. 1: Hard Time (2017)"
+        },
+        "variants": [],
+        "collections": [],
+        "collectedIssues": [],
+        "dates": [
+          {
+            "type": "onsaleDate",
+            "date": "2018-03-21T00:00:00-0400"
+          },
+          {
+            "type": "focDate",
+            "date": "2017-10-16T00:00:00-0400"
+          },
+          {
+            "type": "unlimitedDate",
+            "date": "2017-12-06T00:00:00-0500"
+          },
+          {
+            "type": "digitalPurchaseDate",
+            "date": "2017-12-06T00:00:00-0500"
+          }
+        ],
+        "prices": [
+          {
+            "type": "printPrice",
+            "price": 17.99
+          },
+          {
+            "type": "digitalPurchasePrice",
+            "price": 10.99
+          }
+        ],
+        "thumbnail": {
+          "path": "http://i.annihil.us/u/prod/marvel/i/mg/5/10/5a21c11610c2f",
+          "extension": "jpg"
+        },
+        "images": [
+          {
+            "path": "http://i.annihil.us/u/prod/marvel/i/mg/5/10/5a21c11610c2f",
+            "extension": "jpg"
+          }
+        ],
+        "creators": {
+          "available": 1,
+          "collectionURI": "http://gateway.marvel.com/v1/public/comics/65327/creators",
+          "items": [
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/creators/4430",
+              "name": "Jeff Youngquist",
+              "role": "editor"
+            }
+          ],
+          "returned": 1
+        },
+        "characters": {
+          "available": 4,
+          "collectionURI": "http://gateway.marvel.com/v1/public/comics/65327/characters",
+          "items": [
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/characters/1009148",
+              "name": "Absorbing Man"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/characters/1009184",
+              "name": "Black Bolt"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/characters/1009365",
+              "name": "Inhumans"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/characters/1009406",
+              "name": "Lockjaw"
+            }
+          ],
+          "returned": 4
+        },
+        "stories": {
+          "available": 2,
+          "collectionURI": "http://gateway.marvel.com/v1/public/comics/65327/stories",
+          "items": [
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/stories/141760",
+              "name": "cover from BLACK BOLT VOL. 1: HARD TIME TPB (2017) #1",
+              "type": "cover"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/stories/141761",
+              "name": "story from BLACK BOLT VOL. 1: HARD TIME TPB (2017) #1",
+              "type": "interiorStory"
+            }
+          ],
+          "returned": 2
+        },
+        "events": {
+          "available": 0,
+          "collectionURI": "http://gateway.marvel.com/v1/public/comics/65327/events",
+          "items": [],
+          "returned": 0
+        }
+      },
+      {
+        "id": 66533,
+        "digitalId": 47574,
+        "title": "Black Bolt (2017) #11",
+        "issueNumber": 11,
+        "variantDescription": "",
+        "description": "The Jailer returns! Black Bolt thought he had escaped the alien prison where he was tortured in his brother’s place. But no one escapes their penance — not even the Midnight King. Even without his mighty voice, Black Bolt has a few tricks up his sleeve. But will they be enough to save his young companion Blinky — or himself?",
+        "modified": "2018-03-01T09:02:34-0500",
+        "isbn": "",
+        "upc": "75960608648101111",
+        "diamondCode": "JAN180986",
+        "ean": "",
+        "issn": "",
+        "format": "Comic",
+        "pageCount": 32,
+        "textObjects": [
+          {
+            "type": "issue_solicit_text",
+            "language": "en-us",
+            "text": "The Jailer returns! Black Bolt thought he had escaped the alien prison where he was tortured in his brother’s place. But no one escapes their penance — not even the Midnight King. Even without his mighty voice, Black Bolt has a few tricks up his sleeve. But will they be enough to save his young companion Blinky — or himself?"
+          }
+        ],
+        "resourceURI": "http://gateway.marvel.com/v1/public/comics/66533",
+        "urls": [
+          {
+            "type": "detail",
+            "url": "http://marvel.com/comics/issue/66533/black_bolt_2017_11?utm_campaign=apiRef&utm_source=78615c175e959268b26b574d80998e69"
+          },
+          {
+            "type": "purchase",
+            "url": "http://comicstore.marvel.com/Black-Bolt-11/digital-comic/47574?utm_campaign=apiRef&utm_source=78615c175e959268b26b574d80998e69"
+          },
+          {
+            "type": "reader",
+            "url": "http://marvel.com/digitalcomics/view.htm?iid=47574&utm_campaign=apiRef&utm_source=78615c175e959268b26b574d80998e69"
+          },
+          {
+            "type": "inAppLink",
+            "url": "https://applink.marvel.com/issue/47574?utm_campaign=apiRef&utm_source=78615c175e959268b26b574d80998e69"
+          }
+        ],
+        "series": {
+          "resourceURI": "http://gateway.marvel.com/v1/public/series/23121",
+          "name": "Black Bolt (2017 - 2018)"
+        },
+        "variants": [],
+        "collections": [],
+        "collectedIssues": [],
+        "dates": [
+          {
+            "type": "onsaleDate",
+            "date": "2018-03-07T00:00:00-0500"
+          },
+          {
+            "type": "focDate",
+            "date": "2018-02-12T00:00:00-0500"
+          },
+          {
+            "type": "unlimitedDate",
+            "date": "2018-09-10T00:00:00-0400"
+          },
+          {
+            "type": "digitalPurchaseDate",
+            "date": "2018-03-07T00:00:00-0500"
+          }
+        ],
+        "prices": [
+          {
+            "type": "printPrice",
+            "price": 3.99
+          },
+          {
+            "type": "digitalPurchasePrice",
+            "price": 3.99
+          }
+        ],
+        "thumbnail": {
+          "path": "http://i.annihil.us/u/prod/marvel/i/mg/d/00/5a9729cfea90f",
+          "extension": "jpg"
+        },
+        "images": [
+          {
+            "path": "http://i.annihil.us/u/prod/marvel/i/mg/d/00/5a9729cfea90f",
+            "extension": "jpg"
+          },
+          {
+            "path": "http://i.annihil.us/u/prod/marvel/i/mg/6/90/5a53b6c42676f",
+            "extension": "jpg"
+          }
+        ],
+        "creators": {
+          "available": 4,
+          "collectionURI": "http://gateway.marvel.com/v1/public/comics/66533/creators",
+          "items": [
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/creators/13081",
+              "name": "Saladin Ahmed",
+              "role": "writer"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/creators/10172",
+              "name": "Vc Clayton Cowles",
+              "role": "letterer"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/creators/12376",
+              "name": "Wilson Moss",
+              "role": "editor"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/creators/12470",
+              "name": "Christian Ward",
+              "role": "painter (cover)"
+            }
+          ],
+          "returned": 4
+        },
+        "characters": {
+          "available": 3,
+          "collectionURI": "http://gateway.marvel.com/v1/public/comics/66533/characters",
+          "items": [
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/characters/1009148",
+              "name": "Absorbing Man"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/characters/1009184",
+              "name": "Black Bolt"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/characters/1010669",
+              "name": "Titania"
+            }
+          ],
+          "returned": 3
+        },
+        "stories": {
+          "available": 2,
+          "collectionURI": "http://gateway.marvel.com/v1/public/comics/66533/stories",
+          "items": [
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/stories/144220",
+              "name": "cover from Black Bolt (2017) #11",
+              "type": "cover"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/stories/144221",
+              "name": "story from Black Bolt (2017) #11",
+              "type": "interiorStory"
+            }
+          ],
+          "returned": 2
+        },
+        "events": {
+          "available": 0,
+          "collectionURI": "http://gateway.marvel.com/v1/public/comics/66533/events",
+          "items": [],
+          "returned": 0
+        }
+      },
+      {
+        "id": 64278,
+        "digitalId": 45563,
+        "title": "Black Bolt (2017) #4",
+        "issueNumber": 4,
+        "variantDescription": "",
+        "description": "MAN TO MAN! When their prison break ends in catastrophe, Black Bolt and the Absorbing Man are forced to confront their pasts - together. What makes a hero and a villain? When new hope comes from an unexpected source, Black Bolt faces a choice. What price will he pay for his freedom?",
+        "modified": "2017-07-28T16:46:54-0400",
+        "isbn": "",
+        "upc": "75960608648100411",
+        "diamondCode": "JUN170943",
+        "ean": "",
+        "issn": "",
+        "format": "Comic",
+        "pageCount": 32,
+        "textObjects": [
+          {
+            "type": "issue_solicit_text",
+            "language": "en-us",
+            "text": "MAN TO MAN! When their prison break ends in catastrophe, Black Bolt and the Absorbing Man are forced to confront their pasts - together. What makes a hero and a villain? When new hope comes from an unexpected source, Black Bolt faces a choice. What price will he pay for his freedom?"
+          }
+        ],
+        "resourceURI": "http://gateway.marvel.com/v1/public/comics/64278",
+        "urls": [
+          {
+            "type": "detail",
+            "url": "http://marvel.com/comics/issue/64278/black_bolt_2017_4?utm_campaign=apiRef&utm_source=78615c175e959268b26b574d80998e69"
+          },
+          {
+            "type": "purchase",
+            "url": "http://comicstore.marvel.com/Black-Bolt-4/digital-comic/45563?utm_campaign=apiRef&utm_source=78615c175e959268b26b574d80998e69"
+          },
+          {
+            "type": "reader",
+            "url": "http://marvel.com/digitalcomics/view.htm?iid=45563&utm_campaign=apiRef&utm_source=78615c175e959268b26b574d80998e69"
+          },
+          {
+            "type": "inAppLink",
+            "url": "https://applink.marvel.com/issue/45563?utm_campaign=apiRef&utm_source=78615c175e959268b26b574d80998e69"
+          }
+        ],
+        "series": {
+          "resourceURI": "http://gateway.marvel.com/v1/public/series/23121",
+          "name": "Black Bolt (2017 - 2018)"
+        },
+        "variants": [],
+        "collections": [],
+        "collectedIssues": [],
+        "dates": [
+          {
+            "type": "onsaleDate",
+            "date": "2017-08-02T00:00:00-0400"
+          },
+          {
+            "type": "focDate",
+            "date": "2017-07-10T00:00:00-0400"
+          },
+          {
+            "type": "unlimitedDate",
+            "date": "2018-02-05T00:00:00-0500"
+          },
+          {
+            "type": "digitalPurchaseDate",
+            "date": "2017-08-02T00:00:00-0400"
+          }
+        ],
+        "prices": [
+          {
+            "type": "printPrice",
+            "price": 3.99
+          },
+          {
+            "type": "digitalPurchasePrice",
+            "price": 3.99
+          }
+        ],
+        "thumbnail": {
+          "path": "http://i.annihil.us/u/prod/marvel/i/mg/6/60/596d08c1c46a3",
+          "extension": "jpg"
+        },
+        "images": [
+          {
+            "path": "http://i.annihil.us/u/prod/marvel/i/mg/6/60/596d08c1c46a3",
+            "extension": "jpg"
+          }
+        ],
+        "creators": {
+          "available": 4,
+          "collectionURI": "http://gateway.marvel.com/v1/public/comics/64278/creators",
+          "items": [
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/creators/13081",
+              "name": "Saladin Ahmed",
+              "role": "writer"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/creators/10172",
+              "name": "Vc Clayton Cowles",
+              "role": "letterer"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/creators/12376",
+              "name": "Wilson Moss",
+              "role": "editor"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/creators/12470",
+              "name": "Christian Ward",
+              "role": "penciler (cover)"
+            }
+          ],
+          "returned": 4
+        },
+        "characters": {
+          "available": 2,
+          "collectionURI": "http://gateway.marvel.com/v1/public/comics/64278/characters",
+          "items": [
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/characters/1009148",
+              "name": "Absorbing Man"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/characters/1009184",
+              "name": "Black Bolt"
+            }
+          ],
+          "returned": 2
+        },
+        "stories": {
+          "available": 2,
+          "collectionURI": "http://gateway.marvel.com/v1/public/comics/64278/stories",
+          "items": [
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/stories/139538",
+              "name": "cover from Black Bolt (2017) #4",
+              "type": "cover"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/stories/139539",
+              "name": "story from Black Bolt (2017) #4",
+              "type": "interiorStory"
+            }
+          ],
+          "returned": 2
+        },
+        "events": {
+          "available": 0,
+          "collectionURI": "http://gateway.marvel.com/v1/public/comics/64278/events",
+          "items": [],
+          "returned": 0
+        }
+      },
+      {
+        "id": 63662,
+        "digitalId": 45210,
+        "title": "Black Bolt (2017) #3",
+        "issueNumber": 3,
+        "variantDescription": "",
+        "description": "PRISON BREAK! The prisoners revolt! But are Black Bolt and his unlikely allies simply pawns in a bigger game? Plus: Death's Head! Is he there to help…or hunt? And who — or what — is the warden of this strange place? Whatever it is, the Jailer knows only penance and fear. And soon, so will the Silent King!",
+        "modified": "2017-06-30T16:28:31-0400",
+        "isbn": "",
+        "upc": "75960608648100311",
+        "diamondCode": "MAY170860",
+        "ean": "",
+        "issn": "",
+        "format": "Comic",
+        "pageCount": 32,
+        "textObjects": [
+          {
+            "type": "issue_solicit_text",
+            "language": "en-us",
+            "text": "PRISON BREAK! The prisoners revolt! But are Black Bolt and his unlikely allies simply pawns in a bigger game? Plus: Death's Head! Is he there to help…or hunt? And who — or what — is the warden of this strange place? Whatever it is, the Jailer knows only penance and fear. And soon, so will the Silent King!"
+          }
+        ],
+        "resourceURI": "http://gateway.marvel.com/v1/public/comics/63662",
+        "urls": [
+          {
+            "type": "detail",
+            "url": "http://marvel.com/comics/issue/63662/black_bolt_2017_3?utm_campaign=apiRef&utm_source=78615c175e959268b26b574d80998e69"
+          },
+          {
+            "type": "purchase",
+            "url": "http://comicstore.marvel.com/Black-Bolt-3/digital-comic/45210?utm_campaign=apiRef&utm_source=78615c175e959268b26b574d80998e69"
+          },
+          {
+            "type": "reader",
+            "url": "http://marvel.com/digitalcomics/view.htm?iid=45210&utm_campaign=apiRef&utm_source=78615c175e959268b26b574d80998e69"
+          },
+          {
+            "type": "inAppLink",
+            "url": "https://applink.marvel.com/issue/45210?utm_campaign=apiRef&utm_source=78615c175e959268b26b574d80998e69"
+          }
+        ],
+        "series": {
+          "resourceURI": "http://gateway.marvel.com/v1/public/series/23121",
+          "name": "Black Bolt (2017 - 2018)"
+        },
+        "variants": [],
+        "collections": [],
+        "collectedIssues": [],
+        "dates": [
+          {
+            "type": "onsaleDate",
+            "date": "2017-07-05T00:00:00-0400"
+          },
+          {
+            "type": "focDate",
+            "date": "2017-06-12T00:00:00-0400"
+          },
+          {
+            "type": "unlimitedDate",
+            "date": "2018-01-08T00:00:00-0500"
+          },
+          {
+            "type": "digitalPurchaseDate",
+            "date": "2017-07-05T00:00:00-0400"
+          }
+        ],
+        "prices": [
+          {
+            "type": "printPrice",
+            "price": 3.99
+          },
+          {
+            "type": "digitalPurchasePrice",
+            "price": 3.99
+          }
+        ],
+        "thumbnail": {
+          "path": "http://i.annihil.us/u/prod/marvel/i/mg/3/e0/59553805bf66a",
+          "extension": "jpg"
+        },
+        "images": [
+          {
+            "path": "http://i.annihil.us/u/prod/marvel/i/mg/3/e0/59553805bf66a",
+            "extension": "jpg"
+          }
+        ],
+        "creators": {
+          "available": 4,
+          "collectionURI": "http://gateway.marvel.com/v1/public/comics/63662/creators",
+          "items": [
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/creators/13081",
+              "name": "Saladin Ahmed",
+              "role": "writer"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/creators/10172",
+              "name": "Vc Clayton Cowles",
+              "role": "letterer"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/creators/12376",
+              "name": "Wilson Moss",
+              "role": "editor"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/creators/12470",
+              "name": "Christian Ward",
+              "role": "penciler (cover)"
+            }
+          ],
+          "returned": 4
+        },
+        "characters": {
+          "available": 2,
+          "collectionURI": "http://gateway.marvel.com/v1/public/comics/63662/characters",
+          "items": [
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/characters/1009148",
+              "name": "Absorbing Man"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/characters/1009184",
+              "name": "Black Bolt"
+            }
+          ],
+          "returned": 2
+        },
+        "stories": {
+          "available": 2,
+          "collectionURI": "http://gateway.marvel.com/v1/public/comics/63662/stories",
+          "items": [
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/stories/138267",
+              "name": "cover from Black Bolt (2017) #3",
+              "type": "cover"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/stories/138268",
+              "name": "story from Black Bolt (2017) #3",
+              "type": "interiorStory"
+            }
+          ],
+          "returned": 2
+        },
+        "events": {
+          "available": 0,
+          "collectionURI": "http://gateway.marvel.com/v1/public/comics/63662/events",
+          "items": [],
+          "returned": 0
+        }
+      },
+      {
+        "id": 55857,
+        "digitalId": 41553,
+        "title": "Illuminati (2015) #7",
+        "issueNumber": 7,
+        "variantDescription": "",
+        "description": "AVENGERS: STAND-OFF AFTERMATH! It’s recruitment day! The villains of the Marvel Universe are pissed off after the events of Stand-Off, so naturally the Hood sees a perfect opportunity to enlist them into the Illuminati. But what he has planned next could sicken even the most hardened of criminals... But will Titania continue working with The Hood or focus on saving her marriage to Absorbing Man?",
+        "modified": "2016-05-06T12:10:45-0400",
+        "isbn": "",
+        "upc": "75960608329900711",
+        "diamondCode": "MAR160837",
+        "ean": "",
+        "issn": "",
+        "format": "Comic",
+        "pageCount": 32,
+        "textObjects": [
+          {
+            "type": "issue_solicit_text",
+            "language": "en-us",
+            "text": "AVENGERS: STAND-OFF AFTERMATH! It’s recruitment day! The villains of the Marvel Universe are pissed off after the events of Stand-Off, so naturally the Hood sees a perfect opportunity to enlist them into the Illuminati. But what he has planned next could sicken even the most hardened of criminals... But will Titania continue working with The Hood or focus on saving her marriage to Absorbing Man?"
+          }
+        ],
+        "resourceURI": "http://gateway.marvel.com/v1/public/comics/55857",
+        "urls": [
+          {
+            "type": "detail",
+            "url": "http://marvel.com/comics/issue/55857/illuminati_2015_7?utm_campaign=apiRef&utm_source=78615c175e959268b26b574d80998e69"
+          },
+          {
+            "type": "purchase",
+            "url": "http://comicstore.marvel.com/Illuminati-7/digital-comic/41553?utm_campaign=apiRef&utm_source=78615c175e959268b26b574d80998e69"
+          },
+          {
+            "type": "reader",
+            "url": "http://marvel.com/digitalcomics/view.htm?iid=41553&utm_campaign=apiRef&utm_source=78615c175e959268b26b574d80998e69"
+          },
+          {
+            "type": "inAppLink",
+            "url": "https://applink.marvel.com/issue/41553?utm_campaign=apiRef&utm_source=78615c175e959268b26b574d80998e69"
+          }
+        ],
+        "series": {
+          "resourceURI": "http://gateway.marvel.com/v1/public/series/20552",
+          "name": "Illuminati (2015 - 2016)"
+        },
+        "variants": [],
+        "collections": [],
+        "collectedIssues": [],
+        "dates": [
+          {
+            "type": "onsaleDate",
+            "date": "2016-05-11T00:00:00-0400"
+          },
+          {
+            "type": "focDate",
+            "date": "2016-04-27T00:00:00-0400"
+          },
+          {
+            "type": "unlimitedDate",
+            "date": "2016-11-14T00:00:00-0500"
+          },
+          {
+            "type": "digitalPurchaseDate",
+            "date": "2016-05-11T00:00:00-0400"
+          }
+        ],
+        "prices": [
+          {
+            "type": "printPrice",
+            "price": 3.99
+          },
+          {
+            "type": "digitalPurchasePrice",
+            "price": 3.99
+          }
+        ],
+        "thumbnail": {
+          "path": "http://i.annihil.us/u/prod/marvel/i/mg/6/30/5745cbf0d4802",
+          "extension": "jpg"
+        },
+        "images": [
+          {
+            "path": "http://i.annihil.us/u/prod/marvel/i/mg/6/30/5745cbf0d4802",
+            "extension": "jpg"
+          },
+          {
+            "path": "http://i.annihil.us/u/prod/marvel/i/mg/2/c0/5727a51e2b402",
+            "extension": "jpg"
+          }
+        ],
+        "creators": {
+          "available": 3,
+          "collectionURI": "http://gateway.marvel.com/v1/public/comics/55857/creators",
+          "items": [
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/creators/9443",
+              "name": "Shawn Crystal",
+              "role": "penciller (cover)"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/creators/12456",
+              "name": "Katie Kubert",
+              "role": "editor"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/creators/8847",
+              "name": "Joshua Williamson",
+              "role": "writer"
+            }
+          ],
+          "returned": 3
+        },
+        "characters": {
+          "available": 5,
+          "collectionURI": "http://gateway.marvel.com/v1/public/comics/55857/characters",
+          "items": [
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/characters/1009148",
+              "name": "Absorbing Man"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/characters/1009411",
+              "name": "Mad Thinker"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/characters/1010715",
+              "name": "The Hood"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/characters/1010885",
+              "name": "Thunderball"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/characters/1010669",
+              "name": "Titania"
+            }
+          ],
+          "returned": 5
+        },
+        "stories": {
+          "available": 2,
+          "collectionURI": "http://gateway.marvel.com/v1/public/comics/55857/stories",
+          "items": [
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/stories/122747",
+              "name": "cover from The Cabal (2015) #7",
+              "type": "cover"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/stories/122748",
+              "name": "story from The Cabal (2015) #7",
+              "type": "interiorStory"
+            }
+          ],
+          "returned": 2
+        },
+        "events": {
+          "available": 0,
+          "collectionURI": "http://gateway.marvel.com/v1/public/comics/55857/events",
+          "items": [],
+          "returned": 0
+        }
+      },
+      {
+        "id": 55856,
+        "digitalId": 41682,
+        "title": "Illuminati (2015) #6",
+        "issueNumber": 6,
+        "variantDescription": "",
+        "description": "A STANDOFF tie-in! S.H.I.E.L.D. has trapped Absorbing Man in a new prison and only the Hood and Titania can save him…But does he want to be saved?!",
+        "modified": "2016-04-08T11:01:50-0400",
+        "isbn": "",
+        "upc": "75960608329900611",
+        "diamondCode": "FEB160813",
+        "ean": "",
+        "issn": "",
+        "format": "Comic",
+        "pageCount": 32,
+        "textObjects": [
+          {
+            "type": "issue_solicit_text",
+            "language": "en-us",
+            "text": "A STANDOFF tie-in! S.H.I.E.L.D. has trapped Absorbing Man in a new prison and only the Hood and Titania can save him…But does he want to be saved?!"
+          }
+        ],
+        "resourceURI": "http://gateway.marvel.com/v1/public/comics/55856",
+        "urls": [
+          {
+            "type": "detail",
+            "url": "http://marvel.com/comics/issue/55856/illuminati_2015_6?utm_campaign=apiRef&utm_source=78615c175e959268b26b574d80998e69"
+          },
+          {
+            "type": "purchase",
+            "url": "http://comicstore.marvel.com/Illuminati-6/digital-comic/41682?utm_campaign=apiRef&utm_source=78615c175e959268b26b574d80998e69"
+          },
+          {
+            "type": "reader",
+            "url": "http://marvel.com/digitalcomics/view.htm?iid=41682&utm_campaign=apiRef&utm_source=78615c175e959268b26b574d80998e69"
+          },
+          {
+            "type": "inAppLink",
+            "url": "https://applink.marvel.com/issue/41682?utm_campaign=apiRef&utm_source=78615c175e959268b26b574d80998e69"
+          }
+        ],
+        "series": {
+          "resourceURI": "http://gateway.marvel.com/v1/public/series/20552",
+          "name": "Illuminati (2015 - 2016)"
+        },
+        "variants": [],
+        "collections": [],
+        "collectedIssues": [],
+        "dates": [
+          {
+            "type": "onsaleDate",
+            "date": "2016-04-13T00:00:00-0400"
+          },
+          {
+            "type": "focDate",
+            "date": "2016-03-30T00:00:00-0400"
+          },
+          {
+            "type": "unlimitedDate",
+            "date": "2016-10-10T00:00:00-0400"
+          },
+          {
+            "type": "digitalPurchaseDate",
+            "date": "2016-04-13T00:00:00-0400"
+          }
+        ],
+        "prices": [
+          {
+            "type": "printPrice",
+            "price": 3.99
+          },
+          {
+            "type": "digitalPurchasePrice",
+            "price": 3.99
+          }
+        ],
+        "thumbnail": {
+          "path": "http://i.annihil.us/u/prod/marvel/i/mg/c/20/56faef1c5073a",
+          "extension": "jpg"
+        },
+        "images": [
+          {
+            "path": "http://i.annihil.us/u/prod/marvel/i/mg/c/20/56faef1c5073a",
+            "extension": "jpg"
+          }
+        ],
+        "creators": {
+          "available": 4,
+          "collectionURI": "http://gateway.marvel.com/v1/public/comics/55856/creators",
+          "items": [
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/creators/11435",
+              "name": "Mike Henderson",
+              "role": "penciller"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/creators/12456",
+              "name": "Katie Kubert",
+              "role": "editor"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/creators/12739",
+              "name": "Riley Rossmo",
+              "role": "penciller (cover)"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/creators/8847",
+              "name": "Joshua Williamson",
+              "role": "writer"
+            }
+          ],
+          "returned": 4
+        },
+        "characters": {
+          "available": 3,
+          "collectionURI": "http://gateway.marvel.com/v1/public/comics/55856/characters",
+          "items": [
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/characters/1009148",
+              "name": "Absorbing Man"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/characters/1010715",
+              "name": "The Hood"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/characters/1010669",
+              "name": "Titania"
+            }
+          ],
+          "returned": 3
+        },
+        "stories": {
+          "available": 2,
+          "collectionURI": "http://gateway.marvel.com/v1/public/comics/55856/stories",
+          "items": [
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/stories/122745",
+              "name": "cover from The Cabal (2015) #6",
+              "type": "cover"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/stories/122746",
+              "name": "story from The Cabal (2015) #6",
+              "type": "interiorStory"
+            }
+          ],
+          "returned": 2
+        },
+        "events": {
+          "available": 0,
+          "collectionURI": "http://gateway.marvel.com/v1/public/comics/55856/events",
+          "items": [],
+          "returned": 0
+        }
+      },
+      {
+        "id": 55855,
+        "digitalId": 41456,
+        "title": "Illuminati (2015) #5",
+        "issueNumber": 5,
+        "variantDescription": "",
+        "description": "ALL IS LOST! After a betrayal of a member of the team, the all new Illuminati are public enemy #1! Can Titania’s new powers save them?!",
+        "modified": "2019-09-23T18:03:43-0400",
+        "isbn": "",
+        "upc": "75960608329900511",
+        "diamondCode": "JAN160883",
+        "ean": "",
+        "issn": "",
+        "format": "Comic",
+        "pageCount": 32,
+        "textObjects": [
+          {
+            "type": "issue_solicit_text",
+            "language": "en-us",
+            "text": "ALL IS LOST! After a betrayal of a member of the team, the all new Illuminati are public enemy #1! Can Titania’s new powers save them?!"
+          }
+        ],
+        "resourceURI": "http://gateway.marvel.com/v1/public/comics/55855",
+        "urls": [
+          {
+            "type": "detail",
+            "url": "http://marvel.com/comics/issue/55855/illuminati_2015_5?utm_campaign=apiRef&utm_source=78615c175e959268b26b574d80998e69"
+          },
+          {
+            "type": "purchase",
+            "url": "http://comicstore.marvel.com/Illuminati-5/digital-comic/41456?utm_campaign=apiRef&utm_source=78615c175e959268b26b574d80998e69"
+          },
+          {
+            "type": "reader",
+            "url": "http://marvel.com/digitalcomics/view.htm?iid=41456&utm_campaign=apiRef&utm_source=78615c175e959268b26b574d80998e69"
+          },
+          {
+            "type": "inAppLink",
+            "url": "https://applink.marvel.com/issue/41456?utm_campaign=apiRef&utm_source=78615c175e959268b26b574d80998e69"
+          }
+        ],
+        "series": {
+          "resourceURI": "http://gateway.marvel.com/v1/public/series/20552",
+          "name": "Illuminati (2015 - 2016)"
+        },
+        "variants": [],
+        "collections": [],
+        "collectedIssues": [],
+        "dates": [
+          {
+            "type": "onsaleDate",
+            "date": "2016-03-23T00:00:00-0400"
+          },
+          {
+            "type": "focDate",
+            "date": "2016-03-09T00:00:00-0500"
+          },
+          {
+            "type": "unlimitedDate",
+            "date": "2016-09-19T00:00:00-0400"
+          },
+          {
+            "type": "digitalPurchaseDate",
+            "date": "2016-03-23T00:00:00-0400"
+          }
+        ],
+        "prices": [
+          {
+            "type": "printPrice",
+            "price": 3.99
+          },
+          {
+            "type": "digitalPurchasePrice",
+            "price": 3.99
+          }
+        ],
+        "thumbnail": {
+          "path": "http://i.annihil.us/u/prod/marvel/i/mg/9/a0/56e70adc8475b",
+          "extension": "jpg"
+        },
+        "images": [
+          {
+            "path": "http://i.annihil.us/u/prod/marvel/i/mg/9/a0/56e70adc8475b",
+            "extension": "jpg"
+          },
+          {
+            "path": "http://i.annihil.us/u/prod/marvel/i/mg/3/e0/56968e5a3413e",
+            "extension": "jpg"
+          }
+        ],
+        "creators": {
+          "available": 4,
+          "collectionURI": "http://gateway.marvel.com/v1/public/comics/55855/creators",
+          "items": [
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/creators/9443",
+              "name": "Shawn Crystal",
+              "role": "penciller"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/creators/12456",
+              "name": "Katie Kubert",
+              "role": "editor"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/creators/12739",
+              "name": "Riley Rossmo",
+              "role": "penciller (cover)"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/creators/8847",
+              "name": "Joshua Williamson",
+              "role": "writer"
+            }
+          ],
+          "returned": 4
+        },
+        "characters": {
+          "available": 3,
+          "collectionURI": "http://gateway.marvel.com/v1/public/comics/55855/characters",
+          "items": [
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/characters/1009148",
+              "name": "Absorbing Man"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/characters/1010715",
+              "name": "The Hood"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/characters/1010669",
+              "name": "Titania"
+            }
+          ],
+          "returned": 3
+        },
+        "stories": {
+          "available": 2,
+          "collectionURI": "http://gateway.marvel.com/v1/public/comics/55855/stories",
+          "items": [
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/stories/122743",
+              "name": "cover from The Cabal (2015) #5",
+              "type": "cover"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/stories/122744",
+              "name": "story from The Cabal (2015) #5",
+              "type": "interiorStory"
+            }
+          ],
+          "returned": 2
+        },
+        "events": {
+          "available": 0,
+          "collectionURI": "http://gateway.marvel.com/v1/public/comics/55855/events",
+          "items": [],
+          "returned": 0
+        }
+      },
+      {
+        "id": 55854,
+        "digitalId": 41121,
+        "title": "Illuminati (2015) #4",
+        "issueNumber": 4,
+        "variantDescription": "",
+        "description": "TITANIA VERSUS THOR! ’NUFF SAID!",
+        "modified": "2016-02-01T16:29:31-0500",
+        "isbn": "",
+        "upc": "75960608329900411",
+        "diamondCode": "DEC150842",
+        "ean": "",
+        "issn": "",
+        "format": "Comic",
+        "pageCount": 32,
+        "textObjects": [
+          {
+            "type": "issue_solicit_text",
+            "language": "en-us",
+            "text": "TITANIA VERSUS THOR! ’NUFF SAID!"
+          }
+        ],
+        "resourceURI": "http://gateway.marvel.com/v1/public/comics/55854",
+        "urls": [
+          {
+            "type": "detail",
+            "url": "http://marvel.com/comics/issue/55854/illuminati_2015_4?utm_campaign=apiRef&utm_source=78615c175e959268b26b574d80998e69"
+          },
+          {
+            "type": "purchase",
+            "url": "http://comicstore.marvel.com/Illuminati-4/digital-comic/41121?utm_campaign=apiRef&utm_source=78615c175e959268b26b574d80998e69"
+          },
+          {
+            "type": "reader",
+            "url": "http://marvel.com/digitalcomics/view.htm?iid=41121&utm_campaign=apiRef&utm_source=78615c175e959268b26b574d80998e69"
+          }
+        ],
+        "series": {
+          "resourceURI": "http://gateway.marvel.com/v1/public/series/20552",
+          "name": "Illuminati (2015 - 2016)"
+        },
+        "variants": [],
+        "collections": [],
+        "collectedIssues": [],
+        "dates": [
+          {
+            "type": "onsaleDate",
+            "date": "2016-02-10T00:00:00-0500"
+          },
+          {
+            "type": "focDate",
+            "date": "2016-01-27T00:00:00-0500"
+          },
+          {
+            "type": "unlimitedDate",
+            "date": "2016-08-15T00:00:00-0400"
+          },
+          {
+            "type": "digitalPurchaseDate",
+            "date": "2016-02-05T11:33:00-0500"
+          }
+        ],
+        "prices": [
+          {
+            "type": "printPrice",
+            "price": 3.99
+          }
+        ],
+        "thumbnail": {
+          "path": "http://i.annihil.us/u/prod/marvel/i/mg/9/f0/56ab88e1b5e59",
+          "extension": "jpg"
+        },
+        "images": [
+          {
+            "path": "http://i.annihil.us/u/prod/marvel/i/mg/9/f0/56ab88e1b5e59",
+            "extension": "jpg"
+          },
+          {
+            "path": "http://i.annihil.us/u/prod/marvel/i/mg/7/10/568fd0626ea87",
+            "extension": "jpg"
+          }
+        ],
+        "creators": {
+          "available": 4,
+          "collectionURI": "http://gateway.marvel.com/v1/public/comics/55854/creators",
+          "items": [
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/creators/9443",
+              "name": "Shawn Crystal",
+              "role": "artist"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/creators/12456",
+              "name": "Katie Kubert",
+              "role": "editor"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/creators/12739",
+              "name": "Riley Rossmo",
+              "role": "penciller (cover)"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/creators/8847",
+              "name": "Joshua Williamson",
+              "role": "writer"
+            }
+          ],
+          "returned": 4
+        },
+        "characters": {
+          "available": 3,
+          "collectionURI": "http://gateway.marvel.com/v1/public/comics/55854/characters",
+          "items": [
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/characters/1009148",
+              "name": "Absorbing Man"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/characters/1010715",
+              "name": "The Hood"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/characters/1010669",
+              "name": "Titania"
+            }
+          ],
+          "returned": 3
+        },
+        "stories": {
+          "available": 2,
+          "collectionURI": "http://gateway.marvel.com/v1/public/comics/55854/stories",
+          "items": [
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/stories/122741",
+              "name": "cover from The Cabal (2015) #4",
+              "type": "cover"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/stories/122742",
+              "name": "story from The Cabal (2015) #4",
+              "type": "interiorStory"
+            }
+          ],
+          "returned": 2
+        },
+        "events": {
+          "available": 0,
+          "collectionURI": "http://gateway.marvel.com/v1/public/comics/55854/events",
+          "items": [],
+          "returned": 0
+        }
+      },
+      {
+        "id": 55853,
+        "digitalId": 40855,
+        "title": "Illuminati (2015) #3",
+        "issueNumber": 3,
+        "variantDescription": "",
+        "description": "FIGHT! Villain vs. Villain Battle Royale! Is the all-new all-different Illuminati disbanding? Has the Hood already lost control? Even if they can get their act together, they have no idea of the danger that is coming for them!",
+        "modified": "2015-12-30T10:20:41-0500",
+        "isbn": "",
+        "upc": "75960608329900311",
+        "diamondCode": "NOV150869",
+        "ean": "",
+        "issn": "",
+        "format": "Comic",
+        "pageCount": 32,
+        "textObjects": [
+          {
+            "type": "issue_solicit_text",
+            "language": "en-us",
+            "text": "FIGHT! Villain vs. Villain Battle Royale! Is the all-new all-different Illuminati disbanding? Has the Hood already lost control? Even if they can get their act together, they have no idea of the danger that is coming for them!"
+          }
+        ],
+        "resourceURI": "http://gateway.marvel.com/v1/public/comics/55853",
+        "urls": [
+          {
+            "type": "detail",
+            "url": "http://marvel.com/comics/issue/55853/illuminati_2015_3?utm_campaign=apiRef&utm_source=78615c175e959268b26b574d80998e69"
+          },
+          {
+            "type": "purchase",
+            "url": "http://comicstore.marvel.com/Illuminati-3/digital-comic/40855?utm_campaign=apiRef&utm_source=78615c175e959268b26b574d80998e69"
+          },
+          {
+            "type": "reader",
+            "url": "http://marvel.com/digitalcomics/view.htm?iid=40855&utm_campaign=apiRef&utm_source=78615c175e959268b26b574d80998e69"
+          },
+          {
+            "type": "inAppLink",
+            "url": "https://applink.marvel.com/issue/40855?utm_campaign=apiRef&utm_source=78615c175e959268b26b574d80998e69"
+          }
+        ],
+        "series": {
+          "resourceURI": "http://gateway.marvel.com/v1/public/series/20552",
+          "name": "Illuminati (2015 - 2016)"
+        },
+        "variants": [],
+        "collections": [],
+        "collectedIssues": [],
+        "dates": [
+          {
+            "type": "onsaleDate",
+            "date": "2016-01-13T00:00:00-0500"
+          },
+          {
+            "type": "focDate",
+            "date": "2015-12-14T00:00:00-0500"
+          },
+          {
+            "type": "unlimitedDate",
+            "date": "2016-07-11T00:00:00-0400"
+          },
+          {
+            "type": "digitalPurchaseDate",
+            "date": "2016-01-13T00:00:00-0500"
+          }
+        ],
+        "prices": [
+          {
+            "type": "printPrice",
+            "price": 3.99
+          },
+          {
+            "type": "digitalPurchasePrice",
+            "price": 3.99
+          }
+        ],
+        "thumbnail": {
+          "path": "http://i.annihil.us/u/prod/marvel/i/mg/d/90/56903f9200484",
+          "extension": "jpg"
+        },
+        "images": [
+          {
+            "path": "http://i.annihil.us/u/prod/marvel/i/mg/d/90/56903f9200484",
+            "extension": "jpg"
+          },
+          {
+            "path": "http://i.annihil.us/u/prod/marvel/i/mg/3/f0/5683f69291aa5",
+            "extension": "jpg"
+          }
+        ],
+        "creators": {
+          "available": 6,
+          "collectionURI": "http://gateway.marvel.com/v1/public/comics/55853/creators",
+          "items": [
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/creators/5251",
+              "name": "Vc Joe Caramagna",
+              "role": "letterer"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/creators/9443",
+              "name": "Shawn Crystal",
+              "role": "inker"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/creators/12456",
+              "name": "Katie Kubert",
+              "role": "editor"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/creators/10783",
+              "name": "John Rauch",
+              "role": "colorist"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/creators/12739",
+              "name": "Riley Rossmo",
+              "role": "penciler (cover)"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/creators/8847",
+              "name": "Joshua Williamson",
+              "role": "writer"
+            }
+          ],
+          "returned": 6
+        },
+        "characters": {
+          "available": 3,
+          "collectionURI": "http://gateway.marvel.com/v1/public/comics/55853/characters",
+          "items": [
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/characters/1009148",
+              "name": "Absorbing Man"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/characters/1010715",
+              "name": "The Hood"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/characters/1010669",
+              "name": "Titania"
+            }
+          ],
+          "returned": 3
+        },
+        "stories": {
+          "available": 2,
+          "collectionURI": "http://gateway.marvel.com/v1/public/comics/55853/stories",
+          "items": [
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/stories/122739",
+              "name": "cover from The Cabal (2015) #3",
+              "type": "cover"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/stories/122740",
+              "name": "story from The Cabal (2015) #3",
+              "type": "interiorStory"
+            }
+          ],
+          "returned": 2
+        },
+        "events": {
+          "available": 0,
+          "collectionURI": "http://gateway.marvel.com/v1/public/comics/55853/events",
+          "items": [],
+          "returned": 0
+        }
+      },
+      {
+        "id": 55851,
+        "digitalId": 40682,
+        "title": "Illuminati (2015) #2",
+        "issueNumber": 2,
+        "variantDescription": "",
+        "description": "The Hood explains part of his master plan and it involves going deep into the Marvel underground! Can the All New All Different Illuminati get along long enough to survive their first mission? The dark look at the lives of the Marvel villains continues!",
+        "modified": "2015-12-14T16:19:26-0500",
+        "isbn": "",
+        "upc": "75960608329900211",
+        "diamondCode": "OCT150931",
+        "ean": "",
+        "issn": "",
+        "format": "Comic",
+        "pageCount": 32,
+        "textObjects": [
+          {
+            "type": "issue_solicit_text",
+            "language": "en-us",
+            "text": "The Hood explains part of his master plan and it involves going deep into the Marvel underground! Can the All New All Different Illuminati get along long enough to survive their first mission? The dark look at the lives of the Marvel villains continues!"
+          }
+        ],
+        "resourceURI": "http://gateway.marvel.com/v1/public/comics/55851",
+        "urls": [
+          {
+            "type": "detail",
+            "url": "http://marvel.com/comics/issue/55851/illuminati_2015_2?utm_campaign=apiRef&utm_source=78615c175e959268b26b574d80998e69"
+          },
+          {
+            "type": "purchase",
+            "url": "http://comicstore.marvel.com/Illuminati-2/digital-comic/40682?utm_campaign=apiRef&utm_source=78615c175e959268b26b574d80998e69"
+          },
+          {
+            "type": "reader",
+            "url": "http://marvel.com/digitalcomics/view.htm?iid=40682&utm_campaign=apiRef&utm_source=78615c175e959268b26b574d80998e69"
+          },
+          {
+            "type": "inAppLink",
+            "url": "https://applink.marvel.com/issue/40682?utm_campaign=apiRef&utm_source=78615c175e959268b26b574d80998e69"
+          }
+        ],
+        "series": {
+          "resourceURI": "http://gateway.marvel.com/v1/public/series/20552",
+          "name": "Illuminati (2015 - 2016)"
+        },
+        "variants": [],
+        "collections": [],
+        "collectedIssues": [],
+        "dates": [
+          {
+            "type": "onsaleDate",
+            "date": "2015-12-16T00:00:00-0500"
+          },
+          {
+            "type": "focDate",
+            "date": "2015-12-01T00:00:00-0500"
+          },
+          {
+            "type": "unlimitedDate",
+            "date": "2016-06-13T00:00:00-0400"
+          },
+          {
+            "type": "digitalPurchaseDate",
+            "date": "2015-12-16T00:00:00-0500"
+          }
+        ],
+        "prices": [
+          {
+            "type": "printPrice",
+            "price": 3.99
+          },
+          {
+            "type": "digitalPurchasePrice",
+            "price": 3.99
+          }
+        ],
+        "thumbnail": {
+          "path": "http://i.annihil.us/u/prod/marvel/i/mg/9/b0/566ee0f6e93b0",
+          "extension": "jpg"
+        },
+        "images": [
+          {
+            "path": "http://i.annihil.us/u/prod/marvel/i/mg/9/b0/566ee0f6e93b0",
+            "extension": "jpg"
+          },
+          {
+            "path": "http://i.annihil.us/u/prod/marvel/i/mg/4/20/5640d7f7e9354",
+            "extension": "jpg"
+          }
+        ],
+        "creators": {
+          "available": 3,
+          "collectionURI": "http://gateway.marvel.com/v1/public/comics/55851/creators",
+          "items": [
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/creators/9443",
+              "name": "Shawn Crystal",
+              "role": "artist"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/creators/12739",
+              "name": "Riley Rossmo",
+              "role": "penciller (cover)"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/creators/8847",
+              "name": "Joshua Williamson",
+              "role": "writer"
+            }
+          ],
+          "returned": 3
+        },
+        "characters": {
+          "available": 3,
+          "collectionURI": "http://gateway.marvel.com/v1/public/comics/55851/characters",
+          "items": [
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/characters/1009148",
+              "name": "Absorbing Man"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/characters/1010715",
+              "name": "The Hood"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/characters/1010669",
+              "name": "Titania"
+            }
+          ],
+          "returned": 3
+        },
+        "stories": {
+          "available": 2,
+          "collectionURI": "http://gateway.marvel.com/v1/public/comics/55851/stories",
+          "items": [
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/stories/122735",
+              "name": "cover from The Cabal (2015) #2",
+              "type": "cover"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/stories/122736",
+              "name": "story from The Cabal (2015) #2",
+              "type": "interiorStory"
+            }
+          ],
+          "returned": 2
+        },
+        "events": {
+          "available": 0,
+          "collectionURI": "http://gateway.marvel.com/v1/public/comics/55851/events",
+          "items": [],
+          "returned": 0
+        }
+      },
+      {
+        "id": 55849,
+        "digitalId": 40467,
+        "title": "Illuminati (2015) #1",
+        "issueNumber": 1,
+        "variantDescription": "",
+        "description": "\"Bad guys win every day... why not us?\"\nHow do the villains of the Marvel Universe live in a world where the sky is constantly filled with heroes? What do they do when they want out of that life? There is no escape. No future. Who saves the villains? The Hood believes he might be that savior. He wants everyone to have a place at the table. Now all he needs to do is build his army... Featuring Titania, Mad Thinker, Thunderball, Black Ant and Enchantress, Illuminati is a tale of villains just trying to survive in the All-New All-Different Marvel Universe.",
+        "modified": "2015-11-06T11:26:40-0500",
+        "isbn": "",
+        "upc": "75960608329900111",
+        "diamondCode": "SEP150695",
+        "ean": "",
+        "issn": "",
+        "format": "Comic",
+        "pageCount": 32,
+        "textObjects": [
+          {
+            "type": "issue_solicit_text",
+            "language": "en-us",
+            "text": "\"Bad guys win every day... why not us?\"\nHow do the villains of the Marvel Universe live in a world where the sky is constantly filled with heroes? What do they do when they want out of that life? There is no escape. No future. Who saves the villains? The Hood believes he might be that savior. He wants everyone to have a place at the table. Now all he needs to do is build his army... Featuring Titania, Mad Thinker, Thunderball, Black Ant and Enchantress, Illuminati is a tale of villains just trying to survive in the All-New All-Different Marvel Universe."
+          }
+        ],
+        "resourceURI": "http://gateway.marvel.com/v1/public/comics/55849",
+        "urls": [
+          {
+            "type": "detail",
+            "url": "http://marvel.com/comics/issue/55849/illuminati_2015_1?utm_campaign=apiRef&utm_source=78615c175e959268b26b574d80998e69"
+          },
+          {
+            "type": "purchase",
+            "url": "http://comicstore.marvel.com/Illuminati-1/digital-comic/40467?utm_campaign=apiRef&utm_source=78615c175e959268b26b574d80998e69"
+          },
+          {
+            "type": "reader",
+            "url": "http://marvel.com/digitalcomics/view.htm?iid=40467&utm_campaign=apiRef&utm_source=78615c175e959268b26b574d80998e69"
+          },
+          {
+            "type": "inAppLink",
+            "url": "https://applink.marvel.com/issue/40467?utm_campaign=apiRef&utm_source=78615c175e959268b26b574d80998e69"
+          }
+        ],
+        "series": {
+          "resourceURI": "http://gateway.marvel.com/v1/public/series/20552",
+          "name": "Illuminati (2015 - 2016)"
+        },
+        "variants": [
+          {
+            "resourceURI": "http://gateway.marvel.com/v1/public/comics/56933",
+            "name": "Illuminati (2015) #1 (Holloway-&#8203;Brown Hip-&#8203;Hop Variant)"
+          },
+          {
+            "resourceURI": "http://gateway.marvel.com/v1/public/comics/56934",
+            "name": "Illuminati (2015) #1 (Jack Kirby Monster Variant)"
+          },
+          {
+            "resourceURI": "http://gateway.marvel.com/v1/public/comics/57400",
+            "name": "Illuminati (2015) #1 (Pope Variant)"
+          }
+        ],
+        "collections": [],
+        "collectedIssues": [],
+        "dates": [
+          {
+            "type": "onsaleDate",
+            "date": "2015-11-11T00:00:00-0500"
+          },
+          {
+            "type": "focDate",
+            "date": "2015-10-27T00:00:00-0400"
+          },
+          {
+            "type": "unlimitedDate",
+            "date": "2016-05-09T00:00:00-0400"
+          },
+          {
+            "type": "digitalPurchaseDate",
+            "date": "2015-11-11T00:00:00-0500"
+          }
+        ],
+        "prices": [
+          {
+            "type": "printPrice",
+            "price": 3.99
+          },
+          {
+            "type": "digitalPurchasePrice",
+            "price": 3.99
+          }
+        ],
+        "thumbnail": {
+          "path": "http://i.annihil.us/u/prod/marvel/i/mg/5/b0/563cd34c100b8",
+          "extension": "jpg"
+        },
+        "images": [
+          {
+            "path": "http://i.annihil.us/u/prod/marvel/i/mg/5/b0/563cd34c100b8",
+            "extension": "jpg"
+          },
+          {
+            "path": "http://i.annihil.us/u/prod/marvel/i/mg/6/70/56266d906bfb0",
+            "extension": "jpg"
+          },
+          {
+            "path": "http://i.annihil.us/u/prod/marvel/i/mg/d/c0/56266d4029825",
+            "extension": "jpg"
+          },
+          {
+            "path": "http://i.annihil.us/u/prod/marvel/i/mg/9/a0/56266ce9d3d2b",
+            "extension": "jpg"
+          },
+          {
+            "path": "http://i.annihil.us/u/prod/marvel/i/mg/4/50/561e7c8534c99",
+            "extension": "jpg"
+          },
+          {
+            "path": "http://i.annihil.us/u/prod/marvel/i/mg/3/70/561e7c5e15560",
+            "extension": "jpg"
+          },
+          {
+            "path": "http://i.annihil.us/u/prod/marvel/i/mg/8/b0/561e7c32c1a4a",
+            "extension": "jpg"
+          },
+          {
+            "path": "http://i.annihil.us/u/prod/marvel/i/mg/9/40/561e7c062ea8b",
+            "extension": "jpg"
+          },
+          {
+            "path": "http://i.annihil.us/u/prod/marvel/i/mg/c/40/561e7bd54aaa9",
+            "extension": "jpg"
+          },
+          {
+            "path": "http://i.annihil.us/u/prod/marvel/i/mg/3/10/561e7b8fefbef",
+            "extension": "jpg"
+          },
+          {
+            "path": "http://i.annihil.us/u/prod/marvel/i/mg/5/70/5605a132a7a2d",
+            "extension": "jpg"
+          }
+        ],
+        "creators": {
+          "available": 3,
+          "collectionURI": "http://gateway.marvel.com/v1/public/comics/55849/creators",
+          "items": [
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/creators/9443",
+              "name": "Shawn Crystal",
+              "role": "artist"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/creators/12739",
+              "name": "Riley Rossmo",
+              "role": "penciller (cover)"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/creators/8847",
+              "name": "Joshua Williamson",
+              "role": "writer"
+            }
+          ],
+          "returned": 3
+        },
+        "characters": {
+          "available": 3,
+          "collectionURI": "http://gateway.marvel.com/v1/public/comics/55849/characters",
+          "items": [
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/characters/1009148",
+              "name": "Absorbing Man"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/characters/1010715",
+              "name": "The Hood"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/characters/1010669",
+              "name": "Titania"
+            }
+          ],
+          "returned": 3
+        },
+        "stories": {
+          "available": 2,
+          "collectionURI": "http://gateway.marvel.com/v1/public/comics/55849/stories",
+          "items": [
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/stories/122731",
+              "name": "cover from The Cabal (2015) #1",
+              "type": "cover"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/stories/122732",
+              "name": "story from The Cabal (2015) #1",
+              "type": "interiorStory"
+            }
+          ],
+          "returned": 2
+        },
+        "events": {
+          "available": 0,
+          "collectionURI": "http://gateway.marvel.com/v1/public/comics/55849/events",
+          "items": [],
+          "returned": 0
+        }
+      },
+      {
+        "id": 43507,
+        "digitalId": 29928,
+        "title": "A+X (2012) #8",
+        "issueNumber": 8,
+        "variantDescription": "",
+        "description": "SPIDER-WOMAN & KITTY PRYDE (with Lockheed in tow, of course) investigate some unfinished alien business!\nAdam Warren returns to Marvel with an amazing short story so chock full of awesome that we can't even attempt to sum it up in one sentence!",
+        "modified": "2014-11-14T11:05:49-0500",
+        "isbn": "",
+        "upc": "75960607899800811",
+        "diamondCode": "MAR130635",
+        "ean": "",
+        "issn": "",
+        "format": "Comic",
+        "pageCount": 32,
+        "textObjects": [
+          {
+            "type": "issue_solicit_text",
+            "language": "en-us",
+            "text": "SPIDER-WOMAN & KITTY PRYDE (with Lockheed in tow, of course) investigate some unfinished alien business!\nAdam Warren returns to Marvel with an amazing short story so chock full of awesome that we can't even attempt to sum it up in one sentence!"
+          }
+        ],
+        "resourceURI": "http://gateway.marvel.com/v1/public/comics/43507",
+        "urls": [
+          {
+            "type": "detail",
+            "url": "http://marvel.com/comics/issue/43507/ax_2012_8?utm_campaign=apiRef&utm_source=78615c175e959268b26b574d80998e69"
+          },
+          {
+            "type": "purchase",
+            "url": "http://comicstore.marvel.com/A-X-8/digital-comic/29928?utm_campaign=apiRef&utm_source=78615c175e959268b26b574d80998e69"
+          },
+          {
+            "type": "reader",
+            "url": "http://marvel.com/digitalcomics/view.htm?iid=29928&utm_campaign=apiRef&utm_source=78615c175e959268b26b574d80998e69"
+          },
+          {
+            "type": "inAppLink",
+            "url": "https://applink.marvel.com/issue/29928?utm_campaign=apiRef&utm_source=78615c175e959268b26b574d80998e69"
+          }
+        ],
+        "series": {
+          "resourceURI": "http://gateway.marvel.com/v1/public/series/16450",
+          "name": "A+X (2012 - 2014)"
+        },
+        "variants": [],
+        "collections": [],
+        "collectedIssues": [],
+        "dates": [
+          {
+            "type": "onsaleDate",
+            "date": "2013-05-22T00:00:00-0400"
+          },
+          {
+            "type": "focDate",
+            "date": "2013-05-08T00:00:00-0400"
+          },
+          {
+            "type": "unlimitedDate",
+            "date": "2013-11-18T00:00:00-0500"
+          },
+          {
+            "type": "digitalPurchaseDate",
+            "date": "2013-05-22T00:00:00-0400"
+          }
+        ],
+        "prices": [
+          {
+            "type": "printPrice",
+            "price": 3.99
+          },
+          {
+            "type": "digitalPurchasePrice",
+            "price": 1.99
+          }
+        ],
+        "thumbnail": {
+          "path": "http://i.annihil.us/u/prod/marvel/i/mg/9/40/584f145d7ba0d",
+          "extension": "jpg"
+        },
+        "images": [
+          {
+            "path": "http://i.annihil.us/u/prod/marvel/i/mg/9/40/584f145d7ba0d",
+            "extension": "jpg"
+          }
+        ],
+        "creators": {
+          "available": 10,
+          "collectionURI": "http://gateway.marvel.com/v1/public/comics/43507/creators",
+          "items": [
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/creators/4014",
+              "name": "Axel Alonso",
+              "role": "editor"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/creators/4300",
+              "name": "Nick Lowe",
+              "role": "editor"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/creators/8822",
+              "name": "Jordan D. White",
+              "role": "editor"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/creators/665",
+              "name": "Reilly Brown",
+              "role": "artist"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/creators/10172",
+              "name": "Vc Clayton Cowles",
+              "role": "letterer"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/creators/11680",
+              "name": "Gerry Duggan",
+              "role": "writer"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/creators/11799",
+              "name": "Nathan Edmondson",
+              "role": "writer"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/creators/12759",
+              "name": "Christopher Hastings",
+              "role": "writer"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/creators/11757",
+              "name": "Salvador Larroca",
+              "role": "penciller"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/creators/72",
+              "name": "Humberto Ramos",
+              "role": "penciller (cover)"
+            }
+          ],
+          "returned": 10
+        },
+        "characters": {
+          "available": 6,
+          "collectionURI": "http://gateway.marvel.com/v1/public/comics/43507/characters",
+          "items": [
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/characters/1009148",
+              "name": "Absorbing Man"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/characters/1009268",
+              "name": "Deadpool"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/characters/1009338",
+              "name": "Hawkeye"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/characters/1009508",
+              "name": "Kitty Pryde"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/characters/1009405",
+              "name": "Lockheed"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/characters/1009608",
+              "name": "Spider-Woman (Jessica Drew)"
+            }
+          ],
+          "returned": 6
+        },
+        "stories": {
+          "available": 2,
+          "collectionURI": "http://gateway.marvel.com/v1/public/comics/43507/stories",
+          "items": [
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/stories/97200",
+              "name": "A+X (2012) #8",
+              "type": "cover"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/stories/97201",
+              "name": "story from All-New X-Men (2012) #11",
+              "type": "interiorStory"
+            }
+          ],
+          "returned": 2
+        },
+        "events": {
+          "available": 0,
+          "collectionURI": "http://gateway.marvel.com/v1/public/comics/43507/events",
+          "items": [],
+          "returned": 0
+        }
+      }
+    ]
+  }
+}

@@ -1,0 +1,20 @@
+/* 
+  Localizable.strings
+  MarvelChar
+
+  Created by Leonardo Soares on 05/02/23.
+  
+*/
+
+"AVENGERS_COMMA" = "Vingadores,";
+"ASSEMBLE_EXCLAMATION" = "Unidos!";
+"SEARCH" = "Buscar";
+"ABOUT_SCREEN_TITLE" = "Sobre este app";
+"ABOUT_SCREEN_SUBTITLE" = "Podemos ser heróis";
+"ABOUT_SCREEN_DESCRIPTION" = "Carismáticos, ágeis, fortes, unidos, apaixonados e com muita sabedoria, nós somos tos Heróis do nosso próprio jeito.";
+"ABOUT_SCREEN_OVERVIEW_DESCRIPTION" = "Na verdade, o que nos faz heróis não são forças sobrenaturais, mas pequenos gestos e atitudes que ajudam a melhorar a vida diária de todos nós e daqueles que nos cercam. Heróis de 8 a 11 de dezembro no Parque das Nações - Lisboa.";
+"OVERVIEW" = "Geral";
+"COMICS" = "HQs";
+"EVENTS" = "Eventos";
+"STORIES" = "Histórias";
+"SERIES" = "Séries";

@@ -1,0 +1,6 @@
+framework module Pods_MarvelChar_MarvelCharUITests {
+  umbrella header "Pods-MarvelChar-MarvelCharUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}
