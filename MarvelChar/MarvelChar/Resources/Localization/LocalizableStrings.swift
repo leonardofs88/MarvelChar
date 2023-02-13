@@ -22,4 +22,5 @@ struct LocalizableStrings {
     static let series = "SERIES".localizedString()
     static let googleBooks = "GOOGLE_BOOKS".localizedString()
     static let googleBooksSubtitle = "GOOGLE_BOOKS_SUBTITLE".localizedString()
+    static let error = "ERROR".localizedString()
 }

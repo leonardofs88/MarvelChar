@@ -95,21 +95,31 @@ class HomeViewController: UIViewController {
             })
             .disposed(by: disposeBag)
         
-        heroesCollecionView.rx.didScroll.subscribe { [weak self] _ in
-            guard let self = self else { return }
-            let offSetY = self.heroesCollecionView.contentOffset.y
-            let contentHeight = self.heroesCollecionView.contentSize.height
-            
-            if offSetY > (contentHeight - self.heroesCollecionView.frame.size.height - 100),
-               let vm = self.viewModel,
-               !vm.isLoading {
-                self.page += 20
-               vm.getCharacters(page: self.page, named: self.searchTextField.text)
-            }
-        }
-        .disposed(by: disposeBag)
+        heroesCollecionView.rx.didScroll
+            .subscribe(onNext: { [weak self] _ in
+                guard let self = self else { return }
+                let offSetY = self.heroesCollecionView.contentOffset.y
+                let contentHeight = self.heroesCollecionView.contentSize.height
+                
+                if offSetY > (contentHeight - self.heroesCollecionView.frame.size.height - 100),
+                   let vm = self.viewModel,
+                   !vm.isLoading {
+                    self.page += 20
+                    vm.getCharacters(page: self.page, named: self.searchTextField.text)
+                }
+            }, onError: { [weak self] error in
+                self?.presentError(error)
+            })
+            .disposed(by: disposeBag)
         
         viewModel?.getCharacters(page: page, named: searchTextField.text)
+    }
+    
+    fileprivate func presentError(_ error: Error) {
+        DispatchQueue.main.async {
+            let alertController = UIAlertController(title: LocalizableStrings.error, message: error.localizedDescription, preferredStyle: .alert)
+            self.present(alertController, animated: true)
+        }
     }
 }
 
